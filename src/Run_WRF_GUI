@@ -1,0 +1,141 @@
+#!/bin/bash
+###########################################################
+# This is the primary script for running WRF a the        #
+# Raspberry Pi.                                           #
+#                                                         #
+# Eliott-Foust wefoust@ucar.edu                           #
+###########################################################
+clear
+#Setting Paths
+export wrf_basis=$(readlink -f $(dirname $(basename $0)))
+export wrf_basis=$(cd $wrf_basis/../../ && pwd)
+export wrf_path=$wrf_basis/WRF_System
+
+
+#Run a script to clean old files
+$wrf_basis/Setup/Set_Environment
+$wrf_path/lib/cleanwrf >& /dev/null
+
+
+userstartdate=12-18-2018-12
+userenddate=12-18-2018-18
+
+currentdate=`date +%m-%d-%Y-%H`
+user_date_convert1=$(date +%s -d "${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2} ${userstartdate:11:2}:00:00")
+user_date_convert2=$(date +%s -d "${userenddate:6:4}-${userenddate:0:2}-${userenddate:3:2} ${userenddate:11:2}:00:00")
+
+#add if running online
+days_past=$(( ($currentdate - $user_date_convert1) / 60 / 60 / 24 ))
+run_hours_total=$(( ($user_date_convert2 - $user_date_convert1) / 60 / 60 ))
+
+
+#add if  running live
+#Check user input time and issue warnings
+if [ $days_past -gt 7 ]; then
+	echo 'Data does not extend that far back in time. Please choose a more recent initialization time.'
+	exit 1
+fi 
+
+if [ $run_hours_total -gt 144 ]; then
+	echo 'Run exceedes 6 days. This will take a long time to run. Would you like to continue (y/n)?'
+	read prompt
+	if [$prompt = no] || [$prompt = No] || [$prompt = n] || [$prompt = N] || [$prompt = No]; then
+		exit 1 
+	fi
+elif [ $run_hours_total -lt 0 ]; then
+	echo 'Start Date is after end date. Please revise.'
+	exit 1
+fi
+
+
+# Update start and end date in WPS and WRF namelists
+sed -i "/start_date/c\ start_date = \'${userstartdate:6:4}-${userstartdate:0:5}_${userstartdate:11:2}:00:00\'," $wrf_path/lib/dynamic_namelist.wps
+sed -i "/end_date/c\ end_date   = \'${userenddate:6:4}-${userenddate:0:5}_${userenddate:11:2}:00:00\'," $wrf_path/lib/dynamic_namelist.wps
+
+sed -i "/run_hours/c\ run_hours    = $run_hours_total" $wrf_path/lib/dynamic_namelist_input.wrf 
+
+sed -i "/start_year/c\ start_year    = ${userstartdate:6:4}" $wrf_path/lib/dynamic_namelist_input.wrf 
+sed -i "/start_month/c\ start_month    = ${userstartdate:0:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
+sed -i "/start_day/c\ start_day    = ${userstartdate:3:2}" $wrf_path/lib/dynamic_namelist_input.wrf
+sed -i "/start_hour/c\ start_hour    = ${userstartdate:11:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
+
+sed -i "/end_year/c\ end_year    = ${userenddate:6:4}" $wrf_path/lib/dynamic_namelist_input.wrf 
+sed -i "/end_month/c\ end_month    = ${userenddate:0:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
+sed -i "/end_day/c\ end_day    = ${userenddate:3:2}" $wrf_path/lib/dynamic_namelist_input.wrf
+sed -i "/end_hour/c\ end_hour    = ${userenddate:11:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
+
+sed -i "/geog_data_path/c\geog_data_path='$wrf_path/lib/WPS_GEOG'" $wrf_path/lib/dynamic_namelist.wps 
+
+
+rm $wrf_path/WPS/namelist.wps
+rm $wrf_path/WRFV3/run/namelist.input
+cp $wrf_path/lib/dynamic_namelist.wps $wrf_path/WPS/namelist.wps
+cp $wrf_path/lib/dynamic_namelist_input.wrf $wrf_path/WRFV3/run/namelist.input 
+
+	
+#Download input file starting from 12z to 12z at  6-hour incraments for one day
+rm $wrf_path/lib/DATA/*
+cd $wrf_path/lib/DATA/ 
+for i in `seq 0 6 $run_hours_total`; do 
+	boundary_condition=$(printf %03d $i)
+	echo
+	echo Downloading boundary condition for forecast hour $boundary_condition
+	wget -q ftp://ftpprd.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.\
+${userstartdate:6:4}${userstartdate:0:2}${userstartdate:3:2}/${userstartdate:11:2}/gfs.t\
+${userstartdate:11:2}z.pgrb2.1p00.f$boundary_condition \ 
+$wrf_path/lib/DATA/
+done
+
+
+#Move Back to WPS Directory
+cd $wrf_path/WPS/
+$wrf_path/WPS/geogrid.exe
+$wrf_path/WPS/link_grib.csh $wrf_path/lib/DATA/
+ln -sf ungrib/Variable_Tables/Vtable.GFS Vtable
+./ungrib.exe
+./metgrid.exe
+
+#Modify met_em files such that missing values are corrected
+for f in  met_em*.nc
+do
+	ncap2 -s 'where(SM100200>1 || SM100200<-1) SM100200=1.' $f -O $f
+	ncap2 -s 'where(SM000010>1 || SM000010<-1) SM000010=1.' $f -O $f
+	ncap2 -s 'where(SM010040>1 || SM010040<-1) SM010040=1.' $f -O $f
+	ncap2 -s 'where(SM040100>1 || SM040100<-1) SM040100=1.' $f -O $f
+	ncap2 -s 'where(ST100200>10000 || ST100200<-10000) ST100200=285' $f -O $f
+        ncap2 -s 'where(ST000010>10000 || ST000010<-10000) ST000010=285' $f -O $f
+        ncap2 -s 'where(ST010040>10000 || ST010040<-10000) ST010040=285' $f -O $f
+        ncap2 -s 'where(ST040100>10000 || ST040100<-10000) ST040100=285' $f -O $f
+	ncap2 -s 'where(ST>10000 || ST<-10000) ST=285' $f -O $f
+done
+
+
+echo
+echo Initializing Model
+echo 
+
+#Move to WRFV3's run directory to initialize model
+cd $wrf_path/WRFV3/run
+ln -sf $wrf_path/WPS/met_em*.nc .
+./real.exe
+
+echo
+echo Running WRF
+echo 
+
+
+#Run WRF
+export OMP_NUM_THREADS=4
+./wrf.exe
+#mpirun -np 4./wrf.exe
+clear
+echo
+echo
+echo
+
+#Move and Rename output
+mv wrfout_d01_"${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2}_${userstartdate:11:2}:00:00" $wrf_basis/Output/Temp_WRF_Output
+
+#Run Plotting Scripts
+echo Plotting High Temperature,Low Temperature, Precipitation, Snow Accumulation, and Reference Maps
+echo Please wait for button to appear to view output

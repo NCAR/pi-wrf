@@ -1,0 +1,105 @@
+;	This script plots the user specified domain
+;	Eliott Foust 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;	Load WRF Out file and Set workstation
+;a=addfile("/home/pi/Desktop/WRF_3.9.1_SMPAR/Output/Temp_WRF_Output","r")
+wks_type ="png"
+wks_type@wkWidth = 2048
+wks_type@wkHeight= 2048
+wks=gsn_open_wks("png","/home/pi/pi-wrf/Output/Your_Domain")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;	Set the colors to be used
+colors = (/"white","black","White","ForestGreen","DeepSkyBlue","Red","Blue"/)
+gsn_define_colormap(wks, colors)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;	Set Resources
+res                             = True
+res@gsnMaximize                 = True
+res@gsnDraw                     = False;True
+res@gsnFrame                    = False
+res@mpFillOn                    = True
+res@mpFillColors  = (/"background","DeepSkyBlue","ForestGreen","DeepSkyBlue", "transparent"/)
+res@tiMainString = "Your Simulation Domain"
+res = wrf_map_resources(a,res)    ; This will produce some warnings you can ignore
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;res@mpFillOn                    = False
+
+res@mpOutlineOn                 = True
+res@mpOutlineBoundarySets       = "AllBoundaries"    ; Geographical Boundary Settings
+res@mpDataBaseVersion           = "MediumRes"
+res@mpDataSetName               = "Earth..2"
+res@mpGridAndLimbOn             =  False
+res@mpGeophysicalLineColor      = "Black"
+res@mpNationalLineColor         = "Black"
+res@mpUSStateLineColor          = "black"
+res@mpCountyLineColor           = "gray50"
+res@mpCountyLineThicknessF      =  1
+res@mpUSStateLineThicknessF     =  6
+res@mpNationalLineThicknessF    =  6
+res@mpGeophysicalLineThicknessF =  6
+res@mpAreaMaskingOn = True
+res@mpFillAreaSpecifiers=(/"Water"/)
+res@mpOutlineDrawOrder          = "PostDraw"
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;---Create plot, but don't draw it yet.
+plot = gsn_csm_map(wks,res)
+txres                       = True
+txres@txFontHeightF         = 0.018
+txid = gsn_create_text(wks, "One Box=30KM ", txres)
+amres = True
+amres@amParallelPosF   = -.1    ; This is the right edge of the plot.
+amres@amOrthogonalPosF = -.511    ; This is the bottom edge of the plot.
+amres@amJust           = "BottomLeft"
+annoid = gsn_add_annotation(plot, txid, amres)  ; Attach string to plot
+                                                  ; using default values.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;	The hgt variable is arbitrary. Just need something to hold the
+;	lat/lon arrays.
+hgt       = wrf_user_getvar(a,"HGT",0)
+hgt@lat2d = wrf_user_getvar(a,"XLAT",0)
+hgt@lon2d = wrf_user_getvar(a,"XLONG",0)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+ 
+;	Call function to attach lat/lon lines.
+pres                   = True
+pres@gsnCoordsAsLines  = True        ; Default is points
+
+gsn_coordinates(wks,plot,hgt,pres)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
