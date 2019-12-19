@@ -84,7 +84,7 @@ res@cnLinesOn            = False              ; Turn off contour lines
 res@cnLineLabelsOn       = False              ; Turn off contour labels
 
 res@cnFillOn          =  True                 ; Title and Labels Settings
-res@tiMainString      = "Acuumulated Snow"
+res@tiMainString      = "Accumulated Snow"
 res@lbTitleOn         =  True
 res@cnFillPalette     = "CBR_wet" 
 res@lbTitleString     = "Snow (inches)"
