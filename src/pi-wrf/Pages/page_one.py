@@ -1,281 +1,250 @@
+#This script creates page two of the app. 
+
 #Importing modules 
 import sys
 from importlist import *
+from Pages.start_page  import StartPage
+from Pages.page_two   import PageTwo
+import subprocess
+from datetime import date, datetime, timedelta
 
 #Set Color Scheme and Font
 gui_color=color_scheme(1)  # 1=default
 LARGE_FONT = ("Verdana", 12)
 
-#Setting Time and Date Options
-months=['January','February','March','April','May','June','July','August','September','October','November','December']
-days_in_month = [[31,28,31,30,31,30,31,31,30,31,30,31],
-                [31,29,31,30,31,30,31,31,30,31,30,31]]
-currenthour   = dt.datetime.utcnow().hour
-currentmonth  = dt.datetime.now().month
-currentday    = dt.datetime.now().day
-currentyear   = dt.datetime.now().year
 
-user_startdate_range=[currentday-5,currentday]
-user_enddate_range=[currentday,currentday+14]
+# Creating arrays of time options for user
+# Arrays are based on system time
 
-############################################################################
-############################################################################
-#If current day is at beginning of month ajust settings to go back one month
-if currentday <= 5:
-    user_startdate_range=[1,currentday]
-    if currentmonth==1:
-        months=[months[11],months[0]]
-        days_in_month=[days_in_month[1][11],days_in_month[1][0]]
-    elif currentmonth==3:
-        months=[months[1],months[2]]
-        if currentyear%4 == 0:
-            days_in_month=[days_in_month[1][1],days_in_month[1][2]]
-        else:
-            days_in_month=[days_in_month[0][1],days_in_month[0][2]]
-    else:
-        months=[months[currentmonth-2],months[currentmonth-1]]
-        days_in_month=[days_in_month[0][currentmonth-2],days_in_month[0][currentmonth-1]]
+current_time=datetime.utcnow()
+current_time=current_time.replace(microsecond=0,second=0,minute=0)
 
-#Settings if current day is in middle of month
-if (currentday > 5) and (currentday < 15):
-    user_enddate_range=[currentday,currentday+14]    
-    months=[months[currentmonth-1]]
-    days_in_month=[days_in_month[0][currentmonth-1]]
+if current_time.hour >= 3 and current_time.hour < 9:
+    current_time=current_time.replace(hour=0)
+elif current_time.hour >= 9 and current_time.hour < 15:
+    current_time=current_time.replace(hour=6)
+elif current_time.hour >=15 and current_time.hour < 21:
+    current_time=current_time.replace(hour=12)
+elif current_time.hour >=21 or current_time.hour < 3:
+    current_time=current_time.replace(hour=18)
 
-#Settings if current day is at end of month
-if currentday >= 15:
-    if currentmonth==2:
-        months=[months[1],months[2]]
-        if currentyear%4 == 0:
-            days_in_month=[days_in_month[1][1],days_in_month[1][2]]
-            user_enddate_range=[currentday,days_in_month[0]]
-        else:
-            days_in_month=[days_in_month[0][1],days_in_month[0][2]]
-            user_enddate_range=[currentday,days_in_month[0]]
-    elif currentmonth==12:
-        months=[months[11],months[0]]
-        days_in_month=[days_in_month[0][11],days_in_month[0][0]]
-        user_enddate_range=[currentday,days_in_month[0]]
-    else:
-        months=[months[currentmonth-1],months[currentmonth]]
-        days_in_month=[days_in_month[0][currentmonth-1],days_in_month[0][currentmonth]]
-        user_enddate_range=[currentday,days_in_month[0]]
+time_interval=6
+days_back=2.
+days_ahead=3.
 
-#Map current time to zulu time            
-if (currenthour >= 3) and (currenthour < 9):
-    forecasthour=00
-elif (currenthour >= 9) and (currenthour < 15):
-    forecasthour=6
-elif (currenthour >= 15) and (currenthour < 21):
-    forecasthour=12
-elif (currenthour >= 21) or (currenthour < 3):
-    forecasthour=18
+init_times=[0]*int(((24/6)*days_back+1))
+end_times=[0]*int(((24/6)*days_ahead+1))
+
+init_time_delta=timedelta(hours=-time_interval)
+end_time_delta=timedelta(hours=time_interval)
 
 
-def update_spinbox_start(sb_start_month):
-    heresavalue=sb_start_month.get()    
-    if currentday <= 5:
-        if heresavalue==months[0]:
-            sb_start_day.delete(0,'end')
-            sb_start_day.insert(0,days_in_month[0])
-            sb_start_day.config(from_=(days_in_month[0]-(5-currentday)),to=days_in_month[0])
-            
-        elif heresavalue==months[1]:
-            sb_start_day.delete(0,'end')
-            sb_start_day.insert(0,currentday)
-            sb_start_day.config(from_=1,to=currentday)
-           
-def update_spinbox_end():
-    heresavalue_b=sb_end_month.get()
-    if currentday >=15:
-        if heresavalue_b==months[0]:
-            sb_end_day.delete(0,'end')
-            sb_end_day.insert(0,currentday+1)
-            sb_end_day.config(from_=currentday,to=days_in_month[0])
-            if heresavalue_b=='December':
-                sb_end_year.delete(0,'end')
-                sb_end_year.insert(0,currentyear)
-        elif heresavalue_b==months[1]:
-            sb_end_day.delete(0,'end')
-            sb_end_day.insert(0,1)
-            sb_end_day.config(from_=1,to=14-(days_in_month[1]-currentday))
-            if heresavalue_b=='January':
-                sb_end_year.delete(0,'end')
-                sb_end_year.insert(0,currentyear+1)    
-                       
-            
-def get_spinbox_values():
-    months=['January','February','March','April','May','June','July','August','September','October','November','December']
-    mm_s=str(months.index(sb_start_month.get())+1).zfill(2)
-    dd_s=str(sb_start_day.get()).zfill(2)
-    yy_s=str(sb_start_year.get()).zfill(4)
-    hh_s=str(sb_start_hour.get()).zfill(2)
-    mm_e=str(months.index(sb_end_month.get())+1).zfill(2)
-    dd_e=str(sb_end_day.get()).zfill(2)
-    yy_e=str(sb_end_year.get()).zfill(4)
-    hh_e=str(sb_end_hour.get()).zfill(2)
-    entry1="{}-{}-{}-{}".format(mm_s,dd_s,yy_s,hh_s)
-    entry2="{}-{}-{}-{}".format(mm_e,dd_e,yy_e,hh_e)
-    subprocess.call("sed -i /userstartdate=/c\\userstartdate=funny",shell=True)
-    subprocess.call("sed -i /userstartdate=/c\\userstartdate='{}' ../../Run_WRF_GUI".format(entry1),shell=True)
-    subprocess.call("sed -i /userenddate=/c\\userenddate='{}' ../../Run_WRF_GUI".format(entry2),shell=True)
+init_times[0]=current_time
+for i in range(1,len(init_times),1):
+    init_times[i]=init_times[i-1]+init_time_delta
 
-############################################################################
-############################################################################    
+time_delta=timedelta(hours=6)
+end_times[0]=current_time
+for i in range(1,len(end_times),1):
+    end_times[i]=end_times[i-1]+end_time_delta
 
+
+
+###############################################
 class PageOne(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.configure(bg=gui_color[0])    
 
-        global sb_start_month, sb_start_day, sb_start_year, sb_start_hour
-        global sb_end_month, sb_end_day, sb_end_year, sb_end_hour
-        lbl = tk.Label(self,text="Choose Simulation Start Time", font=("Arial Bold",40),bg=gui_color[1],foreground="white")
-        lbl.grid(row=0,column=0,columnspan=4,sticky=tk.E+tk.W)
-        self.columnconfigure(0,weight=1)
+	# Function that accepts user's time input and writes them to 
+	# the file 'RUN_WRF_GUI' & outputs the slected time to user
+	# User's time gets reformatted to mm-dd-yyyy-hh
+        def get_run_duration():
+            user_start_selection=start_times.get('active')
+            user_start_selection=(user_start_selection[5:7]+
+                                  user_start_selection[7:10]+
+                                  "-"+
+                                  user_start_selection[:4]+
+                                   "-"+
+                                  user_start_selection[11:13])
+            subprocess.call("sed -i /userstartdate=/c\\userstartdate='{}' ../../Run_WRF_GUI".format(user_start_selection),shell=True)
         
-        lbl_start_month = tk.Label(self,text="Start Month", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_start_month.grid(row=1,column=0,sticky=tk.W,pady=(50,0),padx=(50))
-        self.columnconfigure(0,weight=0)
-        
-        lbl_start_Day = tk.Label(self,text="Start Day", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_start_Day.grid(row=1,column=1,sticky=tk.W,pady=(50,0),padx=(50))
-        self.columnconfigure(1,weight=0)
-        
-        lbl_start_year = tk.Label(self,text="Start Year", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_start_year.grid(row=1,column=2,sticky=tk.W,pady=(50,0),padx=(50))
-        self.columnconfigure(2,weight=0)
-        
-        lbl_start_hour = tk.Label(self,text="Start Hour", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_start_hour.grid(row=1,column=3,sticky=tk.W,pady=(50,0),padx=(50))
-        self.columnconfigure(3,weight=1)
-        if currentday>=15:
-            sb_start_month=tk.Spinbox(self,width=10,font=("Arial Bold",35),value=[months[0]],command=update_spinbox_start)
-            sb_start_month.delete(0,'end')
-            sb_start_month.insert(0,months[0])
+            user_end_selection=duration_times.get('active')
+            user_end_selection=(user_end_selection[5:7]+
+                                user_end_selection[7:10]+
+                                "-"+
+                                user_end_selection[:4]+
+                                "-"+
+                                user_end_selection[11:13])
+            subprocess.call("sed -i /userenddate=/c\\userenddate='{}' ../../Run_WRF_GUI".format(user_end_selection),shell=True)
+ 
             
-        else:
-            sb_start_month=tk.Spinbox(self,width=10,font=("Arial Bold",35),value=months,command=update_spinbox_start)
-            sb_start_month.delete(0,'end')
-            sb_start_month.insert(0,months[-1])
-        sb_start_month.grid(column=0,row=2,sticky=tk.W,padx=(50))
-        sb_start_month_value=sb_start_month.get()
-             
-        sb_start_day=tk.Spinbox(self,width=10,font=("Arial Bold",35), from_=user_startdate_range[0], to = user_startdate_range[1])
-        sb_start_day.delete(0,'end')
-        sb_start_day.insert(0,currentday)
-        sb_start_day.grid(column=1,row=2,sticky=tk.W)
-        self.columnconfigure(1,weight=0)
-
-        if (currentday <=5) and (currentmonth==1):
-            sb_start_year=tk.Spinbox(self,width=10,font=("Arial Bold",35), value=[currentyear-1,currentyear])
-        else:
-            sb_start_year=tk.Spinbox(self,width=10,font=("Arial Bold",35), value=currentyear)
-        sb_start_year.delete(0,'end')
-        sb_start_year.insert(0,currentyear)
-        sb_start_year.grid(column=2,row=2)
-        
-        sb_start_hour=tk.Spinbox(self,width=10,font=("Arial Bold",35), from_= 0, to = 18, increment=6)
-        sb_start_hour.delete(0,'end')
-        sb_start_hour.insert(0,forecasthour)        
-        sb_start_hour.grid(column=3,row=2,sticky=tk.W)
-        
-
-        lbl_end_month = tk.Label(self,text="End Month", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_end_month.grid(row=3,column=0,sticky=tk.W,pady=(75,0),padx=(50,0))
-        self.columnconfigure(0,weight=0)
-        
-        lbl_end_Day = tk.Label(self,text="End Day", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_end_Day.grid(row=3,column=1,sticky=tk.W,pady=(75,0))
-        self.columnconfigure(1,weight=0)
-        
-        lbl_end_year = tk.Label(self,text="End Year", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_end_year.grid(row=3,column=2,sticky=tk.W,pady=(75,0))
-        self.columnconfigure(2,weight=0)
-        
-        lbl_end_hour = tk.Label(self,text="End Hour", font=("Arial Bold",40),bg=gui_color[0],foreground="white")
-        lbl_end_hour.grid(row=3,column=3,sticky=tk.W,pady=(75,0))
-        self.columnconfigure(3,weight=1)
-        if currentday<=5:
-            sb_end_month=tk.Spinbox(self,width=10,font=("Arial Bold",35),value=months[-1],command=update_spinbox_end)
-            sb_end_month.delete(0,'end')
-            sb_end_month.insert(0,months[-1])
-        if currentday>=15:
-            sb_end_month=tk.Spinbox(self,width=10,font=("Arial Bold",35),value=months,command=update_spinbox_end)
-            sb_end_month.delete(0,'end')
-            sb_end_month.insert(0,months[0])
-        if (currentday>5) and (currentday<15):
-            sb_end_month=tk.Spinbox(self,width=10,font=("Arial Bold",35),value=months,command=update_spinbox_end)
-            sb_end_month.delete(0,'end')
-            sb_end_month.insert(0,months[-1])
-        sb_end_month.grid(column=0,row=4,sticky=tk.W,padx=(50,0))
-        sb_end_month_value=sb_end_month.get()
-
-             
-        sb_end_day=tk.Spinbox(self,width=10,font=("Arial Bold",35), from_=user_enddate_range[0], to =user_enddate_range[1])
-        sb_end_day.delete(0,'end')
-
-        if forecasthour >= 18:
-            sb_end_day.insert(0,currentday+1)
-        else:
-            sb_end_day.insert(0,currentday)
-        sb_end_day.grid(column=1,row=4,sticky=tk.W)
-        self.columnconfigure(1,weight=0)
-
-        if (currentday >=15) and (currentmonth==12):
-            sb_end_year=tk.Spinbox(self,width=10,font=("Arial Bold",35), value=[currentyear,currentyear+1])
-        else:
-            sb_end_year=tk.Spinbox(self,width=10,font=("Arial Bold",35), value=[currentyear])
-        sb_end_year.delete(0,'end')
-        sb_end_year.insert(0,currentyear)
-        sb_end_year.grid(column=2,row=4)
-        
-        sb_end_hour=tk.Spinbox(self,width=10,font=("Arial Bold",35), from_= 0, to = 18, increment=6)
-        sb_end_hour.delete(0,'end')
-        sb_end_hour.insert(0,(forecasthour+6)%24)        
-        sb_end_hour.grid(column=3,row=4,sticky=tk.W)
-
-        from Pages.page_two   import PageTwo
-        #btn_1 = tk.Button(self,text="Choose Domain",font=("Arial Bold",40),borderwidth=5,bg=gui_color[2],activebackground=gui_color[3],width=20,command=lambda :[reset()])
-        btn_1 = tk.Button(self,text="Choose Domain",font=("Arial Bold",40),borderwidth=5,bg=gui_color[2],activebackground=gui_color[3],width=20,command=lambda :[get_spinbox_values(),reset(),controller.show_frame(PageTwo)])
-        btn_1.grid(column=1,row=5,columnspan=2,pady=(50,0))
-
-        from Pages.start_page  import StartPage
-        btn_2 = tk.Button(self,text="Home",font=("Arial Bold",40),borderwidth=5,bg=gui_color[2],activebackground=gui_color[3],width=20,command=lambda : controller.show_frame(StartPage))
-        btn_2.grid(column=1,row=6,columnspan=2,pady=20)
-
-
-        def reset():    
-            if currentday>=15:
-                sb_start_month.delete(0,'end')
-                sb_start_month.insert(0,months[0])
+            user_duration=datetime.strptime(user_end_selection,"%m-%d-%Y-%H") - \
+                          datetime.strptime(user_start_selection,"%m-%d-%Y-%H")
             
+            if user_duration.total_seconds()/60/60 == 0.0:
+                output=("Start and end time match. Please change times to continue.")
+                domain_button.config(state='disabled')
             else:
-                sb_start_month.delete(0,'end')
-                sb_start_month.insert(0,months[-1])
-            sb_start_day.delete(0,'end')
-            sb_start_day.insert(0,currentday)
-            sb_start_hour.delete(0,'end')
-            sb_start_hour.insert(0,forecasthour)
-            sb_start_year.delete(0,'end')
-            sb_start_year.insert(0,currentyear)
+                output=("The duration of your simulation is "+str(user_duration.days)+
+                        " days and "+str(((user_duration.total_seconds()/60)/60)%24)+
+                        " hours.\n Click 'Choose Domain' to continue or"+
+                        " 'Clear' to reselect times.") 
+            return output
 
-            if currentday<=5:
-                sb_end_month.delete(0,'end')
-                sb_end_month.insert(0,months[-1])
-            if currentday>=15:
-                sb_end_month.delete(0,'end')
-                sb_end_month.insert(0,months[0])
-            if (currentday>5) and (currentday<15):
-                sb_end_month.delete(0,'end')
-                sb_end_month.insert(0,months[-1])
-            if forecasthour >= 18:
-                sb_end_day.insert(0,currentday+1)
-            else:
-                sb_end_day.delete(0,'end')
-                sb_end_day.insert(0,currentday)
-            sb_end_year.delete(0,'end')
-            sb_end_year.insert(0,currentyear)
-            sb_end_hour.delete(0,'end')
-            sb_end_hour.insert(0,(forecasthour+6)%24)
-            
+	# A function that resets the buttons to the default state
+        def clear_time_menu():
+            #start_times.selection_clear(0,last='none')
+            #duration_times.selection_clear(0,last='none')
+            confirm_button.config(state='normal')
+            domain_button.config(state='disabled')
+            clear_button.config(state='disabled')
+            duration_text.config(text="")
+            start_times.config(state='normal')
+            duration_times.config(state='normal')
+            start_times.selection_clear(0,tk.END)
+            duration_times.selection_clear(0,tk.END)
+           
+ 
+       # Laying out frames for top_banner, listboxes, and buttons
+        self.grid_rowconfigure(0,weight=1)
+        self.grid_rowconfigure(1,weight=10)
+        self.grid_rowconfigure(2,weight=100)
+        self.grid_rowconfigure(3,weight=100)
+        self.grid_rowconfigure(4,weight=100)
+        self.grid_rowconfigure(5,weight=0)
+        self.grid_rowconfigure(6,weight=100)
+        self.grid_columnconfigure(0,weight=4)
+        self.grid_columnconfigure(1,weight=4)
+        self.grid_columnconfigure(2,weight=2)
+
+        
+        # Top Banner 
+        top_banner = tk.Label(self,
+                       text="Choose Simulation Start/End",
+                       font=("Arial Bold",40),
+                       bg=gui_color[1],
+                       foreground="white")
+        top_banner.grid(column=0,row=0,
+                        sticky='ewns',
+                        columnspan=3)
+
+
+        # Begin Time Listbox (listbox & two labels)
+        init_time_lbl = tk.Label(self,
+                                 text="Start Time",
+                                 font=("Arial Bold", 30),
+                                 bg=gui_color[0],
+                                 foreground="white")
+        init_time_lbl.grid(column=0,row=1,
+                           sticky='s')
+        
+        start_times = tk.Listbox(self,
+                                 selectmode="ACTIVE",
+                                 font=("Arial Bold",25),
+                                 highlightcolor=gui_color[3],
+                                 selectbackground=gui_color[4],
+                                 exportselection=0)
+        for i in range(0,len(init_times),1):
+            start_times.insert(i,init_times[i])
+        start_times.grid(column=0,row=2,
+                         rowspan=3,
+                         sticky='ns')
+
+        utc_indicator = tk.Label(self,
+                                 text="Times are in UTC",
+                                 font=("Arial Bold",10),
+                                 bg=gui_color[0],
+                                 foreground="white")
+        utc_indicator.grid(column=0,row=5,
+                           sticky='n')
+                                   
+           
+
+        # End Time Listbox (listbox & two labels)
+        end_time_lbl = tk.Label(self, 
+                                 text="End Time",
+                                 font=("Arial Bold", 30),
+                                 bg=gui_color[0],
+                                 foreground="white")
+        end_time_lbl.grid(column=1,row=1,
+                          sticky='s')
+
+        duration_times = tk.Listbox(self,
+                                    font=("Arial Bold",25),
+                                    highlightcolor=gui_color[3],
+                                    selectbackground=gui_color[4],
+                                    exportselection=0)
+        for i in range(0,len(end_times),1):
+            duration_times.insert(i,end_times[i])
+        duration_times.config(font=("Arial Bold",25))
+        duration_times.grid(column=1,row=2,
+                            rowspan=3,
+                            sticky='ns')
+
+        utc_indicator_2 = tk.Label(self,
+                                 text="Times are in UTC",
+                                 font=("Arial Bold",10),
+                                 bg=gui_color[0],
+                                 foreground="white")
+        utc_indicator_2.grid(column=1,row=5,
+                             sticky='n')
+        
+        # Buttons (creating buttons on right side of page)
+        buttons_frame=tk.Frame(self,bg=gui_color[0])
+        buttons_frame.grid(row=3,column=2,
+                           sticky='ewns')
+  
+        home_button = tk.Button(buttons_frame,
+                                      text="HOME",
+                                      font=("Arial Bold",40),
+                                      bg=gui_color[2],
+                                      activebackground=gui_color[3],
+                                      command=lambda : 
+                                      controller.show_frame(StartPage))
+        home_button.pack(fill='x')
+
+        clear_button = tk.Button(buttons_frame,
+                                      text="Reset Selection",
+                                      font=("Arial Bold",40),
+                                      bg=gui_color[2],
+                                      state='disabled',
+                                      activebackground=gui_color[3],
+                                      command=lambda :clear_time_menu())
+        clear_button.pack(fill='x')
+                          
+        confirm_button = tk.Button(buttons_frame,
+                                      text="Confirm Selection",
+                                      font=("Arial Bold",40),
+                                      bg=gui_color[2],
+                                      activebackground=gui_color[3],
+                                      command=lambda : [clear_button.config(state='normal'),
+                                                        domain_button.config(state='normal'),
+                                                        confirm_button.config(state='disabled'),
+                                                        start_times.config(state='disabled'),
+                                                        duration_times.config(state='disabled'),
+                                                        duration_text.config(text=(get_run_duration()))])
+
+        confirm_button.pack(fill='x')
+
+        domain_button = tk.Button(buttons_frame,
+                                      text="Choose Domain",
+                                      font=("Arial Bold",40),
+                                      bg=gui_color[2],
+                                      state='disabled',
+                                      activebackground=gui_color[3],
+                                      command=lambda :[clear_time_menu(), 
+                                                       duration_text.config(text=""),
+                                                       controller.show_frame(PageTwo)])
+        domain_button.pack(fill='x')
+
+        duration_text = tk.Label(self,
+                       font=("Arial Bold",20),
+                       bg=gui_color[0],
+                       text="",
+                       foreground="white")
+        duration_text.grid(column=0,row=6,
+                        sticky='ewns',
+                        columnspan=2)
+
+
