@@ -39,7 +39,6 @@ import subprocess
 #from wrf_model_domain_settings import * as ds
 from color_schemes     import color_scheme
 import wrf_model_domain_settings as ds
-import User_calendar as wrf_calendar
 
 
 
