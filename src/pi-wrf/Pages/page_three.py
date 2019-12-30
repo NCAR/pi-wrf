@@ -61,7 +61,7 @@ class PageThree(tk.Frame):
         frame1_topbanner=tk.Frame(self)
         frame1_topbanner.pack(side=tk.TOP,fill=tk.X)
         topbanner = tk.Label(frame1_topbanner,
-                             text="Your Model Is Running",
+                             text="Start Your Simulation",
                              font=("Arial Bold",40),
                              bg=gui_color[0],
                              foreground="white")
@@ -82,7 +82,9 @@ class PageThree(tk.Frame):
         btn_run_model=tk.Button(frame2_map,
                                 text="Run Model",
                                 font=("Arial Bold",16),
-                                command=lambda :[putintext()])
+                                command=lambda :[topbanner.config(text="Your Simulation is Running"),
+						 putintext(),
+               					 topbanner.config(text="Your Simulation has Finished")])
         btn_run_model.pack(fill=tk.X,side=tk.LEFT)
 
         global btn_view_output
@@ -90,6 +92,7 @@ class PageThree(tk.Frame):
                                   bd=0,
                                   state="normal",
                                   command=lambda :[retrieve_figure(),
+						   topbanner.config(text="Start Your Simulation"),
                                                    controller.show_frame(Pages.page_four.FigurePage),
                                                    reset()])
         btn_view_output.pack(fill=tk.X,side=tk.LEFT)
@@ -108,7 +111,8 @@ class PageThree(tk.Frame):
         reset_button=tk.Button(frame4_low_nav_bar,
                                bd=0,
                                state="normal",
-                               command=lambda : controller.show_frame(StartPage))
+                               command=lambda : [topbanner.config(text="Start Your Simulation"),
+                                                 controller.show_frame(StartPage)])
         reset_button.pack_forget()
 
 
