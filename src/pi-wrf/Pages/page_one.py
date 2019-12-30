@@ -15,19 +15,19 @@ LARGE_FONT = ("Verdana", 12)
 
 # Creating arrays of time options for user
 # Arrays are based on system time
-
 current_time=datetime.utcnow()
 current_time=current_time.replace(microsecond=0,second=0,minute=0)
-
-if current_time.hour >= 3 and current_time.hour < 9:
+if current_time.hour >= 0 and current_time.hour < 3:
+        current_time=current_time-timedelta(days=1)
+        current_time=current_time.replace(hour=18)
+elif current_time.hour >= 3 and current_time.hour < 9:
     current_time=current_time.replace(hour=0)
 elif current_time.hour >= 9 and current_time.hour < 15:
     current_time=current_time.replace(hour=6)
 elif current_time.hour >=15 and current_time.hour < 21:
     current_time=current_time.replace(hour=12)
-elif current_time.hour >=21 or current_time.hour < 3:
+elif current_time.hour >=21:
     current_time=current_time.replace(hour=18)
-
 time_interval=6
 days_back=2.
 days_ahead=3.
