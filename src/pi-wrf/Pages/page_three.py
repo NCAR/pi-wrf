@@ -94,7 +94,9 @@ class PageThree(tk.Frame):
                                   command=lambda :[retrieve_figure(),
 						   topbanner.config(text="Start Your Simulation"),
                                                    controller.show_frame(Pages.page_four.FigurePage),
-                                                   reset()])
+                                                   reset(),
+						   reset_button.pack_forget(),
+						   exit_button.pack_forget()])
         btn_view_output.pack(fill=tk.X,side=tk.LEFT)
         btn_view_output.pack_forget()
         
@@ -112,6 +114,9 @@ class PageThree(tk.Frame):
                                bd=0,
                                state="normal",
                                command=lambda : [topbanner.config(text="Start Your Simulation"),
+						 reset(),
+						 reset_button.pack_forget(),
+                                                 exit_button.pack_forget(),
                                                  controller.show_frame(StartPage)])
         reset_button.pack_forget()
 

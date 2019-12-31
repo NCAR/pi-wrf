@@ -149,7 +149,8 @@ class PageTwo(tk.Frame):
                           text="Home",
                           bg=gui_color[2],
                           activebackground=gui_color[3],
-                          command=lambda : controller.show_frame(StartPage))
+                          command=lambda :[reset_domain(default_lon_limits,default_lat_limits), 
+ 					   controller.show_frame(StartPage)])
         btn_1.pack(side=tk.LEFT,fill=tk.X)
 
         from Pages.page_three import PageThree
