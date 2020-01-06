@@ -104,16 +104,24 @@ class FigurePage(tk.Frame):
         
 
         button7=tk.Button(frame4_high_nav_bar,
+                          text="Wind",
+                          bg=gui_color[2],
+                          activebackground=gui_color[3],
+                          command=lambda : [update_figure("Surface_Wind",screenwidth,screenheight)])
+        button7.pack(fill=tk.X,side=tk.LEFT)
+
+
+        button8=tk.Button(frame4_high_nav_bar,
                           text="Rain",
                           bg=gui_color[2],
                           activebackground=gui_color[3],
                           command=lambda : [update_figure("Total_Precip",screenwidth,screenheight)])
-        button7.pack(fill=tk.X,side=tk.LEFT)
+        button8.pack(fill=tk.X,side=tk.LEFT)
 
-        button8=tk.Button(frame4_high_nav_bar,
+        button9=tk.Button(frame4_high_nav_bar,
                           text="Snow",
                           bg=gui_color[2],
                           activebackground=gui_color[3],
                           command=lambda : [update_figure("Snow_Depth",screenwidth,screenheight)])
-        button8.pack(fill=tk.X,side=tk.LEFT)
+        button9.pack(fill=tk.X,side=tk.LEFT)
         

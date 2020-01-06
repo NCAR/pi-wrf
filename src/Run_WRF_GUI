@@ -17,8 +17,8 @@ $wrf_basis/Setup/Set_Environment
 $wrf_path/lib/cleanwrf >& /dev/null
 
 
-userstartdate=12-18-2018-12
-userenddate=12-18-2018-18
+userstartdate=01-06-2020-00
+userenddate=01-06-2020-06
 
 currentdate=`date +%m-%d-%Y-%H`
 user_date_convert1=$(date +%s -d "${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2} ${userstartdate:11:2}:00:00")
@@ -137,5 +137,5 @@ echo
 mv wrfout_d01_"${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2}_${userstartdate:11:2}:00:00" $wrf_basis/Output/Temp_WRF_Output
 
 #Run Plotting Scripts
-echo Plotting High Temperature,Low Temperature, Precipitation, Snow Accumulation, and Reference Maps
+echo Plotting Temperature, Wind, Precipitation, Snow Accumulation, and Reference Maps
 echo Please wait for button to appear to view output
