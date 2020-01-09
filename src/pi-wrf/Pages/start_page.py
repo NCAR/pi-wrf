@@ -37,7 +37,7 @@ class StartPage(tk.Frame):
         topbanner = tk.Label(frame1_topbanner,
                              bg=gui_color[1],
                              font=("Arial Bold",40),
-                             text="Welcome to the Raspberry Pi-WRF Demo")
+                             text="Welcome to the Raspberry Pi-WRF Application")
         topbanner.pack(fill=tk.X)
         
         from Pages.page_one   import PageOne
