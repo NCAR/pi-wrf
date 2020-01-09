@@ -89,7 +89,7 @@ class PageOne(tk.Frame):
                 output=("The duration of your simulation is "+str(user_duration.days)+
                         " days and "+str(((user_duration.total_seconds()/60)/60)%24)+
                         " hours.\n Click 'Choose Domain' to continue or"+
-                        " 'Clear' to reselect times.") 
+                        " 'Reset Selection' to choose new times.") 
             return output
 
 	# A function that resets the buttons to the default state
@@ -200,8 +200,8 @@ class PageOne(tk.Frame):
                                       font=("Arial Bold",40),
                                       bg=gui_color[2],
                                       activebackground=gui_color[3],
-                                      command=lambda : 
-                                      controller.show_frame(StartPage))
+                                      command=lambda :[clear_time_menu(), 
+                                                       controller.show_frame(StartPage)])
         home_button.pack(fill='x')
 
         clear_button = tk.Button(buttons_frame,
