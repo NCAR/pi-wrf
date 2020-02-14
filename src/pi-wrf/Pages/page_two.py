@@ -2,6 +2,7 @@
 import sys
 from importlist import *
 import pickle
+from tkinter import messagebox
 #Set Color Scheme and Font
 gui_color=color_scheme(1)                                            # 1=default
 LARGE_FONT = ("Verdana", 12)
@@ -23,23 +24,31 @@ class PageTwo(tk.Frame):
         
         # Extracting corners of user defined rectangle
         def line_select_callback(eclick, erelease):
-            global xlim, ylim
-            xlim=np.sort(np.array([erelease.xdata,eclick.xdata]))
-            ylim=np.sort(np.array([erelease.ydata,eclick.ydata]))
-            ax.set_xlim(xlim)
-            ax.set_ylim(ylim)
-            domain_x_length=ds.calculate_distances(min(xlim),
-                                                   max(xlim),
-                                                   mean([min(ylim),max(ylim)]),
-                                                   mean([min(ylim),max(ylim)]))
-            domain_y_length=ds.calculate_distances(min(xlim),
-                                                   min(xlim),
-                                                   min(ylim),
-                                                   max(ylim))
+            global xlim, ylim, gridcells
+            temp_xlim=np.sort(np.array([erelease.xdata,eclick.xdata]))
+            temp_ylim=np.sort(np.array([erelease.ydata,eclick.ydata]))
+            
+            domain_x_length=ds.calculate_distances(min(temp_xlim),
+                                                   max(temp_xlim),
+                                                   mean([min(temp_ylim),max(temp_ylim)]),
+                                                   mean([min(temp_ylim),max(temp_ylim)]))
+            domain_y_length=ds.calculate_distances(min(temp_xlim),
+                                                   min(temp_xlim),
+                                                   min(temp_ylim),
+                                                   max(temp_ylim))
             domain_area=domain_x_length*domain_y_length
             gridcells=round(domain_area/30/30)
-            lbl_gridcells.configure(text='Approximate # of gridcells : {:,}'.format(gridcells))
-            canvas.show()
+                        
+            if gridcells < 100:
+                messagebox.showwarning(title="Domain too small",
+                                       message="At least 100 gridcells are needed. Please click and drag a larger domain or click zoom out.")
+            else:
+                xlim = temp_xlim
+                ylim = temp_ylim
+                lbl_gridcells.configure(text='Approximate # of gridcells : {:,}'.format(gridcells))
+                ax.set_xlim(xlim)
+                ax.set_ylim(ylim) 
+                canvas.show()
 
         # This should be removed becuase it isn't needed for this program.
         def toggle_selector(event):
@@ -52,6 +61,7 @@ class PageTwo(tk.Frame):
                 toggle_selector.RS.set_active(True)
         
         def reset_domain(lons,lats):
+            global gridcells
             ax.set_xlim(lons)
             ax.set_ylim(lats)
             gridcells=round(510000000/(30*30))
@@ -59,7 +69,7 @@ class PageTwo(tk.Frame):
             canvas.show()
               
         def zoom_out():
-            global xlim, ylim
+            global xlim, ylim, gridcells
             length_x=abs(xlim[1]-xlim[0])
             length_y=abs(ylim[1]-ylim[0])
             
@@ -102,6 +112,28 @@ class PageTwo(tk.Frame):
             ylim=zoom_out_y_lim
             del length_x
             del length_y
+
+            domain_x_length=ds.calculate_distances(min(xlim),
+                                                     max(xlim),
+                                                     mean([min(ylim),max(ylim)]),
+                                                     mean([min(ylim),max(ylim)]))
+            domain_y_length=ds.calculate_distances(min(xlim),
+                                                     min(xlim),
+                                                     min(ylim),
+                                                     max(ylim))
+            domain_area=domain_x_length*domain_y_length
+            gridcells=round(domain_area/30/30)
+            lbl_gridcells.configure(text='Approximate # of gridcells : {:,}'.format(gridcells))
+        
+        def domain_maxsize_check():
+            global gridcells
+            if gridcells > 15000:
+                messagebox.showwarning(title="Domain too large",
+                                       message= "The domain is too large to run a simulation. Please select a domain less than 15,000 grid cells.")
+            else:
+                ds.set_domain(xlim,ylim)
+                controller.show_frame(PageThree)
+                reset_domain(default_lon_limits,default_lat_limits)
 
 #### End Functions for Interactive Non-Tiling Map 
 ########################################################################################################################################################
@@ -158,8 +190,9 @@ class PageTwo(tk.Frame):
                           text="Confirm Domain",
                           bg=gui_color[2],
                           activebackground=gui_color[3],
-                          command=lambda : [ds.set_domain(xlim,ylim),controller.show_frame(PageThree),
-                                            reset_domain(default_lon_limits,default_lat_limits)])
+                          command=lambda : [domain_maxsize_check()])
+                          #command=lambda : [ds.set_domain(xlim,ylim),controller.show_frame(PageThree),
+                          #                  reset_domain(default_lon_limits,default_lat_limits)])
         btn_2.pack(side=tk.RIGHT,fill=tk.X)
         
         # Creating Matplotlib figure
