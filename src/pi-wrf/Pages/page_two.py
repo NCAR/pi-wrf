@@ -11,23 +11,23 @@ global default_lat_limits,default_lon_limits
 default_lat_limits   = [-90,90]
 default_lon_limits   = [-180,180]
 
-
 class PageTwo(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.configure(bg=gui_color[0])    
+        gridcells = 566667
 
-
-########################################################################################################################################################
-########################################################################################################################################################
-#### Functions for Interactive Non-Tiling Map
         
-        # Extracting corners of user defined rectangle
         def line_select_callback(eclick, erelease):
+            """ Extracting corners of user defined rectangle
+                This works by ingesting mouseclick data as arguments
+                and calculating the spatial area and amount of grid cells.
+                Based on the gridcell count it will either generate an error
+                prompt or crop the map into a new domain """
+            
             global xlim, ylim, gridcells
             temp_xlim=np.sort(np.array([erelease.xdata,eclick.xdata]))
             temp_ylim=np.sort(np.array([erelease.ydata,eclick.ydata]))
-            
             domain_x_length=ds.calculate_distances(min(temp_xlim),
                                                    max(temp_xlim),
                                                    mean([min(temp_ylim),max(temp_ylim)]),
@@ -49,8 +49,9 @@ class PageTwo(tk.Frame):
                 ax.set_xlim(xlim)
                 ax.set_ylim(ylim) 
                 canvas.show()
+                toggle_selector.RS.update()
+        
 
-        # This should be removed becuase it isn't needed for this program.
         def toggle_selector(event):
             print(' Key pressed.')
             if event.key in ['Q', 'q'] and toggle_selector.RS.active:
@@ -61,18 +62,32 @@ class PageTwo(tk.Frame):
                 toggle_selector.RS.set_active(True)
         
         def reset_domain(lons,lats):
-            global gridcells
+            """ Resets the map and domain to the entire globe."""
+               
+            global gridcells, xlim, ylim
             ax.set_xlim(lons)
             ax.set_ylim(lats)
             gridcells=round(510000000/(30*30))
             lbl_gridcells.configure(text='Approximate # of gridcells : {:,}'.format(gridcells))
+            
+            # Overriding the drawn rectangle to a zero value so it clears previous mouse clicks
+            temp_list = [0,0,0,0]
+            toggle_selector.RS.extents = tuple(temp_list)
             canvas.show()
-              
+
+            # Overriding steps create new rectangle and this section clears the drawn rectangle
+            for artist in toggle_selector.RS.artists:
+                artist.set_visible(False)
+            toggle_selector.RS.update() 
+
         def zoom_out():
+            """ Forces the map to pan out """
+            
             global xlim, ylim, gridcells
             length_x=abs(xlim[1]-xlim[0])
             length_y=abs(ylim[1]-ylim[0])
             
+            # Handeling map edges
             if length_x < 10:
                 zoom_out_x_lim=[xlim[0]-10,xlim[1]+10]
                 if zoom_out_x_lim[0] < -180:
@@ -106,13 +121,28 @@ class PageTwo(tk.Frame):
                     zoom_out_y_lim[1]= 90
                 ax.set_ylim(zoom_out_y_lim)
                 
-
-            canvas.show()
             xlim=zoom_out_x_lim
             ylim=zoom_out_y_lim
-            del length_x
-            del length_y
 
+            
+            # Overriding the drawn rectangle to a zero value so it clears previous mouse clicks
+            temp_list = list(toggle_selector.RS.extents)
+            temp_list[0] = xlim[0]
+            temp_list[1] = xlim[1]
+            temp_list[2] = ylim[0]
+            temp_list[3] = ylim[1]
+            temp_list = [0,0,0,0]
+            toggle_selector.RS.extents = tuple(temp_list)
+            toggle_selector.RS.update()
+            canvas.show()
+
+            # Overriding steps create new rectangle and this section clears the drawn rectangle
+            for artist in toggle_selector.RS.artists:
+                artist.set_visible(False)
+            toggle_selector.RS.update()
+
+            
+            # Calculating the spatial area and amount of grid cells.
             domain_x_length=ds.calculate_distances(min(xlim),
                                                      max(xlim),
                                                      mean([min(ylim),max(ylim)]),
@@ -126,7 +156,11 @@ class PageTwo(tk.Frame):
             lbl_gridcells.configure(text='Approximate # of gridcells : {:,}'.format(gridcells))
         
         def domain_maxsize_check():
+            """ Checks the number of gridcells. If too many gridcells it generates error prompt """
+            
             global gridcells
+            try: gridcells
+            except NameError: gridcells = 566667
             if gridcells > 15000:
                 messagebox.showwarning(title="Domain too large",
                                        message= "The domain is too large to run a simulation. Please select a domain less than 15,000 grid cells.")
@@ -135,11 +169,8 @@ class PageTwo(tk.Frame):
                 controller.show_frame(PageThree)
                 reset_domain(default_lon_limits,default_lat_limits)
 
-#### End Functions for Interactive Non-Tiling Map 
-########################################################################################################################################################
-########################################################################################################################################################
                 
-        # Creating page and frames
+        ## Creating page and frames ##
         frame1_topbanner=tk.Frame(self)
         frame1_topbanner.pack(side=tk.TOP,fill=tk.X)
         topbanner = tk.Label(frame1_topbanner,
@@ -191,8 +222,6 @@ class PageTwo(tk.Frame):
                           bg=gui_color[2],
                           activebackground=gui_color[3],
                           command=lambda : [domain_maxsize_check()])
-                          #command=lambda : [ds.set_domain(xlim,ylim),controller.show_frame(PageThree),
-                          #                  reset_domain(default_lon_limits,default_lat_limits)])
         btn_2.pack(side=tk.RIGHT,fill=tk.X)
         
         # Creating Matplotlib figure
