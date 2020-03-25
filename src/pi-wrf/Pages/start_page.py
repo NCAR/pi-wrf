@@ -23,10 +23,10 @@ class StartPage(tk.Frame):
         self.configure(bg=gui_color[0])
         screenwidth=self.winfo_screenwidth()                         #get the current screen width
         screenheight=self.winfo_screenheight()                       #current height of screen
-        subprocess.call('convert /pi-wrf/WRF_System/lib/splash_image.jpg -resize {}x{}\! /pi-wrf/WRF_System/lib/splash_image.gif'\
+        subprocess.call('convert /pi-wrf/WRF_System/lib/start_page_bg.jpg -resize {}x{}\! /pi-wrf/WRF_System/lib/start_page_bg.gif'\
                         .format(screenwidth,screenheight),
                         shell=True)
-        photo=tk.PhotoImage(file="/pi-wrf/WRF_System/lib/splash_image.gif")
+        photo=tk.PhotoImage(file="/pi-wrf/WRF_System/lib/start_page_bg.gif")
         bg_label_test=tk.Label(self,image=photo)
         bg_label_test.image=photo
         bg_label_test.place(x=0,y=0,relwidth=1,relheight=1)

@@ -6,6 +6,7 @@ from importlist import *
 gui_color=color_scheme(1)                                            # 1=default
 LARGE_FONT = ("Verdana", 12)
 
+from Pages.splash_page  import SplashPage
 from Pages.start_page   import StartPage
 from Pages.page_one     import PageOne
 from Pages.page_two     import PageTwo
@@ -29,12 +30,12 @@ class MainWindow(tk.Tk):
         container.grid_rowconfigure(0, weight=1)                     # make the cell in grid cover the entire window
         container.grid_columnconfigure(0,weight=1)                   # make the cell in grid cover the entire window
         self.frames = {}                                             # Dictionary of Pages to Navigate To
-        for F in (StartPage,PageOne,PageTwo,PageThree,FigurePage):
+        for F in (SplashPage,StartPage,PageOne,PageTwo,PageThree,FigurePage):
             frame = F(container, self)                               # create the page
             self.frames[F] = frame                                   # store into frames
             frame.grid(row=0, column=0, sticky="nsew")               # grid it to container
  
-        self.show_frame(StartPage)                                   # Make StartPage show upfront
+        self.show_frame(SplashPage)                                  # Make SplashPage show upfront
  
     def show_frame(self, name):
         frame = self.frames[name]
