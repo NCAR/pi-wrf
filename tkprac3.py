@@ -1,5 +1,5 @@
-#Lily's Python TKinter practice 1
-#Displays colored rectangles
+#Lily's Python TKinter practice 3
+#Displays multiple colored rectangles using subframes
 
 #Import libraries
 import Tkinter as tk

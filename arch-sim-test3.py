@@ -1,5 +1,5 @@
-#Lily's Python TKinter practice 1
-#Displays colored rectangles
+#Lily's WRF-Pi Archived Simulations test 3
+#Designed for Python 2.7
 
 #Import libraries
 import Tkinter as tk

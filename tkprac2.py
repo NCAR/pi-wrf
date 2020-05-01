@@ -1,5 +1,5 @@
-#Lily's Python TKinter practice 1
-#Displays colored rectangles
+#Lily's Python TKinter practice 2
+#Displays colored rectangles side-by-side
 
 #Import libraries
 import Tkinter as tk
