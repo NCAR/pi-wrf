@@ -71,3 +71,13 @@ class StartPage(tk.Frame):
                           width=20,
                           command=lambda : controller.quit_app())
         btn_3.pack()
+
+        bottombanner=tk.Frame(self)
+        bottombanner.pack(side=tk.BOTTOM,fill=tk.X)
+        version_lable = tk.Label(bottombanner,
+                                 text=("Pi-WRF Version 1.1.2"),
+                                 anchor="w",
+                                 font=("Arial Bold",5),
+                                 fg="black",
+                                 bg=gui_color[1])
+        version_lable.pack(side=tk.BOTTOM,fill=tk.X)

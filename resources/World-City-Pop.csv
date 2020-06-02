@@ -10,14 +10,14 @@ City Name,Lat,Lon,Population
    Pelham,40.9116,-73.8075,7020
    Ridley Park,39.8785,-75.3251,7023
    King,36.2767,-80.356,7025
+   Sandersville,32.9827,-82.8093,7026
    Melekeok,7.4874,134.6265,7026
    Lampasas,31.0659,-98.1831,7026
-   Sandersville,32.9827,-82.8093,7026
-   Quellon,-43.0996,-73.6,7029
    Gibsonville,36.0989,-79.5425,7029
+   Quellon,-43.0996,-73.6,7029
    Edinboro,41.8762,-80.1246,7035
-   Fairview,35.9819,-87.1286,7040
    Orange City,43.0019,-96.0565,7040
+   Fairview,35.9819,-87.1286,7040
    Franklin,35.18,-83.381,7041
    Kapoeta,4.7721,33.5902,7042
    Maryborough,-37.0496,143.73,7046
@@ -26,69 +26,67 @@ City Name,Lat,Lon,Population
    University Park,41.446,-87.7154,7052
    Floresville,29.1403,-98.1627,7053
    Stephenville,48.5504,-58.5666,7054
-   De Funiak Springs,30.7121,-86.1207,7055
    Saint Louis,43.4082,-84.6116,7060
    Fort Payne,34.4559,-85.6954,7062
    Ashland,46.5801,-90.8715,7063
    Santa Clara,37.1312,-113.6561,7065
-   Stanwood,48.245,-122.3427,7073
    Flowery Branch,34.1707,-83.9141,7073
-   Zambezi,-13.54,23.1099,7074
+   Stanwood,48.245,-122.3427,7073
    Nappanee,41.4452,-85.9962,7074
+   Zambezi,-13.54,23.1099,7074
    Sioux Center,43.0746,-96.1707,7076
    Rochester,41.0591,-86.196,7077
    Keystone Heights,29.781,-82.0339,7081
    Madison,44.0062,-97.1084,7081
    Narrabri,-30.3319,149.7874,7082
    Fort Myers Beach,26.4325,-81.9169,7085
-   Keyport,40.4327,-74.2013,7085
    Syracuse,41.4215,-85.749,7085
+   Keyport,40.4327,-74.2013,7085
    Walled Lake,42.5379,-83.4786,7089
    Dade City,28.3564,-82.1942,7099
    Pedro Luro,-39.4833,-62.6833,7100
-   Salida,38.5303,-105.9987,7102
    Hillsboro,39.167,-89.4735,7102
+   Salida,38.5303,-105.9987,7102
    Barnesville,33.0511,-84.1526,7103
    Parry Sound,45.3337,-80.033,7105
    Dos Palos,36.9854,-120.6337,7109
    Live Oak,30.2956,-82.9846,7110
    Richland,32.2309,-90.1592,7111
-   Wytheville,36.953,-81.0881,7114
    Independence,41.378,-81.6385,7114
+   Wytheville,36.953,-81.0881,7114
    Saint Helena,38.5044,-122.4681,7119
    Hudson Falls,43.3042,-73.5818,7121
+   Nebraska City,40.6766,-95.8613,7122
    Pacific,47.261,-122.2507,7122
    Belen,34.6804,-106.7875,7122
-   Nebraska City,40.6766,-95.8613,7122
    Lewisburg,37.8096,-80.4327,7124
    Sausalito,37.8581,-122.4932,7125
-   Winooski,44.4951,-73.1842,7128
    Bellbrook,39.6384,-84.0865,7128
+   Winooski,44.4951,-73.1842,7128
    Milltown,40.4503,-74.435,7132
    Catoosa,36.1832,-95.7663,7133
    Austell,33.8202,-84.6453,7139
-   Wick,58.4333,-3.0834,7147
    Bonne Terre,37.9209,-90.5425,7147
+   Wick,58.4333,-3.0834,7147
    Gunnedah,-30.987,150.2623,7148
    Moab,38.57,-109.5476,7149
    Pleasantville,41.1378,-73.7827,7150
    Glenolden,39.8996,-75.292,7153
-   Tobol,52.698,62.5749,7155
-   Okandja,-0.6829,13.7833,7155
    Highland Heights,39.0355,-84.4567,7155
+   Okandja,-0.6829,13.7833,7155
+   Tobol,52.698,62.5749,7155
    Scappoose,45.7563,-122.8771,7158
    Berrien Springs,41.9474,-86.3406,7162
    Soro,55.433,11.5667,7167
    Mills River,35.3855,-82.5854,7168
    Middleton,43.7124,-116.6143,7168
-   Onalaska,30.8216,-95.1111,7173
    East Hills,40.7958,-73.6292,7173
+   Onalaska,30.8216,-95.1111,7173
    Tolleson,33.4484,-112.2561,7178
    Orland Hills,41.5905,-87.8413,7184
    Bestobe,52.4997,73.0997,7189
    Carhue,-37.1829,-62.7333,7190
    South Weber,41.1334,-111.9393,7196
-   Saint Martinville,30.1264,-91.8319,7197
    Saint Gabriel,30.2536,-91.1013,7205
    La Sarre,48.8,-79.2,7206
    Atherton,37.4539,-122.2032,7207
@@ -96,11 +94,11 @@ City Name,Lat,Lon,Population
    Lucas,33.095,-96.5792,7211
    Hiawatha,42.0518,-91.6899,7212
    Bargersville,39.5414,-86.2004,7213
-   Laurium,47.2351,-88.4382,7214
    Whitefish,48.4333,-114.3594,7214
+   Laurium,47.2351,-88.4382,7214
    Tyrone,33.4751,-84.5942,7215
-   Strasburg,38.9944,-78.3541,7218
    Lawrenceville,38.7263,-87.6874,7218
+   Strasburg,38.9944,-78.3541,7218
    Marion,34.1787,-79.3965,7218
    Woodstock,38.8753,-78.5158,7225
    Hempstead,30.0975,-96.0795,7236
@@ -124,13 +122,13 @@ City Name,Lat,Lon,Population
    Canfield,41.0315,-80.7672,7284
    Hudsonville,42.8634,-85.8626,7285
    Bossembele,5.267,17.65,7287
-   Ephrata,47.3119,-119.5342,7289
    Williston Park,40.7588,-73.6465,7289
+   Ephrata,47.3119,-119.5342,7289
    De Soto,38.141,-90.5609,7290
    Crossett,33.1284,-91.9631,7295
    Jackson,38.3485,-120.7724,7297
-   Leeton,-34.5449,146.3973,7299
    New Cumberland,40.2297,-76.8764,7299
+   Leeton,-34.5449,146.3973,7299
    Riverdale Park,38.9645,-76.9265,7304
    Osakarovka,50.5799,72.5699,7305
    Flatwoods,38.5209,-82.7195,7311
@@ -156,22 +154,20 @@ City Name,Lat,Lon,Population
    Sanibel,26.4535,-82.1024,7351
    Sandwich,41.6496,-88.6175,7358
    West Dundee,42.0984,-88.3072,7361
-   Truth or Consequences,33.1851,-107.2587,7365
    Susuman,62.7833,148.1668,7367
    Oak Grove,36.6686,-87.4216,7370
    Milan,35.9127,-88.7556,7371
-   Mentor-on-the-Lake,41.7135,-81.365,7371
    Dunellen,40.5902,-74.4656,7374
-   Reyes,-14.3096,-67.37,7376
    Tyrone,40.6764,-78.246,7376
+   Reyes,-14.3096,-67.37,7376
    Grove,36.5925,-94.7885,7387
    Torrington,42.0658,-104.1621,7389
-   Neiafu,-18.6496,-173.9833,7391
    Pingree Grove,42.0857,-88.4362,7391
+   Neiafu,-18.6496,-173.9833,7391
    Carnarvon,-24.8998,113.6501,7392
    McCook,40.2046,-100.6214,7393
-   Lander,42.8313,-108.7599,7397
    Minnetrista,44.9355,-93.7103,7397
+   Lander,42.8313,-108.7599,7397
    Corbin,36.9321,-84.1004,7398
    El Alamein,30.8171,28.95,7400
    Albertville,45.2365,-93.6617,7401
@@ -198,9 +194,9 @@ City Name,Lat,Lon,Population
    Herkimer,43.0282,-74.9928,7455
    Cotati,38.3278,-122.7092,7455
    Wynne,35.2324,-90.7897,7455
-   West Miami,25.7578,-80.2969,7459
    Crystal City,28.691,-99.8257,7459
    Webster City,42.4623,-93.8167,7459
+   West Miami,25.7578,-80.2969,7459
    Gaoual,11.754,-13.213,7461
    Wildwood,28.8004,-82.0051,7464
    Fairlawn,41.127,-81.6212,7466
@@ -216,22 +212,22 @@ City Name,Lat,Lon,Population
    Rockton,42.45,-89.0631,7499
    Yarmouth,43.8308,-66.1126,7500
    Young,-34.3096,148.29,7501
-   Banff,51.178,-115.5719,7502
    Aberdeen,35.1345,-79.4314,7502
+   Banff,51.178,-115.5719,7502
    Richfield,38.7628,-112.0927,7507
-   Palmyra,40.31,-76.5944,7510
    Charles City,43.0644,-92.6745,7510
+   Palmyra,40.31,-76.5944,7510
    New London,44.395,-88.7393,7512
    Mount Shasta,41.3206,-122.315,7513
    Wellington,37.2621,-97.428,7513
    Roatan,16.33,-86.519,7514
    Old Town,44.9491,-68.7249,7518
    Round Lake Park,42.3311,-88.0752,7519
-   Lamar,38.0739,-102.6155,7525
    Marengo,42.2311,-88.6156,7525
+   Lamar,38.0739,-102.6155,7525
+   Calipatria,33.1488,-115.5058,7526
    Pembroke,34.6777,-79.1945,7526
    Ashland,40.7811,-76.3451,7526
-   Calipatria,33.1488,-115.5058,7526
    Monticello,41.6519,-74.6874,7527
    Purcell,35.018,-97.3747,7528
    Saranac Lake,44.3245,-74.1314,7529
@@ -246,7 +242,6 @@ City Name,Lat,Lon,Population
    Escalon,37.7911,-120.9981,7548
    Carbondale,39.3946,-107.2145,7549
    Osceola,35.6947,-89.993,7563
-   Happy Valley - Goose Bay,53.3,-60.3,7572
    Hubbard,41.1593,-80.5682,7579
    Nolensville,35.9594,-86.6754,7580
    Ojai,34.4487,-119.2469,7585
@@ -260,23 +255,22 @@ City Name,Lat,Lon,Population
    Pittston,41.3274,-75.7885,7602
    Auburn,34.0151,-83.8316,7603
    Brighton,42.5298,-83.7848,7604
-   Whiteville,34.3306,-78.7014,7605
    Baldwinsville,43.157,-76.3318,7605
+   Whiteville,34.3306,-78.7014,7605
    Clover,35.1124,-81.2201,7607
    Creston,41.0597,-94.365,7612
-   Bansang,13.4336,-14.65,7615
    Centerville,32.6341,-83.6854,7615
+   Bansang,13.4336,-14.65,7615
    Kronenwetter,44.8163,-89.5806,7619
    Marshall,42.2619,-84.9599,7625
-   Grandview Heights,39.9793,-83.0409,7628
    Pulaski,35.1934,-87.0354,7630
    Park City,37.8103,-97.3255,7632
    Winters,38.532,-121.9781,7637
    Philadelphia,32.7761,-89.1221,7639
    Hastings,42.6498,-85.2886,7640
-   Guide,36.0451,101.4242,7642
    Glen Ridge,40.804,-74.2043,7642
    Shorewood,44.9161,-93.5743,7642
+   Guide,36.0451,101.4242,7642
    Quincy,47.2342,-119.8512,7644
    Seminole,32.7215,-102.6504,7648
    Ashland,37.7597,-77.4715,7649
@@ -286,7 +280,6 @@ City Name,Lat,Lon,Population
    Diamondhead,30.3791,-89.3707,7661
    Scotia,42.8322,-73.9607,7664
    Bonner Springs,39.0817,-94.8778,7665
-   Green Cove Springs,29.9903,-81.6808,7666
    Revelstoke,51.0005,-118.1833,7668
    Emerson,40.9749,-74.0239,7669
    Benton,38.011,-88.9179,7671
@@ -299,14 +292,14 @@ City Name,Lat,Lon,Population
    Estes Park,40.3701,-105.5214,7691
    Orting,47.0967,-122.2113,7693
    Swainsboro,32.5866,-82.3345,7699
-   Fanwood,40.6417,-74.3857,7700
    Gettysburg,39.8304,-77.2339,7700
+   Fanwood,40.6417,-74.3857,7700
    Duvall,47.7354,-121.9726,7701
    White Oak,40.3415,-79.8007,7707
    Quarryville,39.8957,-76.1617,7716
    Wapato,46.4435,-120.4213,7723
-   York,40.8708,-97.5947,7724
    Gilberts,42.1096,-88.3716,7724
+   York,40.8708,-97.5947,7724
    Kalabo,-14.9896,22.68,7731
    Perry,41.838,-94.094,7734
    Seaford,38.6539,-75.6118,7736
@@ -357,15 +350,13 @@ City Name,Lat,Lon,Population
    Crookston,47.7747,-96.6062,7875
    Norwich,42.5333,-75.5227,7880
    Lake Dallas,33.1277,-97.0234,7881
-   San Juan Bautista,-26.68,-57.15,7882
    Big Stone Gap,36.8615,-82.7774,7885
    Esperance,-33.8573,121.8889,7888
    Erseke,40.3333,20.6833,7890
    Jersey Village,29.8903,-95.5721,7892
-   Southwest Ranches,26.0476,-80.3762,7898
    Maryville,38.7264,-89.9643,7904
-   Downingtown,40.0076,-75.7019,7905
    Canal Winchester,39.8432,-82.8121,7905
+   Downingtown,40.0076,-75.7019,7905
    Port Maria,18.377,-76.9,7906
    Gracias,14.5833,-88.5833,7909
    Ellsworth,44.5847,-68.4875,7911
@@ -387,7 +378,6 @@ City Name,Lat,Lon,Population
    Ripon,43.8436,-88.8386,7961
    West Long Branch,40.2883,-74.0186,7963
    Bajram Curri,42.3333,20.0833,7967
-   Hastings-on-Hudson,40.9902,-73.8801,7969
    Milton,47.2522,-122.3153,7970
    Princeton,41.3815,-89.4649,7978
    Conshohocken,40.0772,-75.3035,7982
@@ -395,10 +385,10 @@ City Name,Lat,Lon,Population
    Medina,43.2197,-78.3888,7993
    Oak Grove,39.0074,-94.1278,7994
    Brooksville,28.5404,-82.3901,7999
-   Oldeani,-3.3496,35.55,8000
    El Calafate,-50.3333,-72.3,8000
    Old Forge,41.3705,-75.7409,8000
    Brentwood,38.6194,-90.3476,8000
+   Oldeani,-3.3496,35.55,8000
    Latrobe,40.3125,-79.3826,8003
    Logan,39.5386,-82.4063,8003
    Celina,33.3201,-96.7854,8006
@@ -406,21 +396,21 @@ City Name,Lat,Lon,Population
    Oberlin,41.2857,-82.2197,8009
    Orono,44.9647,-93.5904,8009
    Firebaugh,36.8533,-120.4536,8015
-   Kontcha,7.967,12.2333,8018
    Caldwell,40.839,-74.2777,8018
+   Kontcha,7.967,12.2333,8018
    La Junta,37.9797,-103.5473,8020
    Deniliquin,-35.5296,144.95,8024
    Jefferson,43.0042,-88.8084,8024
    Willits,39.405,-123.3494,8026
    Hyrum,41.6317,-111.8439,8027
-   Salem,38.6278,-88.9582,8029
    Flushing,43.0637,-83.8403,8029
+   Salem,38.6278,-88.9582,8029
    Briarcliff Manor,41.14,-73.844,8032
    Albion,43.246,-78.1902,8044
    Qusmuryn,52.458,64.6,8049
    Uliastay,47.75,96.8167,8056
-   Cheraw,34.6978,-79.8988,8061
    Tillamook,45.4561,-123.8346,8061
+   Cheraw,34.6978,-79.8988,8061
    Brookhaven,39.8715,-75.3918,8066
    Puerto Aisen,-45.3999,-72.7,8067
    Oak Brook,41.8373,-87.9512,8070
@@ -472,14 +462,12 @@ City Name,Lat,Lon,Population
    Aiquile,-18.1895,-65.18,8224
    Colorado City,36.9774,-112.983,8227
    Castle Shannon,40.3664,-80.0194,8228
-   Rolling Hills Estates,33.7783,-118.3508,8231
    Hillsboro,32.0092,-97.1151,8234
    Croton-on-Hudson,41.2005,-73.9002,8243
    Olovyannaya,50.95,115.5666,8247
    Denison,42.016,-95.3528,8249
    Morehead,38.1906,-83.4466,8252
    York,34.9968,-81.2348,8260
-   North Bay Village,25.8487,-80.1535,8262
    Whitehouse,32.2228,-95.2222,8269
    Menominee,45.1219,-87.6235,8279
    Doylestown,40.314,-75.128,8280
@@ -500,24 +488,23 @@ City Name,Lat,Lon,Population
    Masindi-Port,1.7004,32.0699,8319
    McFarland,43.0192,-89.2922,8320
    Petoskey,45.365,-84.9886,8323
-   Upper Saddle River,41.0633,-74.0987,8326
    Spanish Fort,30.7257,-87.8602,8327
-   Conover,35.7156,-81.2169,8331
    Rio Vista,38.1762,-121.7034,8331
+   Conover,35.7156,-81.2169,8331
    Jefferson City,36.1196,-83.484,8335
    Middleport,38.9948,-82.0643,8338
    Brokopondo,5.0404,-55.02,8340
    Fairview,33.1401,-96.6123,8354
    New Square,41.1411,-74.0294,8357
-   Gering,41.8275,-103.6649,8360
    Mount Pleasant,40.9622,-91.5453,8360
+   Gering,41.8275,-103.6649,8360
    Tecumseh,42.0066,-83.9451,8362
    Bridgeport,39.3036,-80.2476,8364
    Aurora,36.968,-93.7199,8364
    Pleasant Hill,38.8061,-94.2654,8376
    Dormont,40.3941,-80.0377,8381
-   Boonton,40.9047,-74.4048,8382
    Runnemede,39.8521,-75.074,8382
+   Boonton,40.9047,-74.4048,8382
    Millersville,40.0047,-76.3522,8383
    Wetumpka,32.5406,-86.2054,8383
    Black Mountain,35.6142,-82.3275,8384
@@ -531,9 +518,9 @@ City Name,Lat,Lon,Population
    Mason,42.5805,-84.4426,8395
    Sturgeon Bay,44.8228,-87.366,8396
    Gridley,39.3622,-121.6972,8396
+   Highland Heights,41.5518,-81.4691,8397
    Prairie du Sac,43.2922,-89.7337,8397
    Alliance,42.1021,-102.8768,8397
-   Highland Heights,41.5518,-81.4691,8397
    Gaylord,45.0211,-84.6799,8399
    Katakwi,1.8911,33.9661,8400
    Corning,39.9282,-122.182,8409
@@ -548,8 +535,8 @@ City Name,Lat,Lon,Population
    Spotswood,40.3952,-74.3915,8429
    Tuskegee,32.4395,-85.7139,8430
    Napoleon,41.3978,-84.1244,8432
-   Hoquiam,46.9857,-123.9006,8434
    Tuscumbia,34.7204,-87.7035,8434
+   Hoquiam,46.9857,-123.9006,8434
    Guntersville,34.3674,-86.2634,8437
    Sheridan,45.0956,-123.3972,8439
    Heath,32.8443,-96.4679,8440
@@ -568,27 +555,26 @@ City Name,Lat,Lon,Population
    Perkasie,40.3719,-75.292,8479
    North Haledon,40.9627,-74.1845,8491
    Saint Johns,43.0008,-84.5557,8491
-   San Antonio Oeste,-40.7329,-64.9333,8492
    Oranjemund,-28.5495,16.43,8496
    Sunset Hills,38.531,-90.4088,8497
    Carbondale,41.5714,-75.5048,8498
    Kirkwall,58.967,-2.95,8500
    Los Altos Hills,37.3672,-122.1391,8501
-   Montvale,41.053,-74.0497,8506
    Susanville,40.4206,-120.6129,8506
+   Montvale,41.053,-74.0497,8506
    Bogota,40.8753,-74.0293,8507
    Fountain Inn,34.6988,-82.1991,8513
    Wyoming,39.2295,-84.4814,8517
    Elsmere,38.9949,-84.6017,8520
    Lindstrom,45.3869,-92.8475,8521
-   Paris,39.6148,-87.6905,8528
    Detroit Lakes,46.8057,-95.8436,8528
+   Paris,39.6148,-87.6905,8528
    Zimmerman,45.4415,-93.5977,8530
    Westwego,29.9058,-90.1434,8533
    Des Peres,38.5973,-90.4481,8540
-   Aqsu,52.4502,71.9597,8543
-   Humboldt,35.8254,-88.9045,8543
    Willowbrook,41.7635,-87.9456,8543
+   Humboldt,35.8254,-88.9045,8543
+   Aqsu,52.4502,71.9597,8543
    Oak Hill,37.9889,-81.1467,8544
    Malverne,40.6746,-73.6721,8544
    Oak Grove,45.3407,-93.3264,8545
@@ -598,21 +584,20 @@ City Name,Lat,Lon,Population
    Socorro,34.0544,-106.9064,8554
    Chos Malal,-37.383,-70.2666,8556
    Inverell,-29.7668,151.1126,8561
-   Kingaroy,-26.539,151.8406,8573
    Signal Mountain,35.1448,-85.3457,8573
+   Kingaroy,-26.539,151.8406,8573
    Beaver Falls,40.762,-80.3225,8581
    Clinton,38.3716,-93.7679,8581
    Ladue,38.6378,-90.3815,8583
-   Indian Harbour Beach,28.1528,-80.5974,8586
-   Corrales,35.2367,-106.6197,8586
    Livingston,45.6667,-110.5537,8586
+   Corrales,35.2367,-106.6197,8586
    Pineville,35.0864,-80.8915,8593
    Lake Park,26.7998,-80.0689,8595
    Wesley Chapel,34.9985,-80.6904,8596
    Hobart,44.4965,-88.1602,8599
    Wood-Ridge,40.8509,-74.0878,8600
-   Monroe,41.3198,-74.1848,8600
    Southside,33.9007,-86.0237,8600
+   Monroe,41.3198,-74.1848,8600
    Lake City,33.8676,-79.7533,8604
    Kearney,39.3548,-94.3589,8607
    Clayton,39.6629,-75.0782,8614
@@ -623,13 +608,13 @@ City Name,Lat,Lon,Population
    Rockland,44.1274,-69.1369,8633
    Suntar,62.1444,117.6319,8639
    Kirby,29.4611,-98.3859,8640
-   Bloomfield,36.7265,-107.9792,8645
    Fair Oaks Ranch,29.7454,-98.6396,8645
+   Bloomfield,36.7265,-107.9792,8645
    La Libertad,16.7804,-90.12,8646
    Clarendon Hills,41.7981,-87.9569,8653
-   Luba,3.45,8.55,8655
    Perryville,37.7255,-89.876,8655
    Park Hills,37.8211,-90.505,8655
+   Luba,3.45,8.55,8655
    Gadabay,40.5656,45.8161,8657
    Nevada,37.8445,-94.3492,8660
    Bay Minette,30.8938,-87.7912,8665
@@ -660,9 +645,9 @@ City Name,Lat,Lon,Population
    Helotes,29.5701,-98.6947,8758
    Clinton,35.5058,-98.9724,8761
    Marrupa,-13.1984,37.4995,8762
-   Lexington,37.7825,-79.444,8765
    Collingdale,39.9151,-75.2776,8765
    Sellersburg,38.4029,-85.7705,8765
+   Lexington,37.7825,-79.444,8765
    Burlington,48.4676,-122.3298,8768
    Rhinelander,45.6361,-89.4255,8769
    Swissvale,40.4207,-79.8858,8769
@@ -710,8 +695,8 @@ City Name,Lat,Lon,Population
    Zhangaozen,43.3004,52.8,8895
    Manor,30.3548,-97.5302,8895
    Cortez,37.3498,-108.5769,8898
-   Park Ridge,41.0353,-74.0422,8900
    Garden City,32.0867,-81.1773,8900
+   Park Ridge,41.0353,-74.0422,8900
    Makhambet,47.6714,51.5798,8905
    Glenwood,41.5412,-87.6119,8911
    Franklin,36.6831,-76.9386,8913
@@ -731,8 +716,8 @@ City Name,Lat,Lon,Population
    Manvel,29.4775,-95.3634,8939
    Sodankyla,67.4171,26.6,8942
    Quincy,30.5659,-84.5856,8952
-   Sinop,-11.85,-55.46,8961
    Live Oak,39.2788,-121.6624,8961
+   Sinop,-11.85,-55.46,8961
    Manteno,41.2505,-87.8442,8969
    Chatham,40.7405,-74.3838,8977
    Berkeley,38.7441,-90.3362,8981
@@ -742,9 +727,9 @@ City Name,Lat,Lon,Population
    Rock Falls,41.7733,-89.6932,8993
    Mbamba Bay,-11.2829,34.7666,8997
    Oakwood,39.7202,-84.1734,8999
-   B'abda,33.8333,35.5333,9000
-   Aguelhok,19.4549,0.8564,9000
    San Elizario,31.5793,-106.2632,9000
+   Aguelhok,19.4549,0.8564,9000
+   B'abda,33.8333,35.5333,9000
    Sheffield Lake,41.4884,-82.0978,9004
    Mechanicsburg,40.2115,-77.006,9007
    Saint Anthony,45.0275,-93.2174,9007
@@ -762,23 +747,22 @@ City Name,Lat,Lon,Population
    Tula,23.0004,-99.72,9054
    Inirida,3.854,-67.9061,9065
    Jumla,29.25,82.2167,9073
-   Dauphin,51.15,-100.05,9077
    Plymouth,42.3718,-83.468,9077
+   Dauphin,51.15,-100.05,9077
    Ayr,-19.5702,147.3995,9078
    Chanute,37.6699,-95.4619,9079
    Fairmont,43.6441,-94.4618,9083
    Fultondale,33.6177,-86.8015,9084
-   Shar,49.6003,81.0549,9087
    Rawlins,41.7849,-107.2265,9087
+   Shar,49.6003,81.0549,9087
    Colac,-38.3395,143.58,9089
    Aliquippa,40.6155,-80.2548,9102
    Lenoir City,35.8113,-84.2817,9106
    Brewer,44.7835,-68.7352,9107
    Mae Hong Son,19.301,97.969,9109
-   Menaka,15.9167,2.4,9110
    Gig Harbor,47.335,-122.5966,9110
+   Menaka,15.9167,2.4,9110
    Challapata,-18.8996,-66.78,9114
-   Thief River Falls,48.1111,-96.1774,9114
    Franklin,41.3936,-79.8425,9121
    Dexter,36.793,-89.9632,9125
    Ville Platte,30.6901,-92.2745,9126
@@ -791,16 +775,14 @@ City Name,Lat,Lon,Population
    Ust Nera,64.5666,143.2,9148
    Highland Park,32.8311,-96.8012,9149
    Saline,42.1737,-83.7779,9151
-   Grosse Pointe Farms,42.4067,-82.8992,9155
    Lynwood,41.5233,-87.5507,9159
-   Halacho,20.48,-90.08,9165
    Saint Marys,41.4574,-78.5343,9165
+   Halacho,20.48,-90.08,9165
    Sullivan,38.2127,-91.1636,9171
    Tiburon,37.8853,-122.4636,9176
    Ecorse,42.249,-83.1398,9181
    Leonia,40.8638,-73.9898,9195
    Waseca,44.0826,-93.5026,9196
-   Washington Terrace,41.1683,-111.9783,9198
    Bernalillo,35.3126,-106.5537,9202
    La Salle,41.3576,-89.0727,9203
    Elwood,40.2743,-85.8372,9204
@@ -814,8 +796,8 @@ City Name,Lat,Lon,Population
    Brandon,43.5928,-96.5799,9232
    Guthrie,35.8428,-97.4358,9237
    La Plata,38.5356,-76.9695,9239
-   Kapuskasing,49.4167,-82.4333,9240
    Independence,37.2122,-95.7324,9240
+   Kapuskasing,49.4167,-82.4333,9240
    Jeannette,40.3277,-79.6139,9245
    Harrisburg,37.7373,-88.5457,9246
    Ulladulla,-35.3495,150.47,9250
@@ -829,7 +811,6 @@ City Name,Lat,Lon,Population
    Claremont,43.379,-72.3368,9312
    Murphysboro,37.7679,-89.3321,9315
    Walterboro,32.9007,-80.6751,9316
-   North College Hill,39.2174,-84.5517,9322
    Villa Ahumada,30.6104,-106.51,9326
    Bethalto,38.9016,-90.0472,9328
    Anthony,32.0131,-106.5985,9330
@@ -846,29 +827,28 @@ City Name,Lat,Lon,Population
    Gore,8.149,35.537,9352
    Louisville,40.8366,-81.2646,9356
    Shira,54.4914,89.9531,9358
+   Cloverdale,38.796,-123.0152,9360
    San Pedro,-24.09,-57.08,9360
    Harahan,29.9374,-90.2031,9360
-   Cloverdale,38.796,-123.0152,9360
-   Weyburn,49.6666,-103.85,9362
    Flossmoor,41.5391,-87.6857,9362
+   Weyburn,49.6666,-103.85,9362
    Warrenton,38.8186,-91.1358,9366
    Mount Airy,39.3743,-77.1535,9374
    Muncy,41.2021,-76.7854,9375
-   Cairo,30.8789,-84.2051,9378
    Harrisonville,38.653,-94.3467,9378
+   Cairo,30.8789,-84.2051,9378
    Kundiawa,-6.023,144.96,9383
    Boonville,38.9598,-92.7524,9388
    Brownsville,35.5881,-89.2574,9389
    Mound,44.9325,-93.6598,9394
    Augusta,37.6953,-96.9909,9397
-   Emerald,-23.5122,148.1673,9398
    Little Falls,45.9831,-94.3602,9398
+   Emerald,-23.5122,148.1673,9398
    Princeton,33.184,-96.5079,9405
    Indianola,33.4492,-90.6447,9406
    Sarnen,46.899,8.243,9410
    Monmouth,40.9142,-90.642,9415
    Emmett,43.8686,-116.4889,9416
-   Juan Jose Castelli,-25.9495,-60.6166,9421
    Brentwood,40.3734,-79.9757,9422
    Kodiak,57.7933,-152.4029,9427
    The Village,35.5706,-97.5567,9429
@@ -906,8 +886,8 @@ City Name,Lat,Lon,Population
    Union,34.7235,-81.6248,9562
    Union,38.4401,-90.9928,9567
    Charters Towers,-20.0809,146.2587,9573
-   Oxford,36.3156,-78.585,9573
    Sugar Grove,41.7714,-88.4471,9573
+   Oxford,36.3156,-78.585,9573
    Rye Brook,41.0303,-73.6865,9575
    Grand Rapids,47.2379,-93.5326,9576
    Clinton,35.0007,-78.3322,9577
@@ -943,31 +923,31 @@ City Name,Lat,Lon,Population
    Phangnga,8.451,98.534,9676
    Danville,39.7607,-86.5081,9676
    Tell City,37.9528,-86.7596,9677
+   Greenville,43.1797,-85.2534,9679
    Tshabong,-26.0095,22.4,9679
    Sembe,1.6404,14.58,9679
-   Greenville,43.1797,-85.2534,9679
    Bishop,37.3665,-118.3958,9687
    De Forest,43.2319,-89.3424,9690
    Mandritsara,-15.8328,48.8166,9705
-   Aqadyr,48.2749,72.8599,9710
    Silsbee,30.3456,-94.1764,9710
+   Aqadyr,48.2749,72.8599,9710
    Boaz,34.1985,-86.1529,9710
    Parsons,37.3405,-95.2959,9714
-   Siler City,35.7252,-79.4558,9716
    Pleasant View,41.3249,-112.001,9716
+   Siler City,35.7252,-79.4558,9716
    Steinbach,49.5171,-96.6833,9729
    Marysville,42.9085,-82.4806,9735
    Central City,37.2962,-87.128,9742
    Wasilla,61.5769,-149.4668,9748
-   Gore,-46.0947,168.9604,9750
    Pleasant Hill,41.5857,-93.4998,9750
+   Gore,-46.0947,168.9604,9750
    Pokrovsk,61.4934,129.1272,9763
    East Aurora,42.7666,-78.6172,9780
    Lobamba,-26.4667,31.2,9782
    Fort Lupton,40.0829,-104.7982,9783
    Maywood,40.9024,-74.0632,9785
-   Hope,33.6677,-93.5908,9789
    North Bend,43.4075,-124.2364,9789
+   Hope,33.6677,-93.5908,9789
    Monticello,33.6254,-91.7935,9791
    Olmos,-5.9796,-79.75,9800
    East Rockaway,40.6432,-73.6672,9802
@@ -978,8 +958,8 @@ City Name,Lat,Lon,Population
    Carroll,42.0697,-94.8647,9830
    Chillicothe,39.7947,-93.5498,9833
    Komsomolets,53.7506,62.0502,9838
-   Milton,30.6286,-87.0522,9839
    Fort Oglethorpe,34.9318,-85.2461,9839
+   Milton,30.6286,-87.0522,9839
    Dalby,-27.1939,151.2657,9847
    Russellville,34.5056,-87.7282,9850
    Bogande,12.969,-0.138,9854
@@ -991,8 +971,8 @@ City Name,Lat,Lon,Population
    Winslow,35.0253,-110.7098,9864
    Molalla,45.1502,-122.5844,9865
    Burlington,40.0783,-74.8523,9866
-   Alcoa,35.8071,-83.9748,9874
    Miles City,46.406,-105.8387,9874
+   Alcoa,35.8071,-83.9748,9874
    Bocas del Toro,9.3354,-82.2475,9883
    Jewett City,41.607,-71.9807,9883
    Bulaevo,54.9053,70.44,9886
@@ -1011,22 +991,21 @@ City Name,Lat,Lon,Population
    Mazowe,-17.5196,30.97,9966
    Sumner,47.219,-122.2337,9969
    Vera,-29.4662,-60.2166,9979
-   Helena-West Helena,34.5311,-90.6202,9980
    Selkirk,50.15,-96.8833,9986
    Bonham,33.588,-96.1901,9990
+   Choele Choel,-39.2666,-65.6833,10000
    Hammerfest,70.6613,23.688,10000
    Olyokminsk,60.5032,120.3926,10000
-   Obluchye,49,131.0833,10000
-   An Nabk,31.3333,37.3333,10000
    Tarin Kowt,32.6333,65.8667,10000
-   Choele Choel,-39.2666,-65.6833,10000
+   Obluchye,49,131.0833,10000
    Moranbah,-22.0016,148.038,10000
+   An Nabk,31.3333,37.3333,10000
    Gyangze,28.95,89.6333,10000
    Gar,32.2004,79.9833,10000
    Senanga,-16.1196,23.27,10005
+   Scottsboro,34.6438,-86.0491,10006
    Kuruman,-27.4496,23.42,10006
    Moba,-7.0596,29.72,10006
-   Scottsboro,34.6438,-86.0491,10006
    Skovorodino,53.9833,123.9167,10007
    Kutztown,40.5213,-75.7773,10011
    Union City,36.4265,-89.0477,10013
@@ -1041,11 +1020,11 @@ City Name,Lat,Lon,Population
    Eumseong,36.9353,127.6897,10077
    Sparta,43.9403,-90.8084,10086
    Selma,29.5866,-98.3134,10088
-   Cuero,29.1006,-97.2865,10090
    Waterloo,38.3403,-90.1538,10090
+   Cuero,29.1006,-97.2865,10090
    Troy,38.727,-89.8967,10093
-   Nogliki,51.8333,143.1667,10098
    Sweet Home,44.4023,-122.7028,10098
+   Nogliki,51.8333,143.1667,10098
    Greymouth,-42.4716,171.2231,10100
    Lowell,41.2934,-87.4183,10102
    Fife,47.2327,-122.3519,10103
@@ -1055,8 +1034,8 @@ City Name,Lat,Lon,Population
    Bel Air,39.5347,-76.346,10109
    Watervliet,42.7243,-73.7068,10120
    Bolivar,37.6057,-93.4174,10133
-   Otuzco,-7.9,-78.57,10134
    River Grove,41.9243,-87.8379,10134
+   Otuzco,-7.9,-78.57,10134
    Georgetown,38.6899,-75.3872,10136
    Berwick,41.0555,-76.2492,10138
    Katherine,-14.4666,132.2666,10141
@@ -1078,22 +1057,22 @@ City Name,Lat,Lon,Population
    Puerto Carreno,6.185,-67.493,10216
    Great Neck,40.8028,-73.7331,10218
    Kinnelon,40.9847,-74.3863,10219
-   Alvorada,-12.47,-49.082,10232
    Lexington,40.778,-99.7462,10232
+   Alvorada,-12.47,-49.082,10232
    Anderson,40.4509,-122.2961,10232
-   Merowe,18.4833,31.8167,10234
    Braselton,34.1086,-83.8124,10234
+   Merowe,18.4833,31.8167,10234
    Lonquimay,-38.4333,-71.2333,10237
    Shawano,44.7749,-88.5843,10242
    Wood River,38.8633,-90.0774,10251
    Dayton,35.4917,-85.0116,10255
+   Avon Park,27.5934,-81.5086,10259
    Caldera,-27.0696,-70.83,10259
    Norton,36.9317,-82.626,10259
-   Avon Park,27.5934,-81.5086,10259
-   Hinton,53.4,-117.5834,10265
    Roma-Los Saenz,26.4153,-99.006,10265
-   Roma,26.4153,-99.006,10265
    Burkburnett,34.0748,-98.5671,10265
+   Hinton,53.4,-117.5834,10265
+   Roma,26.4153,-99.006,10265
    Laurens,34.5014,-82.0232,10269
    Columbia,38.4581,-90.2157,10273
    Sukhothai,17.0119,99.7515,10276
@@ -1103,9 +1082,9 @@ City Name,Lat,Lon,Population
    Covington,30.4808,-90.1125,10310
    Barrington,42.1516,-88.128,10312
    Moncks Corner,33.1716,-80.0121,10315
-   Shamva,-17.3196,31.57,10317
    Ventnor City,39.3457,-74.486,10317
    Reading,39.2241,-84.4332,10317
+   Shamva,-17.3196,31.57,10317
    Orange Cove,36.6211,-119.3188,10320
    Melvindale,42.2803,-83.1782,10322
    Arden Hills,45.0722,-93.1671,10324
@@ -1115,15 +1094,15 @@ City Name,Lat,Lon,Population
    Little Canada,45.0244,-93.0863,10344
    West Haverstraw,41.2063,-73.9884,10345
    Cape Canaveral,28.3934,-80.605,10352
-   Taksimo,56.3315,114.89,10359
    Columbia,40.0347,-76.4943,10359
+   Taksimo,56.3315,114.89,10359
    New Albany,40.0808,-82.7926,10360
    Alpine,40.4621,-111.7728,10361
    Bethanie,-26.4995,17.15,10363
    Fort Bragg,39.4416,-123.8033,10368
    Canandaigua,42.8885,-77.2805,10369
-   Greenville,5.0111,-9.0388,10374
    Cedar Hills,40.4135,-111.753,10374
+   Greenville,5.0111,-9.0388,10374
    Kiama,-34.7096,150.84,10379
    Solenzo,12.1833,-4.0833,10385
    Puerto Quijarro,-17.7796,-57.77,10392
@@ -1143,19 +1122,19 @@ City Name,Lat,Lon,Population
    Manville,40.5422,-74.5892,10430
    Portage,43.5489,-89.4657,10431
    Baie-Comeau,49.2227,-68.158,10435
-   Springbok,-29.6667,17.8833,10438
    Sauk Village,41.4907,-87.5702,10438
+   Springbok,-29.6667,17.8833,10438
    Lincoln Park,40.9239,-74.3035,10442
    Kendallville,41.4441,-85.2578,10444
    Ntcheu,-14.8167,34.6333,10445
    Santiago,-14.1896,-75.74,10449
    Bound Brook,40.5676,-74.5385,10455
-   Vienna,39.3236,-81.5381,10459
    Fox Lake,42.426,-88.1847,10459
+   Vienna,39.3236,-81.5381,10459
    Magnolia,33.2777,-93.2261,10460
    Cresson,40.4626,-78.5866,10467
-   Filadelfia,-22.34,-60.03,10470
    Beverly Hills,42.522,-83.2424,10470
+   Filadelfia,-22.34,-60.03,10470
    Clearfield,41.0216,-78.439,10484
    Cacheu,12.269,-16.165,10490
    Puquio,-14.7,-74.13,10491
@@ -1169,8 +1148,8 @@ City Name,Lat,Lon,Population
    Roscoe,42.4252,-89.0084,10521
    Pine Hill,39.7879,-74.9858,10524
    Forest Acres,34.0322,-80.9718,10542
-   Valparaiso,22.7704,-103.57,10545
    Somers Point,39.3167,-74.6069,10545
+   Valparaiso,22.7704,-103.57,10545
    Cleveland,30.3399,-95.0992,10546
    West Point,41.1221,-112.0995,10548
    Saint Albans,38.3769,-81.8198,10553
@@ -1180,12 +1159,12 @@ City Name,Lat,Lon,Population
    Arkadelphia,34.1245,-93.0719,10568
    Decatur,40.8301,-84.9281,10572
    Kimpese,-5.5496,14.4333,10578
-   Songo,-7.3496,14.85,10579
    Florence,43.9916,-124.1065,10579
+   Songo,-7.3496,14.85,10579
    Montgomery,39.2494,-84.3457,10582
    California City,35.1578,-117.872,10589
-   Norwalk,41.4914,-93.6922,10590
    North Logan,41.7759,-111.8066,10590
+   Norwalk,41.4914,-93.6922,10590
    Lansdowne,39.9408,-75.276,10606
    Juarez,-37.6655,-59.8,10609
    Hornell,42.3258,-77.6605,10612
@@ -1211,7 +1190,6 @@ City Name,Lat,Lon,Population
    Kavaratti,10.5626,72.6369,10688
    Jacinto City,29.7663,-95.2411,10696
    Martin,36.3391,-88.8518,10697
-   Bellefontaine Neighbors,38.7529,-90.2278,10702
    Ludington,43.9567,-86.4431,10702
    Fate,32.9401,-96.3864,10703
    Petal,31.3477,-89.2359,10704
@@ -1245,8 +1223,8 @@ City Name,Lat,Lon,Population
    Gonzales,30.213,-90.9234,10832
    Show Low,34.2677,-110.0387,10835
    Ngorongoro,-3.2496,35.52,10836
-   Kenora,49.7667,-94.4666,10852
    Franklin Lakes,41.0085,-74.2082,10852
+   Kenora,49.7667,-94.4666,10852
    Spencer,43.1469,-95.1533,10859
    Kennett,36.2403,-90.0481,10863
    Stayton,44.803,-122.798,10877
@@ -1289,14 +1267,13 @@ City Name,Lat,Lon,Population
    Mount Kisco,41.2018,-73.7282,11103
    Town and Country,38.6317,-90.4791,11113
    Newman,37.3156,-121.0208,11122
-   Grosse Pointe Park,42.3794,-82.9288,11126
    Pompton Lakes,41.0028,-74.2857,11127
    Clinton,34.478,-81.864,11127
-   Lithgow,-33.4961,150.1528,11128
    Fairfield,41.0071,-91.9673,11128
+   Lithgow,-33.4961,150.1528,11128
    Elk City,35.3849,-99.4333,11136
-   Parkes,-33.1296,148.17,11137
    Canyon Lake,33.6884,-117.2621,11137
+   Parkes,-33.1296,148.17,11137
    Villanueva,22.35,-102.88,11138
    Walden,41.5603,-74.1879,11138
    Lighthouse Point,26.2785,-80.089,11143
@@ -1310,20 +1287,20 @@ City Name,Lat,Lon,Population
    Koror,7.3452,134.4695,11200
    Qasr-e Shirin,34.5124,45.5772,11202
    Vanimo,-2.69,141.304,11204
-   Wahpeton,46.2719,-96.6118,11205
    Springdale,39.2909,-84.476,11205
+   Wahpeton,46.2719,-96.6118,11205
    Elkins,38.9237,-79.854,11206
    Yorktown,40.183,-85.5123,11210
    Chino Valley,34.7593,-112.4107,11214
-   Mwingi,-0.9296,38.07,11219
    Huntingdon,40.4999,-78.0097,11219
+   Mwingi,-0.9296,38.07,11219
    Lantana,26.5834,-80.0558,11221
    Webb City,37.1413,-94.4675,11226
    Loreto,26.0133,-111.3517,11227
    Westwood,40.9878,-74.0307,11235
    Prieska,-29.6595,22.73,11236
-   Otar,43.5346,75.2139,11238
    Camp Verde,34.5699,-111.8573,11238
+   Otar,43.5346,75.2139,11238
    Brookings,42.0691,-124.3004,11241
    Haysville,37.5651,-97.3528,11245
    Merriam,39.0186,-94.6934,11245
@@ -1336,8 +1313,8 @@ City Name,Lat,Lon,Population
    Steinkjer,64.0171,11.5,11274
    Mendota Heights,44.8813,-93.1402,11280
    Holly Springs,34.1678,-84.4856,11281
-   Macclenny,30.2818,-82.1246,11307
    Jefferson Hills,40.2927,-79.9329,11307
+   Macclenny,30.2818,-82.1246,11307
    Campton Hills,41.95,-88.4166,11310
    Leon Valley,29.4954,-98.6141,11314
    Summit,41.7877,-87.8146,11314
@@ -1349,8 +1326,8 @@ City Name,Lat,Lon,Population
    Gloucester City,39.8923,-75.1173,11339
    Ocean City,39.2687,-74.602,11340
    Woods Cross,40.8731,-111.917,11351
-   Piedmont,37.8226,-122.2301,11353
    Princess Anne,38.2053,-75.6969,11353
+   Piedmont,37.8226,-122.2301,11353
    Makoua,-0.0096,15.64,11355
    Ridgefield,40.8312,-74.0146,11357
    Las Tablas,7.7604,-80.28,11358
@@ -1363,7 +1340,6 @@ City Name,Lat,Lon,Population
    Caracarai,1.8162,-61.1277,11368
    Humahuaca,-23.2,-65.3499,11369
    Smyrna,39.2922,-75.6079,11371
-   Excelsior Springs,39.3395,-94.2377,11374
    Spirit Lake,43.4177,-95.1109,11375
    Mwanza,-15.6167,34.5167,11379
    Mount Sterling,38.0647,-83.9473,11380
@@ -1392,8 +1368,8 @@ City Name,Lat,Lon,Population
    Fitzgerald,31.7135,-83.2515,11476
    Bellmawr,39.8665,-75.0942,11478
    Portachuelo,-17.36,-63.4,11485
-   Coshocton,40.262,-81.8482,11488
    Cottage Grove,43.7958,-123.0581,11488
+   Coshocton,40.262,-81.8482,11488
    Aginskoye,51.1031,114.5228,11491
    Mexico,39.1626,-91.8711,11491
    Robinson,31.4501,-97.1202,11493
@@ -1406,8 +1382,8 @@ City Name,Lat,Lon,Population
    Zmeinogorsk,51.1571,82.195,11514
    Du Bois,41.1225,-78.7564,11514
    Cedarburg,43.2991,-87.9887,11518
-   Bartica,6.4104,-58.63,11524
    Grove City,41.1572,-80.0893,11524
+   Bartica,6.4104,-58.63,11524
    Bradford,41.9604,-78.6413,11531
    Tarrytown,41.0647,-73.8673,11532
    Ravenna,41.1613,-81.2421,11533
@@ -1422,8 +1398,8 @@ City Name,Lat,Lon,Population
    Berlin,44.4871,-71.2601,11560
    Severnyy,67.6083,64.1233,11562
    Newcastle,47.5304,-122.1633,11567
-   Grafton,43.3205,-87.9482,11568
    Coolidge,32.9595,-111.5285,11568
+   Grafton,43.3205,-87.9482,11568
    North Vernon,39.0151,-85.6287,11575
    Lincoln City,44.975,-124.0073,11577
    Clute,29.0273,-95.3972,11586
@@ -1435,34 +1411,33 @@ City Name,Lat,Lon,Population
    Mendota,36.7555,-120.3777,11621
    Richfield,43.2372,-88.2413,11622
    Alotau,-10.3021,150.4591,11624
-   Lamesa,32.7333,-101.9542,11627
    Jackson,39.046,-82.6494,11627
+   Lamesa,32.7333,-101.9542,11627
    Elizabethtown,40.1534,-76.5991,11629
    Muswellbrook,-32.2696,150.89,11630
    Archdale,35.9035,-79.9612,11631
    Lundazi,-12.2895,33.17,11635
    Los Alamitos,33.7972,-118.0594,11636
-   East Grand Rapids,42.9464,-85.6088,11637
    Newport,44.6231,-124.0524,11639
    Eureka,38.5013,-90.6492,11641
-   Mont-Laurier,46.5504,-75.5,11642
    Port Washington,43.3847,-87.8851,11642
+   Mont-Laurier,46.5504,-75.5,11642
    Tomball,30.097,-95.6185,11643
    River Edge,40.9269,-74.0387,11647
-   Gympie,-26.1886,152.6709,11649
    Signal Hill,33.8029,-118.1681,11649
+   Gympie,-26.1886,152.6709,11649
    Enumclaw,47.2018,-121.9898,11654
    Seven Hills,41.3805,-81.6737,11655
    Emeryville,37.8382,-122.2932,11671
    Loganville,33.8353,-83.8957,11674
    Bridgeton,38.7672,-90.4277,11680
-   Wallington,40.8535,-74.1067,11689
    Gulf Shores,30.2718,-87.708,11689
+   Wallington,40.8535,-74.1067,11689
    Schiller Park,41.9586,-87.8693,11692
    Prineville,44.2989,-120.8594,11701
    Beachwood,41.4759,-81.503,11707
-   Bainbridge,30.9046,-84.5722,11713
    East Bethel,45.3556,-93.2035,11713
+   Bainbridge,30.9046,-84.5722,11713
    Winchester,35.1898,-86.1078,11724
    Magdagachi,53.45,125.8,11739
    Rurrenabaque,-14.46,-67.56,11749
@@ -1500,7 +1475,6 @@ City Name,Lat,Lon,Population
    Malvern,34.369,-92.8186,11861
    Otsego,42.457,-85.6975,11864
    Qabala,40.9814,47.8458,11867
-   Nacozari de Garcia,30.42,-109.65,11872
    Carahue,-38.7095,-73.17,11875
    El Campo,29.1983,-96.2738,11885
    Freehold,40.2595,-74.2753,11891
@@ -1515,8 +1489,8 @@ City Name,Lat,Lon,Population
    Scotts Valley,37.0555,-122.0118,11928
    Greensburg,39.3515,-85.5024,11928
    Snyder,32.7136,-100.9108,11938
-   Leeds,33.5429,-86.5636,11940
    Bucyrus,40.8054,-82.9719,11940
+   Leeds,33.5429,-86.5636,11940
    Chuquicamata,-22.32,-68.93,11941
    Glen Rock,40.96,-74.1248,11946
    Lake Station,41.5729,-87.26,11952
@@ -1540,12 +1514,10 @@ City Name,Lat,Lon,Population
    Poquoson,37.1318,-76.3569,12017
    Waconia,44.8411,-93.7933,12020
    Robstown,27.7886,-97.6685,12022
-   Aleksandrovsk Sakhalinskiy,50.8975,142.1561,12024
    Santaquin,39.9713,-111.7936,12041
    Glenwood Springs,39.5459,-107.3348,12042
    Dikhil,11.104,42.372,12043
    Edgewater,40.8234,-73.974,12044
-   Angra do Heroismo,38.6504,-27.2167,12045
    Delavan,42.6281,-88.6324,12045
    Kelso,46.1249,-122.8907,12047
    Pell City,33.5609,-86.2669,12055
@@ -1576,12 +1548,11 @@ City Name,Lat,Lon,Population
    Newberry,34.2822,-81.6012,12156
    Red Bank,40.348,-74.0674,12160
    Ottawa,38.5998,-95.2643,12161
-   Belomorsk,64.5252,34.7658,12165
    Somerville,40.5696,-74.6092,12165
+   Belomorsk,64.5252,34.7658,12165
    Trophy Club,33.0038,-97.1897,12166
    Lindale,32.4933,-95.4069,12171
    Irmo,34.1016,-81.1949,12177
-   Hasbrouck Heights,40.862,-74.0742,12182
    Cedar Lake,41.3693,-87.438,12183
    Qalat,32.1123,66.8868,12191
    Elkhorn,42.6711,-88.5376,12198
@@ -1612,8 +1583,8 @@ City Name,Lat,Lon,Population
    West Haven,41.2082,-112.0538,12329
    Glenn Heights,32.5507,-96.8548,12336
    LaBelle,26.7212,-81.4526,12337
-   Fergus Falls,46.285,-96.0763,12338
    North Saint Paul,45.0137,-92.9995,12338
+   Fergus Falls,46.285,-96.0763,12338
    Chelsea,33.3258,-86.6287,12341
    Warwick,-28.2292,152.0203,12347
    Choctaw,35.48,-97.2666,12354
@@ -1639,8 +1610,8 @@ City Name,Lat,Lon,Population
    Avenal,36.0312,-120.116,12451
    Davidson,35.4861,-80.8272,12452
    Chatham,39.6714,-89.6962,12453
-   Green River,41.5124,-109.4708,12458
    Federal Heights,39.8651,-105.0154,12458
+   Green River,41.5124,-109.4708,12458
    Woodhaven,42.132,-83.2374,12461
    Richmond Hill,31.9207,-81.3181,12482
    Calbuco,-41.7522,-73.1416,12490
@@ -1656,8 +1627,8 @@ City Name,Lat,Lon,Population
    Jackson,43.4723,-110.774,12540
    Platteville,42.7334,-90.4716,12550
    Plover,44.4614,-89.5373,12552
-   Markham,41.6,-87.6905,12565
    Cedartown,34.0217,-85.25,12565
+   Markham,41.6,-87.6905,12565
    Pago Pago,-14.274,-170.7046,12576
    Barcelos,-0.975,-62.9239,12584
    Suamico,44.6352,-88.0664,12588
@@ -1690,7 +1661,6 @@ City Name,Lat,Lon,Population
    Ziniare,12.577,-1.293,12703
    Paris,38.2015,-84.2717,12704
    Riverton,43.0416,-108.4125,12705
-   Sault Sainte Marie,46.4816,-84.372,12705
    Youngsville,30.096,-91.9961,12709
    Bubanza,-3.0833,29.3667,12728
    Diebougou,10.952,-3.248,12732
@@ -1701,10 +1671,9 @@ City Name,Lat,Lon,Population
    New Providence,40.6996,-74.4037,12758
    Trenton,39.4791,-84.462,12762
    Kamuli,0.9472,33.1197,12764
-   Panama City Beach,30.237,-85.8776,12776
    Powell River,49.8837,-124.55,12779
-   Glendale,43.1289,-87.9277,12779
    Oak Island,33.9433,-78.1366,12779
+   Glendale,43.1289,-87.9277,12779
    Port Royal,32.3579,-80.7047,12785
    Lawrenceburg,39.0989,-84.8713,12787
    South Daytona,29.1656,-81.0056,12789
@@ -1722,8 +1691,8 @@ City Name,Lat,Lon,Population
    Dover,40.5302,-81.4805,12843
    Justice,41.7495,-87.8345,12844
    South Charleston,38.3482,-81.711,12859
-   Kingston,41.2652,-75.8875,12861
    Centerton,36.3551,-94.296,12861
+   Kingston,41.2652,-75.8875,12861
    New Carrollton,38.9663,-76.8769,12868
    Malibu,34.0368,-118.7845,12879
    Chilca,-12.5196,-76.74,12884
@@ -1742,8 +1711,8 @@ City Name,Lat,Lon,Population
    Herrin,37.7984,-89.0304,12950
    Mounds View,45.1071,-93.2077,12952
    Verona,42.9879,-89.5371,12969
-   Pecos,31.4046,-103.5057,12973
    Commerce,33.9963,-118.1519,12973
+   Pecos,31.4046,-103.5057,12973
    Keokuk,40.4096,-91.4031,12976
    Glen Carbon,38.758,-89.9839,12978
    Andover,37.687,-97.1352,12980
@@ -1751,8 +1720,8 @@ City Name,Lat,Lon,Population
    Endicott,42.098,-76.0639,12992
    North Palm Beach,26.8217,-80.0574,12993
    Champasak,14.8833,105.8667,12994
-   Kumi,1.4608,33.9361,13000
    Muynoq,43.7683,59.0214,13000
+   Kumi,1.4608,33.9361,13000
    Bastrop,32.7749,-91.9058,13010
    Shiloh,38.554,-89.9163,13011
    Rochester,42.6867,-83.1197,13017
@@ -1774,7 +1743,6 @@ City Name,Lat,Lon,Population
    Dallas,33.9153,-84.8416,13108
    South Sioux City,42.4636,-96.4149,13120
    Bellefonte,40.9141,-77.7683,13126
-   University Heights,41.4948,-81.5348,13126
    Qulan,42.9204,72.705,13128
    Oakland,41.0313,-74.2411,13130
    Stoughton,42.9237,-89.2219,13134
@@ -1796,9 +1764,7 @@ City Name,Lat,Lon,Population
    Fort Morgan,40.2561,-103.7907,13215
    Soddy-Daisy,35.2571,-85.174,13217
    Broome,-17.9618,122.2308,13218
-   Paso de los Toros,-32.81,-56.51,13221
    Globe,33.3869,-110.7515,13234
-   Warrensville Heights,41.4363,-81.5222,13236
    Warrenville,41.821,-88.1856,13246
    Lawrenceburg,38.0331,-84.9031,13262
    Lake Forest Park,47.7592,-122.2877,13266
@@ -1813,15 +1779,14 @@ City Name,Lat,Lon,Population
    Tokoroa,-38.2245,175.8705,13350
    San Marino,34.1224,-118.1132,13365
    Shorewood,43.0913,-87.8863,13368
-   Joaquin V. Gonzalez,-25.0833,-64.1834,13376
    Mariental,-24.6196,17.9599,13380
    Kittanning,40.8279,-79.5233,13381
    Marion,35.6776,-82.0016,13383
    Western Springs,41.8022,-87.9006,13391
    Muisne,0.61,-80.02,13393
    Luganville,-15.5126,167.1766,13397
-   Bollnas,61.352,16.3666,13398
    Riverdale,41.644,-87.6366,13398
+   Bollnas,61.352,16.3666,13398
    Faya Largeau,17.9167,19.1167,13400
    Ferndale,48.8525,-122.5893,13403
    Sharon,41.2339,-80.4997,13405
@@ -1850,12 +1815,10 @@ City Name,Lat,Lon,Population
    Esil,51.957,66.3775,13504
    Washington,40.1739,-80.2465,13514
    Havre de Grace,39.5471,-76.1135,13527
-   Steamboat Springs,40.4774,-106.8233,13529
    Reidsville,36.3379,-79.6726,13541
    Chanaral,-29.03,-71.43,13543
    Richton Park,41.4821,-87.7353,13557
    Moss Point,30.4241,-88.5289,13570
-   Palos Verdes Estates,33.7871,-118.3976,13586
    Frias,-28.6496,-65.15,13594
    Lyndhurst,41.5172,-81.4922,13605
    Waunakee,43.183,-89.4426,13607
@@ -1867,8 +1830,8 @@ City Name,Lat,Lon,Population
    Baker,30.5833,-91.1578,13628
    Port Lincoln,-34.7332,135.8666,13630
    Sauk Rapids,45.5981,-94.154,13631
-   Pedreiras,-4.5696,-44.67,13638
    Roselle Park,40.6653,-74.2667,13638
+   Pedreiras,-4.5696,-44.67,13638
    Grover Beach,35.1205,-120.6199,13641
    Bongaree,-27.0787,153.1509,13649
    Destin,30.395,-86.4701,13654
@@ -1877,8 +1840,8 @@ City Name,Lat,Lon,Population
    St. Ann's Bay,18.4326,-77.1995,13671
    Swellendam,-34.0196,20.43,13674
    Motupe,-6.15,-79.71,13681
-   Carpinteria,34.3961,-119.5117,13684
    Grain Valley,39.0166,-94.2086,13684
+   Carpinteria,34.3961,-119.5117,13684
    Lamas,-6.43,-76.52,13693
    Franklin,29.7851,-91.5098,13706
    Lewisville,36.1029,-80.4167,13710
@@ -1908,8 +1871,8 @@ City Name,Lat,Lon,Population
    Mount Dora,28.8143,-81.6344,13818
    Moberly,39.4185,-92.4364,13821
    Kem,64.9536,34.5684,13829
-   Hidalgo,26.108,-98.2481,13831
    Muscle Shoals,34.7426,-87.6336,13831
+   Hidalgo,26.108,-98.2481,13831
    Ephrata,40.1811,-76.1812,13833
    Hendersonville,35.3239,-82.4579,13840
    Guapi,2.5604,-77.86,13853
@@ -1943,8 +1906,8 @@ City Name,Lat,Lon,Population
    Wangaratta,-36.36,146.3,14022
    Lamphun,18.503,99.074,14030
    Corovode,40.5167,20.2333,14046
-   Maqat,47.6482,53.3265,14082
    Mountain Home,36.3345,-92.3845,14082
+   Maqat,47.6482,53.3265,14082
    Chippewa Falls,44.9358,-91.3903,14084
    Willowick,41.6343,-81.468,14087
    Thomaston,32.8907,-84.3272,14089
@@ -1963,14 +1926,14 @@ City Name,Lat,Lon,Population
    Williams Lake,52.1166,-122.15,14168
    Schwyz,47.02,8.648,14177
    Fairburn,33.5497,-84.5914,14182
-   Waxhaw,34.9362,-80.743,14194
    Harrison,36.2438,-93.1198,14194
+   Waxhaw,34.9362,-80.743,14194
    Highland Park,40.5006,-74.4284,14195
    West Richland,46.3115,-119.3996,14198
    Canton,40.5631,-90.0411,14203
    Greendale,42.9371,-88.0019,14211
-   Kaoma,-14.7796,24.8,14212
    El Daba,31.0338,28.4333,14212
+   Kaoma,-14.7796,24.8,14212
    Kouroussa,10.653,-9.892,14223
    Maridi,4.9151,29.4769,14224
    Mineral Wells,32.8169,-98.0776,14225
@@ -1991,8 +1954,8 @@ City Name,Lat,Lon,Population
    Tehachapi,35.127,-118.4751,14336
    Raymondville,26.4759,-97.7769,14339
    Hayden,47.7685,-116.801,14344
-   Livingston,15.8307,-88.7562,14350
    Mill Valley,37.9085,-122.5421,14350
+   Livingston,15.8307,-88.7562,14350
    Whitewater,42.8371,-88.734,14352
    Paradise Valley,33.5435,-111.9595,14355
    Buford,34.1183,-83.9918,14356
@@ -2004,8 +1967,8 @@ City Name,Lat,Lon,Population
    Basse Santa Su,13.31,-14.223,14380
    Hopatcong,40.9541,-74.6592,14384
    Wauchula,27.547,-81.8102,14390
-   Oldsmar,28.0506,-82.6696,14397
    Washington,38.5517,-91.015,14397
+   Oldsmar,28.0506,-82.6696,14397
    Torshavn,62.03,-6.82,14398
    Port Antonio,18.159,-76.38,14400
    Harrison,39.257,-84.7883,14411
@@ -2015,8 +1978,8 @@ City Name,Lat,Lon,Population
    Fairview,40.8182,-74.0023,14421
    Red Wing,44.5818,-92.6041,14424
    Ascension,-15.6996,-63.08,14429
-   Gabu,12.28,-14.234,14430
    Greensburg,40.3113,-79.5445,14430
+   Gabu,12.28,-14.234,14430
    Miami Springs,25.8195,-80.2896,14431
    Gwanda,-20.9396,29.01,14450
    Phillipsburg,40.6895,-75.1821,14455
@@ -2056,12 +2019,12 @@ City Name,Lat,Lon,Population
    Abong Mbang,3.9837,13.1833,14661
    Johnson City,42.1233,-75.9625,14673
    Crowley,30.2174,-92.3752,14678
-   Warren,41.8433,-79.1445,14680
    McFarland,35.6781,-119.2414,14680
+   Warren,41.8433,-79.1445,14680
    Midlothian,41.6254,-87.7243,14699
    Graham,36.0601,-79.3906,14707
-   San Ramon,-11.1296,-75.34,14708
    Prince Rupert,54.3167,-130.33,14708
+   San Ramon,-11.1296,-75.34,14708
    Boerne,29.7856,-98.7297,14719
    Ondorhaan,47.3167,110.65,14723
    Ijevan,40.8756,45.1492,14737
@@ -2100,14 +2063,14 @@ City Name,Lat,Lon,Population
    Lady Lake,28.924,-81.93,14974
    Niceville,30.5301,-86.4826,14974
    Port Isabel,26.0538,-97.2505,14991
-   Salyan,28.35,82.1833,15000
+   Chaguaramas,9.2159,-63.7523,15000
+   Chaghcharan,34.5167,65.25,15000
+   Kok Yangak,41.0307,73.2058,15000
    Ramechhap,27.326,86.087,15000
    Bhimphedi,27.551,85.13,15000
    Gikongoro,-2.4833,29.5667,15000
-   Chaguaramas,9.2159,-63.7523,15000
-   Chaghcharan,34.5167,65.25,15000
+   Salyan,28.35,82.1833,15000
    Paro,27.3833,89.5167,15000
-   Kok Yangak,41.0307,73.2058,15000
    Longwood,28.7016,-81.3489,15011
    Buda,30.0854,-97.844,15023
    Fort Mill,35.0072,-80.9381,15029
@@ -2123,7 +2086,6 @@ City Name,Lat,Lon,Population
    West Park,25.984,-80.1922,15112
    Andrews,32.3211,-102.5522,15113
    Ramsey,41.0595,-74.1457,15116
-   Washington Court House,39.5384,-83.4276,15116
    Santa Barbara,14.919,-88.236,15119
    Hartsville,34.3679,-80.0829,15133
    Luderitz,-26.648,15.1594,15137
@@ -2138,7 +2100,6 @@ City Name,Lat,Lon,Population
    Daru,-9.1092,143.2337,15214
    Belmopan,17.252,-88.7671,15220
    Sterling,40.6207,-103.1919,15228
-   Sao Cabriel da Cachoeira,-0.1332,-67.0833,15231
    Yazoo City,32.8618,-90.4067,15241
    Newport,39.0855,-84.4868,15241
    Wendell,35.7823,-78.3963,15242
@@ -2163,8 +2124,8 @@ City Name,Lat,Lon,Population
    Nerchinsk,52.009,116.5486,15360
    Addison,32.9587,-96.8356,15368
    Stallings,35.108,-80.6607,15378
-   Westbury,40.7599,-73.5891,15384
    New Haven,41.0669,-85.0282,15384
+   Westbury,40.7599,-73.5891,15384
    Nyunzu,-5.9496,28.0167,15397
    Burrel,41.626,20.016,15405
    Kerouane,9.2704,-9.02,15406
@@ -2188,31 +2149,28 @@ City Name,Lat,Lon,Population
    Chainat,15.179,100.126,15469
    Bradley,41.1634,-87.8466,15471
    Aarau,47.39,8.034,15501
-   West University Place,29.7157,-95.4321,15516
    Bellevue,44.4592,-87.9553,15524
-   Satipo,-11.26,-74.69,15532
    Monte Plata,18.807,-69.784,15532
+   Satipo,-11.26,-74.69,15532
    Auburndale,28.0966,-81.8007,15540
    Pembroke,45.8503,-77.1166,15551
    Pimentel,-6.8296,-79.93,15552
    Anna,33.3475,-96.5512,15554
    Viana Do Castelo,41.6962,-8.8441,15555
-   Humble,29.992,-95.2656,15561
    McMinnville,35.6859,-85.7817,15561
    Hueytown,33.4237,-87.0223,15561
+   Humble,29.992,-95.2656,15561
    Portalegre,39.29,-7.423,15581
    Wilkinsburg,40.4442,-79.8733,15586
    Loncoche,-39.37,-72.63,15590
    At Bashy,41.1725,75.7968,15601
    Dedza,-14.3667,34.3333,15608
-   Middleburg Heights,41.3695,-81.815,15608
    La Grange,41.8072,-87.8741,15610
    Aberdeen,39.5146,-76.1731,15612
    Pacific Grove,36.6192,-121.9255,15624
    Pulaski,37.0531,-80.7624,15625
    Circleville,39.6062,-82.9335,15626
    Hernando,34.8496,-89.992,15631
-   Grosse Pointe Woods,42.4366,-82.8989,15639
    Villa Hayes,-25.09,-57.53,15643
    King City,36.2165,-121.133,15652
    Gornyak,50.9881,81.4877,15668
@@ -2228,13 +2186,12 @@ City Name,Lat,Lon,Population
    Elkton,39.6066,-75.8205,15744
    Hood River,45.7092,-121.526,15747
    Live Oak,29.5545,-98.3404,15749
-   Greenwood Village,39.6152,-104.913,15749
    Shively,38.197,-85.8136,15751
    Coalinga,36.1432,-120.3268,15756
    Groves,29.9457,-93.9164,15758
    Gun Barrel City,32.3277,-96.1286,15762
-   Yoro,15.06,-87.29,15774
    La Palma,33.8504,-118.0407,15774
+   Yoro,15.06,-87.29,15774
    Lake Saint Louis,38.785,-90.7872,15777
    Bastrop,30.1112,-97.3159,15781
    Dunn,35.311,-78.6132,15798
@@ -2264,7 +2221,6 @@ City Name,Lat,Lon,Population
    Grandville,42.9003,-85.7564,16002
    Houghton,47.1122,-88.5696,16010
    Taylor,30.5743,-97.4233,16019
-   North Myrtle Beach,33.8225,-78.7086,16032
    Ilave,-16.0796,-69.67,16033
    Miami,36.8877,-94.8718,16042
    Nikolayevsk,50.0161,45.4261,16044
@@ -2284,7 +2240,6 @@ City Name,Lat,Lon,Population
    Yelm,46.9398,-122.6261,16125
    Dispur,26.144,91.7666,16140
    Monroe,33.7997,-83.7155,16146
-   San Francisco Gotera,13.7,-88.1,16152
    Burley,42.5371,-113.7933,16160
    Compostela,21.2304,-104.9,16162
    New Port Richey,28.2468,-82.7169,16167
@@ -2303,8 +2258,8 @@ City Name,Lat,Lon,Population
    Prospect Heights,42.1039,-87.9267,16242
    Jasper,38.3936,-86.9405,16245
    Bridgeview,41.7402,-87.8067,16248
-   Terrell,32.7309,-96.2884,16252
    Griffith,41.5279,-87.424,16252
+   Terrell,32.7309,-96.2884,16252
    Riverdale,33.5645,-84.4098,16258
    Bemidji,47.4798,-94.8833,16271
    Laguna Woods,33.6099,-117.7299,16272
@@ -2350,19 +2305,18 @@ City Name,Lat,Lon,Population
    Sikeston,36.8875,-89.587,16545
    Crescent City,41.7728,-124.1902,16558
    Kamenka,53.1947,44.0444,16560
-   Akureyi,65.6666,-18.1,16563
    Westchester,41.8492,-87.8906,16563
+   Akureyi,65.6666,-18.1,16563
    Bellinzona,46.197,9.02,16572
    Queenstown,-45.0227,168.7251,16600
    Lake Placid,27.2967,-81.3719,16610
    Coldwater,41.9428,-85.0016,16613
    Troutdale,45.5372,-122.3955,16617
    Portland,27.8858,-97.3201,16618
-   Stuart,27.1962,-80.2438,16623
    Clayton,38.6443,-90.3301,16623
+   Stuart,27.1962,-80.2438,16623
    Highland Village,33.0897,-97.0615,16624
    Mercedes,26.1533,-97.9128,16624
-   Country Club Hills,41.5638,-87.7246,16637
    Buffalo,45.1786,-93.8663,16643
    Lakeport,39.0392,-122.9218,16649
    Morris,41.3744,-88.43,16656
@@ -2397,8 +2351,8 @@ City Name,Lat,Lon,Population
    Douglas,31.3602,-109.5394,16885
    Ngara,-2.4695,30.65,16890
    El Segundo,33.9169,-118.4021,16893
-   Alton,26.2887,-98.3105,16895
    Lemont,41.6697,-87.9831,16895
+   Alton,26.2887,-98.3105,16895
    El Reno,35.543,-97.966,16902
    Zaghouan,36.4,10.147,16911
    Troy,31.8021,-85.9665,16918
@@ -2416,14 +2370,14 @@ City Name,Lat,Lon,Population
    Ihosy,-22.3996,46.1167,16990
    Nevelsk,46.6803,141.8699,17000
    Ambriz,-7.855,13.125,17000
-   Vila Real,41.294,-7.737,17001
    Monte Cristi,19.867,-71.65,17001
+   Vila Real,41.294,-7.737,17001
    Harnosand,62.634,17.934,17016
    Eden,36.5029,-79.7421,17019
    Plast,54.3685,60.8085,17050
    Dickson,36.0637,-87.3661,17066
-   Batavia,42.9987,-78.1802,17067
    Streator,41.125,-88.8303,17067
+   Batavia,42.9987,-78.1802,17067
    Makokou,0.5671,12.8666,17070
    South Ogden,41.1715,-111.9568,17094
    Katy,29.7911,-95.8268,17116
@@ -2452,9 +2406,9 @@ City Name,Lat,Lon,Population
    Lock Haven,41.1365,-77.4521,17336
    Mehtar Lam,34.65,70.1667,17345
    Bulgan,48.8106,103.5317,17348
+   North Canton,40.8742,-81.3971,17365
    Eldorado,24.3305,-107.37,17365
    Eldorado,-26.2,-54.6,17365
-   North Canton,40.8742,-81.3971,17365
    Broken Hill,-31.95,141.4331,17395
    Anoka,45.21,-93.3894,17400
    Palos Hills,41.6986,-87.8266,17410
@@ -2472,8 +2426,8 @@ City Name,Lat,Lon,Population
    Karokh,34.4868,62.5918,17484
    Boulsa,12.657,-0.569,17489
    Ilam,26.908,87.926,17491
-   Maitland,28.6293,-81.3716,17519
    Fayetteville,33.4497,-84.4703,17519
+   Maitland,28.6293,-81.3716,17519
    Albert Lea,43.6548,-93.3643,17522
    Tallmadge,41.1023,-81.4216,17534
    Pakwach,2.4704,31.48,17541
@@ -2493,8 +2447,8 @@ City Name,Lat,Lon,Population
    Bitam,2.0837,11.4834,17637
    Ocean Springs,30.4082,-88.7861,17652
    Dong Ha,16.85,107.1333,17662
-   Zongo,4.3303,18.615,17667
    Anacortes,48.4878,-122.6291,17667
+   Zongo,4.3303,18.615,17667
    Martinsburg,39.458,-77.9779,17687
    Sylacauga,33.1779,-86.2606,17696
    Ashburton,-43.8983,171.7486,17700
@@ -2564,8 +2518,8 @@ City Name,Lat,Lon,Population
    Rancho Mirage,33.7625,-116.4273,18194
    Cudahy,42.9467,-87.8638,18200
    North Wilkesboro,36.1728,-81.1391,18217
-   Kedougou,12.5604,-12.18,18226
    Traralgon,-38.1996,146.53,18226
+   Kedougou,12.5604,-12.18,18226
    Kilgore,32.3979,-94.8603,18246
    Dover,40.8859,-74.5597,18252
    Trenton,42.1394,-83.193,18253
@@ -2579,7 +2533,6 @@ City Name,Lat,Lon,Population
    Seminole,27.8429,-82.7835,18334
    Bensenville,41.9595,-87.9435,18355
    Hannibal,39.7097,-91.3936,18361
-   Santiago Ixcuintla,21.82,-105.22,18365
    Round Lake,42.3439,-88.1059,18375
    Prosper,33.2394,-96.8088,18379
    El Dorado,33.2182,-92.6641,18396
@@ -2625,13 +2578,13 @@ City Name,Lat,Lon,Population
    Whakatane,-37.9574,176.9828,18700
    Beeville,28.4059,-97.7494,18714
    Mayfield Heights,41.5175,-81.4534,18731
-   Ansonia,41.3443,-73.0689,18732
    Iron Mountain,45.8275,-88.0605,18732
+   Ansonia,41.3443,-73.0689,18732
    Whitehall,39.9682,-82.8833,18736
    Brookfield,41.8245,-87.847,18753
    Ceres,-15.3033,-49.6052,18759
-   Embi,48.8268,58.1442,18760
    Marshfield,44.6633,-90.1731,18760
+   Embi,48.8268,58.1442,18760
    Villamontes,-21.2496,-63.5,18761
    Rutland,43.6091,-72.9782,18765
    Fort St. John,56.25,-120.8333,18776
@@ -2691,7 +2644,6 @@ City Name,Lat,Lon,Population
    Carlisle,40.1999,-77.2042,19162
    Homewood,41.5591,-87.661,19175
    Fernley,39.5612,-119.1925,19195
-   Broadview Heights,41.3195,-81.6782,19197
    Polyarnyy,69.2052,33.4502,19200
    Hurricane,37.1497,-113.3526,19202
    Lumphat,13.507,106.981,19205
@@ -2723,8 +2675,8 @@ City Name,Lat,Lon,Population
    Central Falls,41.89,-71.3933,19347
    Mamaroneck,40.9469,-73.7316,19356
    Tchibanga,-2.857,11.027,19365
-   Ivdel,60.6936,60.4133,19379
    Mount Airy,36.5084,-80.6156,19379
+   Ivdel,60.6936,60.4133,19379
    Lai,9.395,16.305,19382
    Monmouth,44.8506,-123.2283,19387
    Lake Forest,42.238,-87.8596,19388
@@ -2752,7 +2704,6 @@ City Name,Lat,Lon,Population
    Lillehammer,61.1333,10.5,19542
    Bethany,35.5072,-97.6417,19543
    Culpeper,38.4705,-78.0002,19544
-   Santa Cruz Cabralia,-16.28,-39.03,19545
    Levin,-40.6124,175.2772,19550
    Front Royal,38.926,-78.1837,19557
    Lynbrook,40.6579,-73.6742,19567
@@ -2786,10 +2737,10 @@ City Name,Lat,Lon,Population
    Payson,40.0352,-111.7409,19810
    Tsetserleg,47.4769,101.4502,19812
    Rockport,28.0351,-97.0663,19819
-   Secaucus,40.7809,-74.0662,19822
    Sand Springs,36.1345,-96.1285,19822
-   Camacupa,-12.0196,17.47,19828
+   Secaucus,40.7809,-74.0662,19822
    General Guemes,-24.6666,-65.05,19828
+   Camacupa,-12.0196,17.47,19828
    Glassboro,39.7014,-75.1119,19835
    Ben Gardane,33.1404,11.22,19843
    Kebili,33.69,8.971,19875
@@ -2806,11 +2757,11 @@ City Name,Lat,Lon,Population
    Kracheh,12.469,106.024,19975
    Tidjikdja,18.55,-11.4166,19981
    Muglad,11.0337,27.7333,19997
-   Hakha,22.65,93.6167,20000
+   Puerto Natales,-51.7183,-72.5117,20000
    Narvik,68.3832,17.29,20000
+   Hakha,22.65,93.6167,20000
    Haiya,18.3362,36.3842,20000
    Zemio,5.0337,25.1333,20000
-   Puerto Natales,-51.7183,-72.5117,20000
    Bryant,34.6144,-92.4903,20005
    Germantown,43.2343,-88.1217,20027
    Tukwila,47.4749,-122.2727,20033
@@ -2819,8 +2770,8 @@ City Name,Lat,Lon,Population
    Sing Buri,14.887,100.401,20046
    Esquel,-42.9,-71.3166,20048
    Pita,11.08,-12.401,20052
-   Rayevskiy,54.0674,54.9269,20060
    Kasongo-Lunda,-6.4796,16.83,20060
+   Rayevskiy,54.0674,54.9269,20060
    Zhosaly,45.4877,64.078,20065
    Pickerington,39.8889,-82.768,20069
    Dickinson,29.454,-95.0587,20074
@@ -2873,13 +2824,12 @@ City Name,Lat,Lon,Population
    Gardner,42.5845,-71.9868,20430
    Murray,36.6146,-88.3204,20431
    Valley,32.8088,-85.1771,20441
-   La Canada Flintridge,34.2097,-118.2002,20447
    American Canyon,38.1798,-122.2583,20452
    Covington,47.3665,-122.105,20478
    Atoka,35.4229,-89.7862,20478
    Murphy,33.0186,-96.6105,20482
-   Ushtobe,45.2653,77.97,20492
    Pleasantville,39.3897,-74.5168,20492
+   Ushtobe,45.2653,77.97,20492
    Komatipoort,-25.4096,31.94,20508
    Laurinburg,34.7597,-79.4781,20514
    Atoyac,17.2,-100.43,20515
@@ -2906,8 +2856,8 @@ City Name,Lat,Lon,Population
    Pleasant Prairie,42.5265,-87.8895,20734
    Agoura Hills,34.151,-118.7608,20745
    San Felipe,31.0241,-114.8496,20750
-   Ulundi,-28.3296,31.41,20753
    Palisades Park,40.847,-73.9965,20753
+   Ulundi,-28.3296,31.41,20753
    Eustis,28.8568,-81.6783,20768
    Corner Brook,48.95,-57.9333,20791
    Mustang,35.3917,-97.7245,20792
@@ -2925,11 +2875,10 @@ City Name,Lat,Lon,Population
    Impfondo,1.6404,18.04,20859
    Dublin,32.5358,-82.9279,20872
    Belton,31.0564,-97.4789,20873
-   Gamboma,-1.8795,15.85,20877
    New Hope,45.0375,-93.3869,20877
+   Gamboma,-1.8795,15.85,20877
    Okahandja,-21.9796,16.91,20879
    South El Monte,34.0493,-118.0484,20883
-   Petrovsk Zabaykalskiy,51.2827,108.8327,20889
    Rutana,-3.931,29.993,20893
    Duncan,34.5425,-97.919,20895
    Union City,33.5939,-84.5629,20919
@@ -2952,8 +2901,8 @@ City Name,Lat,Lon,Population
    Phayao,19.1707,99.9083,21058
    Nzeto,-7.2296,12.86,21059
    Corinth,33.1434,-97.0681,21078
-   Havelock,34.9078,-76.8985,21083
    Shelbyville,35.4991,-86.4518,21083
+   Havelock,34.9078,-76.8985,21083
    Trinidad,-33.544,-56.901,21093
    Charleston,39.4845,-88.1779,21105
    Gardner,38.8163,-94.9297,21110
@@ -2961,14 +2910,13 @@ City Name,Lat,Lon,Population
    Luena,-11.79,19.9,21115
    Oxford,33.5963,-85.8718,21120
    East Moline,41.5198,-90.3878,21135
-   Isikul,54.9287,71.2682,21136
    Siloam Springs,36.1838,-94.5319,21136
+   Isikul,54.9287,71.2682,21136
    Bardstown,37.8175,-85.455,21143
    Lebanon,44.5314,-122.9075,21165
    Elko,40.8383,-115.7677,21168
    Crest Hill,41.5722,-88.1125,21169
    Alice,27.7556,-98.0653,21172
-   Mountlake Terrace,47.7921,-122.3077,21182
    Oneida,43.0769,-75.6621,21184
    Paracuru,-3.3995,-39.04,21196
    Nixa,37.0456,-93.2962,21201
@@ -3005,16 +2953,16 @@ City Name,Lat,Lon,Population
    Kilkenny,52.6545,-7.2523,21589
    Trat,12.237,102.509,21590
    Perrysburg,41.5376,-83.6412,21592
-   Barras,-4.25,-42.3,21597
    Ardmore,34.1944,-97.1251,21597
+   Barras,-4.25,-42.3,21597
    Evans,40.3661,-104.7389,21615
    Roselle,40.6527,-74.2599,21625
    Ashland,42.1905,-122.6992,21639
    Yasothon,15.788,104.151,21643
    Owosso,42.9956,-84.1763,21653
    Kaedi,16.15,-13.5,21656
-   Naryan Mar,67.6474,53.0574,21658
    South Euclid,41.5239,-81.5245,21658
+   Naryan Mar,67.6474,53.0574,21658
    Mount Vernon,40.3854,-82.4732,21670
    Clinton,41.1395,-112.0656,21672
    Gavarr,40.3589,45.1267,21680
@@ -3024,7 +2972,6 @@ City Name,Lat,Lon,Population
    Kayunga,0.7025,32.8886,21704
    Greenfield,39.7937,-85.7739,21709
    Hays,38.8806,-99.3214,21713
-   Colonia del Sacramento,-34.48,-57.84,21714
    LaPorte,41.6077,-86.7137,21732
    Marietta,39.424,-81.4465,21735
    Eirunepe,-6.66,-69.8738,21750
@@ -3053,11 +3000,10 @@ City Name,Lat,Lon,Population
    Heredia,9.992,-84.12,21947
    New Castle,39.919,-85.3697,21949
    Del City,35.4483,-97.4408,21950
-   Fort Walton Beach,30.4244,-86.6192,21971
    Frauenfeld,47.568,9.108,21979
    Puerto Suarez,-18.9496,-57.85,22000
-   Aracuai,-16.8596,-42.0699,22005
    Northfield,44.4553,-93.1697,22005
+   Aracuai,-16.8596,-42.0699,22005
    Marshall,32.537,-94.3515,22014
    Summit,40.7154,-74.3648,22019
    Mocoa,1.15,-76.63,22035
@@ -3067,13 +3013,11 @@ City Name,Lat,Lon,Population
    Katoomba,-33.7069,150.32,22076
    Edgewater,28.9619,-80.9414,22077
    Darien,41.7447,-87.9823,22085
-   Sunny Isles Beach,25.9385,-80.1245,22086
    Christiansburg,37.1411,-80.4028,22088
    Nkhata Bay,-11.5996,34.3,22108
    Ojinaga,29.5404,-104.41,22128
    Itaberai,-16.02,-49.81,22129
    Kizel,59.0644,57.6343,22135
-   San Jose del Guaviare,2.57,-72.64,22136
    Patterson,37.4734,-121.144,22169
    Qarazhal,48.0253,70.7999,22170
    Prichard,30.7735,-88.1301,22185
@@ -3124,8 +3068,8 @@ City Name,Lat,Lon,Population
    Kemi,65.7333,24.5817,22641
    Farmington,44.6573,-93.1689,22656
    Millbrae,37.5994,-122.4024,22661
-   Oytal,42.9153,73.2549,22673
    Armidale,-30.5123,151.6675,22673
+   Oytal,42.9153,73.2549,22673
    Andoany,-13.4,48.2666,22680
    Maracaju,-21.61,-55.18,22690
    Onega,63.9271,38.0771,22693
@@ -3142,8 +3086,8 @@ City Name,Lat,Lon,Population
    Conway,33.8406,-79.0418,22761
    Willoughby,41.646,-81.4084,22769
    Windsor,40.4666,-104.9213,22776
-   Tashtagol,52.7918,87.8677,22779
    Shelbyville,38.2059,-85.2306,22779
+   Tashtagol,52.7918,87.8677,22779
    Auburn Hills,42.6734,-83.2447,22795
    Erie,40.0384,-105.0409,22803
    Corsicana,32.0823,-96.4676,22805
@@ -3206,14 +3150,12 @@ City Name,Lat,Lon,Population
    Roseau,15.301,-61.387,23336
    Magdalena,30.6166,-111.05,23359
    Van Buren,35.4479,-94.3525,23367
-   Jacksonville Beach,30.2782,-81.4045,23387
    Blue Island,41.6578,-87.6812,23401
    Loves Park,42.3365,-88.9976,23413
    Zug,47.179,8.487,23435
    Gjirokaster,40.079,20.149,23437
    Hanahan,32.9303,-80.0031,23439
    Haines City,28.1098,-81.6158,23454
-   Santa Maria da Vitoria,-13.39,-44.21,23488
    Lgov,51.6948,35.2744,23500
    Bondo,3.81,23.67,23517
    Roanoke Rapids,36.4453,-77.6491,23546
@@ -3221,7 +3163,6 @@ City Name,Lat,Lon,Population
    Nasca,-14.83,-74.94,23556
    Itambe,-15.2396,-40.63,23558
    Tash Komur,41.3419,72.2314,23594
-   Santa Cruz Del Quiche,15.0333,-91.1333,23618
    Dudinka,69.4182,86.225,23619
    Bogotol,56.2165,89.5184,23622
    Derby,37.5567,-97.2553,23633
@@ -3295,7 +3236,6 @@ City Name,Lat,Lon,Population
    Fatick,14.344,-16.416,24243
    Dunkirk,42.4803,-79.3323,24248
    Plainview,34.1908,-101.7234,24257
-   Saint-Laurent-du-Maroni,5.4976,-54.0325,24287
    Angangxi,47.1601,123.8,24317
    Trotwood,39.7927,-84.3165,24331
    Norton Shores,43.1621,-86.2519,24340
@@ -3304,11 +3244,9 @@ City Name,Lat,Lon,Population
    Brookings,44.3027,-96.7856,24357
    Fort Dodge,42.5098,-94.1751,24359
    Elk River,45.3313,-93.567,24364
-   Phnum Tbeng Meanchey,13.8167,104.9667,24380
    Riverbank,37.7269,-120.9406,24389
-   Herndon,38.9699,-77.3867,24393
    Hastings,40.5962,-98.3926,24393
-   Bainbridge Island,47.6439,-122.5434,24404
+   Herndon,38.9699,-77.3867,24393
    Baubau,-5.4699,122.6163,24412
    Aldan,58.603,125.3894,24426
    Seal Beach,33.7542,-118.0714,24440
@@ -3316,14 +3254,13 @@ City Name,Lat,Lon,Population
    Inkster,42.2935,-83.3148,24462
    Tifton,31.4624,-83.5205,24463
    San Benito,26.1298,-97.644,24476
-   Pochutla,15.7304,-96.47,24481
    Homer Glen,41.6043,-87.9495,24481
+   Pochutla,15.7304,-96.47,24481
    Fountain Hills,33.6072,-111.7398,24482
    Ridgeland,32.4225,-90.1456,24483
    Rolim de Moura,-11.7302,-61.7806,24516
    Watsa,3.04,29.53,24516
    Lamu,-2.262,40.9197,24525
-   Ciudad Altamirano,18.3204,-100.65,24533
    Victoria,-38.2395,-72.34,24555
    Ranong,9.962,98.638,24561
    Madisonville,37.341,-87.5033,24565
@@ -3336,7 +3273,6 @@ City Name,Lat,Lon,Population
    Watauga,32.8718,-97.2515,24629
    South Salt Lake,40.7056,-111.8987,24630
    Collinsville,38.6768,-90.0053,24635
-   Veinticinco de Mayo,-35.43,-60.18,24668
    Topki,55.2802,85.6108,24672
    Thomasville,30.8394,-83.9782,24678
    Kakonko,-3.2796,30.96,24688
@@ -3350,13 +3286,12 @@ City Name,Lat,Lon,Population
    Westmont,41.7948,-87.9742,24767
    Sebastian,27.7882,-80.4813,24772
    Walker,42.9857,-85.7443,24775
-   Lodi,40.8784,-74.0815,24778
    Ontario,44.0259,-116.976,24778
+   Lodi,40.8784,-74.0815,24778
    Newport,41.4803,-71.3205,24779
    Eagle,43.7231,-116.3856,24785
    Lincoln,-34.88,-61.5399,24798
    Madaoua,14.0762,5.9586,24804
-   Felipe Carrillo Puerto,19.5804,-88.05,24807
    Otjiwarongo,-20.4595,16.64,24815
    Pires do Rio,-17.2995,-48.28,24822
    Covilha,40.2833,-7.5,24828
@@ -3365,8 +3300,8 @@ City Name,Lat,Lon,Population
    Tarpon Springs,28.1492,-82.7622,24867
    Franklin,39.4935,-86.0541,24867
    Puyo,-1.483,-77.987,24881
-   Muskego,42.8859,-88.1291,24882
    Sevierville,35.8868,-83.5674,24882
+   Muskego,42.8859,-88.1291,24882
    De Pere,44.4312,-88.0795,24893
    Socorro,6.4603,-73.27,24895
    Yucca Valley,34.1231,-116.4215,24899
@@ -3398,8 +3333,8 @@ City Name,Lat,Lon,Population
    Hermanus,-34.4096,19.2299,25153
    Colinas,-6.0395,-44.24,25158
    Ponca City,36.7235,-97.0679,25164
-   Dolores,-36.33,-57.69,25190
    Grandview,38.8802,-94.5227,25190
+   Dolores,-36.33,-57.69,25190
    Clinton,32.354,-90.3403,25211
    Rehoboth,-23.3196,17.08,25219
    Melrose Park,41.9029,-87.8642,25229
@@ -3410,7 +3345,6 @@ City Name,Lat,Lon,Population
    Lambarene,-0.6996,10.2166,25310
    Bixby,35.9454,-95.8773,25333
    Washington,37.1325,-113.4894,25339
-   Sao Lourenco do Sul,-31.37,-51.98,25340
    Nelidovo,56.2235,32.7731,25349
    Ossining,41.1609,-73.8712,25360
    Hercules,38.0064,-122.2564,25360
@@ -3419,8 +3353,8 @@ City Name,Lat,Lon,Population
    Ust Kut,56.765,105.76,25388
    Opelousas,30.5279,-92.0851,25390
    San Ignacio,-16.3696,-60.96,25391
-   Majuro,7.103,171.38,25400
    El Cerrito,37.9197,-122.3025,25400
+   Majuro,7.103,171.38,25400
    Brownsburg,39.833,-86.3828,25408
    At Tafilah,30.8333,35.6,25429
    Hazelwood,38.7932,-90.3901,25443
@@ -3440,8 +3374,8 @@ City Name,Lat,Lon,Population
    Woodstock,42.3103,-88.4357,25628
    White Bear Lake,45.0654,-93.0149,25634
    Green,40.9483,-81.4757,25673
-   Zwedru,6.0704,-8.13,25678
    Scottsbluff,41.8676,-103.6618,25678
+   Zwedru,6.0704,-8.13,25678
    Sept-Iles,50.3161,-66.36,25686
    Lancaster,34.7247,-80.7801,25691
    Okeechobee,27.2412,-80.8298,25692
@@ -3476,8 +3410,8 @@ City Name,Lat,Lon,Population
    Madison,32.4738,-90.13,26031
    Lafayette,37.8919,-122.1188,26103
    Mizdah,31.4337,12.9833,26107
-   Tuxpan,21.9304,-105.27,26115
    Toktogul,41.8826,72.9372,26115
+   Tuxpan,21.9304,-105.27,26115
    Barberton,41.0095,-81.6038,26120
    Lake City,30.1892,-82.647,26128
    Saint-Georges,46.1171,-70.6667,26149
@@ -3495,8 +3429,8 @@ City Name,Lat,Lon,Population
    Bayankhongor,46.3,100.9833,26252
    Mendi,-6.1444,143.6452,26252
    Medina,41.1358,-81.8694,26261
-   Ayorou,14.7318,0.9195,26290
    Alenquer,-1.9396,-54.79,26290
+   Ayorou,14.7318,0.9195,26290
    La Union,-40.29,-73.09,26298
    Pukekohe,-37.2015,174.9033,26300
    Velsk,61.0674,42.0974,26300
@@ -3582,19 +3516,17 @@ City Name,Lat,Lon,Population
    Independence,38.9512,-84.5492,27024
    Thomasville,35.8813,-80.0807,27030
    Horn Lake,34.9512,-90.0501,27042
-   Libenge,3.6604,18.62,27053
    Casselberry,28.6621,-81.3217,27053
+   Libenge,3.6604,18.62,27053
    Rockledge,28.3199,-80.7318,27068
    Asino,56.9931,86.1627,27070
    Lindenhurst,40.6858,-73.371,27074
    Belmont,37.5154,-122.2955,27081
    Sikonge,-5.6295,32.77,27113
    Gladstone,39.2134,-94.5593,27114
-   Conceicao do Araguaia,-8.25,-49.29,27115
    Maryland Heights,38.7188,-90.4749,27137
    Colider,-10.8173,-55.4506,27139
    Puerto Armuelles,8.28,-82.87,27147
-   Nikolayevsk na Amure,53.1496,140.73,27152
    Williston,48.1834,-103.633,27164
    Rock Springs,41.595,-109.2237,27173
    Shemonaikha,50.6316,81.905,27176
@@ -3644,7 +3576,6 @@ City Name,Lat,Lon,Population
    Alice Springs,-23.701,133.88,27710
    Ornskoldsvik,63.318,18.7167,27749
    Mongo,12.1837,18.7,27763
-   Santa Vitoria do Palmar,-33.52,-53.37,27775
    Santa Cruz,-6.22,-36.03,27775
    Dembi Dolo,8.5337,34.8,27780
    Oak Forest,41.6055,-87.7527,27792
@@ -3660,9 +3591,9 @@ City Name,Lat,Lon,Population
    Mocimboa,-11.3196,40.35,27909
    Melrose,42.4556,-71.059,27928
    Monroeville,40.4262,-79.7605,27953
-   Camiri,-20.05,-63.52,27961
    Kasangulu,-4.5796,15.18,27961
    Sterling,41.7997,-89.6952,27961
+   Camiri,-20.05,-63.52,27961
    Mouila,-1.8662,11.0167,28000
    Aleysk,52.4918,82.7777,28019
    Ancud,-41.87,-73.83,28020
@@ -3701,14 +3632,13 @@ City Name,Lat,Lon,Population
    Wisconsin Rapids,44.393,-89.8262,28406
    Bella Vista,36.4667,-94.2708,28406
    Syracuse,41.0871,-112.0698,28407
-   Brandon,49.8333,-99.95,28418
    East Chicago,41.6487,-87.4531,28418
+   Brandon,49.8333,-99.95,28418
    Kotelnich,58.3041,48.3137,28431
    Pilar,-26.8695,-58.3,28435
    Mpika,-11.83,31.46,28445
    Monterey,36.5922,-121.8807,28454
    Englewood,40.8917,-73.9735,28455
-   Zheleznogorsk Ilimskiy,56.5762,104.1227,28456
    Northampton,42.3266,-72.6745,28483
    Kartaly,53.0474,60.6819,28503
    Cornelius,35.4733,-80.8833,28515
@@ -3731,7 +3661,6 @@ City Name,Lat,Lon,Population
    Garner,35.6949,-78.6212,28776
    Tarawa,1.3382,173.0176,28802
    Indiana,40.622,-79.1552,28820
-   Lake in the Hills,42.1913,-88.3478,28830
    Henderson,37.8402,-87.5786,28841
    Aberdeen,46.9768,-123.8083,28863
    SeaTac,47.4444,-122.2985,28873
@@ -3806,11 +3735,11 @@ City Name,Lat,Lon,Population
    Castro,-42.4808,-73.7623,29926
    Warrnambool,-38.38,142.47,29928
    North Chicago,42.3172,-87.8596,29951
-   Bourem,16.9004,-0.35,30000
-   Casma,-9.44,-78.21,30000
+   Savanna-la-Mar,18.164,-77.948,30000
    Khorugh,37.4875,71.5476,30000
    Mavinga,-15.7895,20.36,30000
-   Savanna-la-Mar,18.164,-77.948,30000
+   Bourem,16.9004,-0.35,30000
+   Casma,-9.44,-78.21,30000
    Kuta,-8.7151,115.1841,30012
    Chicago Heights,41.5101,-87.6347,30026
    Garden City,37.9765,-100.8579,30040
@@ -3914,8 +3843,8 @@ City Name,Lat,Lon,Population
    Auburn,42.9338,-76.5684,31263
    Buurhakaba,2.7837,44.0833,31267
    Neuchatel,46.999,6.923,31270
-   Skelleftea,64.7721,20.95,31311
    Barra do Bugres,-15.0696,-57.19,31311
+   Skelleftea,64.7721,20.95,31311
    Sasovo,54.3491,41.9087,31325
    Cauquenes,-35.96,-72.32,31362
    Wheat Ridge,39.7728,-105.103,31372
@@ -4014,9 +3943,8 @@ City Name,Lat,Lon,Population
    Bangassou,4.7338,22.8166,32841
    Cradock,-32.1995,25.61,32898
    Kholmsk,47.0473,142.0624,32911
-   Elk Grove Village,42.0061,-87.9929,32931
-   Djenne,13.9,-4.55,32944
    Bur Safaga,26.7337,33.9333,32944
+   Djenne,13.9,-4.55,32944
    Alabaster,33.2197,-86.8233,32948
    Reggane,26.7,0.1666,32974
    North Ridgeville,41.3851,-82.0194,32983
@@ -4049,8 +3977,8 @@ City Name,Lat,Lon,Population
    Holly Springs,35.6544,-78.8392,33260
    Mount Juliet,36.2004,-86.5122,33263
    Fairmont,39.4768,-80.149,33265
-   Sumbe,-11.21,13.85,33277
    Socorro,31.6385,-106.26,33277
+   Sumbe,-11.21,13.85,33277
    University Place,47.2146,-122.5461,33288
    Lebowakgomo,-24.1996,29.5,33308
    La Oroya,-11.52,-75.94,33345
@@ -4064,7 +3992,6 @@ City Name,Lat,Lon,Population
    Fair Lawn,40.9358,-74.1177,33453
    Woodridge,41.7372,-88.041,33476
    Castelo Branco,39.811,-7.488,33479
-   Prachuap Khiri Khan,11.803,99.8,33521
    Dyatkovo,53.5891,34.3392,33527
    Clermont,28.5403,-81.7296,33549
    Shepparton,-36.3746,145.3914,33550
@@ -4116,7 +4043,6 @@ City Name,Lat,Lon,Population
    Riviera Beach,26.7814,-80.0741,34244
    Businga,3.3404,20.87,34247
    Sibut,5.7338,19.0833,34267
-   Cottonwood Heights,40.6137,-111.8144,34285
    Babati,-4.2195,35.75,34291
    Gisborne,-38.6633,178.0181,34300
    Staraya Russa,57.9948,31.3544,34303
@@ -4131,8 +4057,8 @@ City Name,Lat,Lon,Population
    Merauke,-8.4932,140.4018,34412
    Grass Valley,39.2236,-121.0549,34508
    Bridgeton,39.4284,-75.2284,34536
-   Satun,6.6167,100.0667,34544
    Granbury,32.448,-97.7681,34544
+   Satun,6.6167,100.0667,34544
    Leawood,38.9076,-94.6258,34565
    Oswego,41.6832,-88.3382,34571
    Chacabuco,-34.65,-60.49,34587
@@ -4180,7 +4106,6 @@ City Name,Lat,Lon,Population
    El Mirage,33.5906,-112.3271,35043
    Samut Songkhram,13.413,100.001,35065
    La Vergne,36.021,-86.5574,35071
-   Inver Grove Heights,44.8246,-93.0596,35077
    La Asuncion,11.0333,-63.8833,35084
    La Porte,29.669,-95.0483,35086
    Jacarezinho,-23.1599,-49.98,35090
@@ -4215,7 +4140,6 @@ City Name,Lat,Lon,Population
    Saint John's,17.118,-61.85,35499
    Queen Creek,33.2392,-111.6397,35524
    Nacogdoches,31.6131,-94.6527,35525
-   Santa Rosa de Copan,14.77,-88.78,35529
    Yangambi,0.7704,24.43,35531
    Sharya,58.3798,45.5094,35532
    Barreiros,-8.8296,-35.2,35565
@@ -4237,8 +4161,8 @@ City Name,Lat,Lon,Population
    Owasso,36.2884,-95.8312,35784
    Ulaangom,49.9833,92.0666,35796
    Atbasar,51.8219,68.3477,35819
-   Beja,38.014,-7.863,35854
    Douglas,54.1504,-4.48,35854
+   Beja,38.014,-7.863,35854
    Bell,33.9801,-118.1798,35864
    Oak Creek,42.8803,-87.9008,35881
    Valuyki,50.2091,38.0987,35887
@@ -4267,9 +4191,7 @@ City Name,Lat,Lon,Population
    Baykonur,45.6914,63.2413,36175
    Cleburne,32.3585,-97.4172,36185
    Slantsy,59.1116,28.0747,36209
-   Sao Francisco do Sul,-26.2396,-48.6,36224
    La Grange,33.0276,-85.0383,36270
-   San Juan Capistrano,33.5009,-117.6544,36276
    Vaduz,47.1337,9.5167,36281
    Oregon City,45.3418,-122.5938,36286
    Yirga Alem,6.7504,38.41,36292
@@ -4283,8 +4205,8 @@ City Name,Lat,Lon,Population
    Crestview,30.748,-86.5784,36433
    Gillette,44.2793,-105.5013,36446
    Falun,60.613,15.647,36477
-   Kaniama,-7.5696,24.17,36481
    Moorpark,34.2855,-118.877,36481
+   Kaniama,-7.5696,24.17,36481
    Voi,-3.3696,38.57,36487
    Zharkent,44.1616,79.9801,36496
    Portage,41.5866,-87.1792,36505
@@ -4300,8 +4222,8 @@ City Name,Lat,Lon,Population
    Serdobsk,52.4622,44.2218,36652
    Retalhuleu,14.5371,-91.677,36656
    Moses Lake,47.1276,-119.2762,36662
-   Kasimov,54.9435,41.3931,36663
    San Juan,26.1902,-98.1522,36663
+   Kasimov,54.9435,41.3931,36663
    New Albany,38.3078,-85.8242,36670
    West Hollywood,34.0883,-118.3718,36698
    Olive Branch,34.9608,-89.8478,36699
@@ -4437,7 +4359,6 @@ City Name,Lat,Lon,Population
    Orange,-33.28,149.1,39329
    Oviedo,28.6576,-81.1869,39337
    Culver City,34.0058,-118.3968,39364
-   Antigua Guatemala,14.5667,-90.7333,39368
    Friendswood,29.5109,-95.198,39396
    Annapolis,38.9705,-76.5047,39418
    Borlange,60.4833,15.4167,39422
@@ -4456,31 +4377,29 @@ City Name,Lat,Lon,Population
    Salgotarjan,48.105,19.826,39640
    Perth,56.4003,-3.47,39654
    Marlborough,42.3494,-71.5468,39697
-   Goroka,-6.0833,145.3855,39699
    Chelsea,42.3959,-71.0325,39699
+   Goroka,-6.0833,145.3855,39699
    Mochudi,-24.377,26.152,39700
    Romeoville,41.631,-88.1014,39706
    Laguna,-28.48,-48.78,39711
    Grove City,39.8665,-83.0703,39721
    Daman,20.417,72.85,39737
    New Berlin,42.9726,-88.1292,39803
-   Alekseyevka,50.6535,38.6931,39848
    Bartlesville,36.7356,-95.9451,39848
+   Alekseyevka,50.6535,38.6931,39848
    New Castle,40.9956,-80.3458,39873
    Uray,60.1401,64.7548,39878
    Warren,41.2389,-80.8177,39898
-   Ciudad Constitucion,25.04,-111.66,39915
    Yian,47.8804,125.3,39924
    Ob,54.998,82.7077,39949
-   Hanggin Houqi,40.8847,107.14,39954
    Apache Junction,33.3982,-111.5349,39954
+   Hanggin Houqi,40.8847,107.14,39954
    Pogradec,40.9,20.664,40000
    Tombua,-15.8,11.86,40000
    Salama,15.103,-90.314,40000
    Kaya,13.0904,-1.09,40017
    Raub,3.7927,101.8423,40024
    Weslaco,26.1669,-97.9859,40033
-   Altagracia de Orituco,9.8504,-66.38,40052
    Carol Stream,41.9183,-88.1309,40069
    Ali Sabih,11.1562,42.7125,40074
    Wake Forest,35.963,-78.5144,40112
@@ -4514,7 +4433,6 @@ City Name,Lat,Lon,Population
    Shakopee,44.7745,-93.4763,40610
    Oakley,37.9929,-121.6951,40622
    Puyallup,47.1794,-122.2901,40640
-   Bom Jesus da Lapa,-13.2495,-43.44,40691
    Torrington,41.8349,-73.1282,40710
    Covington,39.0334,-84.5166,40797
    Aquidauana,-20.4696,-55.79,40803
@@ -4530,7 +4448,6 @@ City Name,Lat,Lon,Population
    Hobbs,32.7281,-103.1597,41021
    Centralia,46.7226,-122.9695,41077
    Ita,-25.5096,-57.36,41090
-   Palmeira dos Indios,-9.4166,-36.6166,41095
    Cao Bang,22.664,106.268,41112
    Muskogee,35.743,-95.3567,41117
    Mityana,0.4004,32.05,41131
@@ -4553,8 +4470,8 @@ City Name,Lat,Lon,Population
    Grand Prairie,55.1666,-118.8,41462
    Lushnje,40.94,19.716,41469
    Pottsville,40.6798,-76.2092,41479
-   Zaraza,9.3404,-65.32,41483
    Manassas,38.748,-77.484,41483
+   Zaraza,9.3404,-65.32,41483
    Jamestown,42.0975,-79.2366,41492
    Jaguaquara,-13.53,-39.97,41498
    Canoinhas,-26.18,-50.4,41498
@@ -4581,8 +4498,8 @@ City Name,Lat,Lon,Population
    Miercurea Cuic,46.361,25.524,42029
    Goose Creek,32.992,-80.0063,42039
    Castro,-24.79,-50.01,42091
-   Penedo,-10.2696,-36.58,42097
    Zanesville,39.9567,-82.0133,42097
+   Penedo,-10.2696,-36.58,42097
    Sdid Bouzid,35.0167,9.5,42098
    Kearny,40.7526,-74.1202,42126
    Salgueiro,-8.0596,-39.13,42152
@@ -4600,7 +4517,6 @@ City Name,Lat,Lon,Population
    Kotabumi,-4.8333,104.9,42366
    Charlottetown,46.2493,-63.1313,42402
    The Colony,33.0926,-96.8977,42408
-   Rancho Palos Verdes,33.7554,-118.3636,42435
    Shu,43.5953,73.7448,42439
    Linden,40.6251,-74.238,42457
    Dieppe,49.9337,1.0833,42461
@@ -4621,10 +4537,8 @@ City Name,Lat,Lon,Population
    Arys,42.4369,68.8048,42648
    Fort Portal,0.671,30.275,42670
    Caninde,-4.35,-39.31,42720
-   San Antonio de los Banos,22.8911,-82.4991,42724
    Richmond,39.8318,-84.8904,42759
    Leander,30.5707,-97.8587,42761
-   Peachtree Corners,33.9668,-84.2321,42773
    Tehuantepec,16.33,-95.23,42776
    Klamath Falls,42.2193,-121.7755,42791
    Bell Gardens,33.9663,-118.155,42806
@@ -4653,14 +4567,12 @@ City Name,Lat,Lon,Population
    Sovetsk,55.0718,21.882,43309
    Nizhneudinsk,54.8977,99.0277,43326
    Clovis,34.4375,-103.1924,43327
-   Desert Hot Springs,33.955,-116.543,43327
    Volksrust,-27.3596,29.89,43378
    Oyem,1.6166,11.5833,43423
    Ararangua,-28.94,-49.5,43444
    Imbituba,-28.2296,-48.66,43450
    Sambava,-14.2662,50.1666,43465
    Marana,32.4355,-111.1558,43474
-   Altamonte Springs,28.6616,-81.395,43492
    Hutchinson,38.0672,-97.9083,43507
    Phatthalung,7.615,100.081,43522
    Novozybkov,52.5348,31.9449,43534
@@ -4675,7 +4587,6 @@ City Name,Lat,Lon,Population
    Batouri,4.4337,14.3666,43821
    Adrian,41.8994,-84.0447,43850
    Salinas,-2.2,-80.98,43862
-   North Miami Beach,25.9302,-80.166,43891
    Comendador,18.876,-71.707,43894
    Nabire,-3.3515,135.5134,43898
    Hagere Hiywet,8.9804,37.85,43920
@@ -4696,7 +4607,6 @@ City Name,Lat,Lon,Population
    Parnu,58.3747,24.5136,44192
    Winneba,5.3504,-0.63,44254
    Atar,20.5166,-13.05,44265
-   Villa Constitucion,-33.23,-60.35,44271
    Roskilde,55.65,12.0833,44285
    Selma,36.5743,-119.6156,44292
    Aracati,-4.56,-37.77,44293
@@ -4717,9 +4627,8 @@ City Name,Lat,Lon,Population
    Akhtubinsk,48.2787,46.1687,44551
    Kamenna Obi,53.7936,81.3388,44564
    Kabale,-1.2496,29.98,44600
-   Danville,37.8121,-121.9698,44631
    Strongsville,41.3128,-81.8313,44631
-   Cleveland Heights,41.5112,-81.5636,44633
+   Danville,37.8121,-121.9698,44631
    Artemovskiy,57.3652,61.8698,44689
    Linden,5.99,-58.27,44690
    Cutler Bay,25.5765,-80.3357,44707
@@ -4831,8 +4740,8 @@ City Name,Lat,Lon,Population
    Poso,-1.3896,120.76,47110
    Mandeville,18.033,-77.5,47115
    Salina,38.8143,-97.6151,47123
-   Progreso,21.2833,-89.6666,47124
    Jeffersonville,38.3377,-85.7026,47124
+   Progreso,21.2833,-89.6666,47124
    Tres Arroyos,-38.37,-60.2699,47136
    Poti,42.1557,41.6716,47149
    Breves,-1.68,-50.49,47164
@@ -4850,8 +4759,8 @@ City Name,Lat,Lon,Population
    Euclid,41.5904,-81.5188,47360
    Ladysmith,-28.5495,29.78,47375
    Cookeville,36.1485,-85.5114,47381
-   Gryazi,52.4948,39.9343,47413
    San Jacinto,33.797,-116.9915,47413
+   Gryazi,52.4948,39.9343,47413
    Montana,43.414,23.237,47445
    Glenview,42.0825,-87.8215,47475
    Aksum,14.1304,38.72,47487
@@ -4880,7 +4789,6 @@ City Name,Lat,Lon,Population
    Cutral Co,-38.94,-69.24,47814
    Ratnapura,6.693,80.386,47832
    Kannapolis,35.4766,-80.6391,47839
-   Huajuapan de Leon,17.8104,-97.79,47844
    Lawrence,39.8674,-85.9904,47866
    Mildura,-34.185,142.1514,47867
    Goianesia,-15.3096,-49.13,47883
@@ -4935,7 +4843,6 @@ City Name,Lat,Lon,Population
    Cypress,33.8171,-118.0386,48906
    Larnaka,34.917,33.636,48947
    Slobodskoy,58.7185,50.188,48962
-   Rancho Santa Margarita,33.6318,-117.5989,48969
    Changyon,38.2517,125.1021,48984
    Verkhnyaya Salda,58.0502,60.5498,48992
    Paducah,37.0711,-88.6435,49027
@@ -4952,7 +4859,6 @@ City Name,Lat,Lon,Population
    Murray,40.6498,-111.8875,49230
    Timimoun,29.2365,0.27,49237
    Uniontown,39.8994,-79.7244,49241
-   Libertador General San Martin,-23.8195,-64.79,49267
    Waterford,52.2583,-7.1119,49275
    Ruzayevka,54.0643,44.9244,49311
    Summerville,33.0038,-80.1794,49323
@@ -4989,11 +4895,11 @@ City Name,Lat,Lon,Population
    Maun,-19.9896,23.42,49945
    Chake Chake,-5.2395,39.77,49959
    El Kharga,25.44,30.55,49991
-   Pa-an,16.85,97.6167,50000
-   Puzi,23.4611,120.2419,50000
+   Bairin Zuoqi,43.9837,119.1834,50000
    Korogwe,-5.0896,38.54,50000
    Kahemba,-7.2829,19,50000
-   Bairin Zuoqi,43.9837,119.1834,50000
+   Pa-an,16.85,97.6167,50000
+   Puzi,23.4611,120.2419,50000
    Gogrial,8.5337,28.1167,50065
    Poway,32.9872,-117.0201,50077
    Kampot,10.6171,104.1833,50105
@@ -5060,8 +4966,8 @@ City Name,Lat,Lon,Population
    Batatais,-20.89,-47.59,51976
    Walvis Bay,-22.9575,14.5053,52058
    Kimry,56.8691,37.3444,52070
-   Nyagan,62.1465,65.3814,52137
    Pinellas Park,27.8586,-82.7075,52137
+   Nyagan,62.1465,65.3814,52137
    Tayshet,55.9277,97.9877,52184
    Whangarei,-35.7256,174.323,52200
    Basankusu,1.2337,19.8,52216
@@ -5083,11 +4989,10 @@ City Name,Lat,Lon,Population
    Jaen,-5.7096,-78.81,52493
    Thongwa,16.7547,96.5193,52496
    Perth Amboy,40.5204,-74.2724,52499
-   Porirua,-41.1219,174.8524,52500
    New Plymouth,-39.0556,174.0748,52500
+   Porirua,-41.1219,174.8524,52500
    Puerto Ayacucho,5.6639,-67.6236,52526
    Mongu,-15.2796,23.12,52534
-   City of Milford (balance),41.2253,-73.0624,52536
    DeSoto,32.5992,-96.8634,52599
    Leesburg,39.1057,-77.5543,52607
    Siena,43.317,11.35,52625
@@ -5133,13 +5038,10 @@ City Name,Lat,Lon,Population
    Pamplona,7.3904,-72.66,53587
    Charikar,35.0183,69.1679,53676
    Upata,8.0204,-62.41,53685
-   San Pedro de las Colonias,25.7592,-102.9827,53688
    Elyria,41.3761,-82.1063,53715
    Yevlax,40.6172,47.15,53716
    Bac Giang,21.267,106.2,53728
    Markala,13.6704,-6.07,53738
-   Palm Beach Gardens,26.8489,-80.1654,53778
-   Vyshnniy Volochek,57.583,34.5631,53800
    Bijar,35.8741,47.5937,53871
    Severomorsk,69.0731,33.4231,53921
    Jihlava,49.4004,15.5833,53921
@@ -5177,7 +5079,6 @@ City Name,Lat,Lon,Population
    Juigalpa,12.11,-85.38,54731
    Euless,32.8507,-97.0798,54769
    Fond du Lac,43.7719,-88.4396,54811
-   Nuevo Casas Grandes,30.4185,-107.9119,54826
    Huntersville,35.4055,-80.8741,54839
    Tarbes,43.2333,0.0833,54854
    Commerce City,39.8638,-104.8434,54869
@@ -5195,7 +5096,6 @@ City Name,Lat,Lon,Population
    Cartersville,34.1631,-84.8007,55195
    Kribi,2.9404,9.91,55224
    Cape Girardeau,37.3107,-89.5595,55253
-   Sao Jose de Ribamar,-2.55,-44.07,55265
    Grants Pass,42.4334,-123.3318,55265
    Hazleton,40.9504,-75.9724,55301
    Kettering,39.6956,-84.1495,55306
@@ -5265,8 +5165,8 @@ City Name,Lat,Lon,Population
    Los Andes,-32.8296,-70.6,56859
    Cruzeiro do Sul,-7.63,-72.67,56862
    Kitgum,3.3004,32.87,56891
-   Adrar,27.87,-0.29,56910
    New Brunswick,40.487,-74.445,56910
+   Adrar,27.87,-0.29,56910
    Rodos,36.4412,28.2225,56969
    Roslavl,53.9509,32.8604,56971
    Vaasa,63.1,21.6,57014
@@ -5373,7 +5273,6 @@ City Name,Lat,Lon,Population
    Pontiac,42.6493,-83.2878,59698
    Itapetinga,-15.25,-40.25,59721
    Linares,38.0833,-3.6334,59761
-   Saint Clair Shores,42.4922,-82.8957,59775
    Nkhotakota,-12.9163,34.3,59854
    Gorno Altaysk,51.9613,85.9577,59868
    Kotlas,61.2631,46.6631,59879
@@ -5413,7 +5312,6 @@ City Name,Lat,Lon,Population
    Sonbong,42.3377,130.4027,60864
    Marietta,33.9532,-84.542,60941
    Bouafle,6.978,-5.748,60962
-   El Carmen de Bolivar,9.7204,-75.13,60980
    Cherbourg,49.6504,-1.65,60991
    Salsk,46.4775,41.542,61000
    Rome,34.2657,-85.1863,61019
@@ -5437,8 +5335,8 @@ City Name,Lat,Lon,Population
    Cayenne,4.933,-52.33,61550
    Sibay,52.7091,58.6387,61590
    Pula,44.8687,13.8481,61599
-   Vyska,55.3247,42.1644,61664
    La Habra,33.9278,-117.9513,61664
+   Vyska,55.3247,42.1644,61664
    Beckley,37.7878,-81.1841,61693
    Troyes,48.3404,4.0834,61703
    Medenine,33.4,10.4167,61705
@@ -5457,8 +5355,8 @@ City Name,Lat,Lon,Population
    Labinsk,44.6348,40.7443,61945
    Rowlett,32.9165,-96.5494,61999
    Ferkessedougou,9.6004,-5.2,62008
-   Madang,-5.2248,145.7853,62023
    Veszprem,47.091,17.911,62023
+   Madang,-5.2248,145.7853,62023
    Tupa,-21.93,-50.52,62035
    Sagua la Grande,22.809,-80.0711,62073
    Tikhvin,59.6448,33.5144,62075
@@ -5549,8 +5447,8 @@ City Name,Lat,Lon,Population
    Mazatenango,14.5304,-91.51,64652
    Feyzabad,37.1298,70.5792,64704
    Rafha,29.6202,43.4948,64755
-   Gurupi,-11.7196,-49.06,64789
    East Orange,40.7651,-74.2118,64789
+   Gurupi,-11.7196,-49.06,64789
    Johnstown,40.3258,-78.9194,64842
    Tan Tan,28.4304,-11.1,64868
    Krasnoturinsk,59.7948,60.4848,64878
@@ -5562,8 +5460,8 @@ City Name,Lat,Lon,Population
    Rogers,36.3172,-94.1515,65021
    Elmira,42.0938,-76.8097,65104
    Longview,46.1471,-122.9642,65156
-   Coban,15.47,-90.38,65194
    Shawnee,39.0158,-94.8076,65194
+   Coban,15.47,-90.38,65194
    Tamarac,26.2057,-80.2547,65199
    Bekescsaba,46.672,21.101,65206
    Debre Birhan,9.6804,39.53,65231
@@ -5597,7 +5495,6 @@ City Name,Lat,Lon,Population
    Bayonne,40.6659,-74.1141,66238
    Pyongsan,38.3367,126.3866,66260
    Leninogorsk,54.5987,52.4487,66263
-   North Little Rock,34.7813,-92.2378,66278
    Lahij,13.0582,44.8838,66288
    Huinan,42.6229,126.2614,66315
    Neryungri,56.674,124.7104,66320
@@ -5617,11 +5514,10 @@ City Name,Lat,Lon,Population
    Aleksin,54.5143,37.0944,66885
    Kati,12.7504,-8.08,66895
    Apatity,67.5731,33.393,66907
-   Petaluma,38.2423,-122.6267,66940
    Rockville,39.0834,-77.1553,66940
+   Petaluma,38.2423,-122.6267,66940
    Saratoga Springs,43.0674,-73.7775,66945
    Narva,59.3776,28.1603,66980
-   South San Francisco,37.6537,-122.4197,66980
    Fairbanks,64.8353,-147.6533,66996
    Jaltipan,17.94,-94.74,66998
    Palo Alto,37.3917,-122.1465,67024
@@ -5653,7 +5549,6 @@ City Name,Lat,Lon,Population
    Ames,42.0262,-93.6275,67841
    Garissa,-0.4396,39.67,67861
    Redondo Beach,33.8574,-118.3766,67867
-   Concepcion del Uruguay,-32.48,-58.24,67895
    Calbayog,12.0672,124.6042,67921
    Putrajaya,2.914,101.7019,67964
    Homestead,25.4664,-80.4472,67996
@@ -5714,15 +5609,14 @@ City Name,Lat,Lon,Population
    Maple Grove,45.1088,-93.4626,69576
    Guajara-Miram,-10.8,-65.3499,69586
    Tuy Hoa,13.082,109.316,69596
-   Rio Verde,21.93,-99.98,69613
    Paragominas,-2.9596,-47.49,69613
+   Rio Verde,21.93,-99.98,69613
    Hammond,30.5059,-90.4561,69616
    Arba Minch,6.04,37.55,69622
    Ouezzane,34.8103,-5.57,69658
    Decatur,34.5733,-86.9919,69660
    Totonicapan,14.914,-91.358,69734
    Trnava,48.3666,17.6,69785
-   North Richland Hills,32.8605,-97.218,69798
    Lobatse,-25.2196,25.68,69804
    West Bend,43.4184,-88.1823,69810
    Rongzhag,30.9504,101.9167,70000
@@ -5732,8 +5626,8 @@ City Name,Lat,Lon,Population
    Belogorsk,50.9191,128.4637,70203
    Chau Doc,10.7004,105.1167,70239
    Lima,40.7409,-84.1121,70296
-   Sunyani,7.336,-2.336,70299
    Janesville,42.6855,-89.0137,70299
+   Sunyani,7.336,-2.336,70299
    Iguatu,-6.36,-39.3,70380
    Kastamonu,41.389,33.783,70402
    Sheboygan,43.7448,-87.7317,70436
@@ -5845,7 +5739,6 @@ City Name,Lat,Lon,Population
    Prey Veng,11.484,105.324,74000
    Riberalta,-10.983,-66.1,74014
    Standerton,-26.9395,29.24,74021
-   San Ramon de la Nueva Oran,-23.14,-64.32,74059
    Kara Balta,42.8306,73.8857,74133
    Karlstad,59.3671,13.4999,74141
    Camarillo,34.223,-119.0325,74152
@@ -5872,9 +5765,7 @@ City Name,Lat,Lon,Population
    Kompong Chhnang,12.2505,104.6666,75244
    Bethlehem,40.6266,-75.3679,75293
    Union City,37.603,-122.0187,75322
-   Hilton Head Island,32.1896,-80.7499,75328
    Campo Murao,-24.0496,-52.42,75401
-   Arlington Heights,42.0955,-87.9825,75525
    Nevsehir,38.624,34.724,75527
    Davis,38.5552,-121.7365,75553
    Wyoming,42.8909,-85.7067,75567
@@ -5883,10 +5774,9 @@ City Name,Lat,Lon,Population
    San Ramon,37.7625,-121.9366,75639
    Layton,41.0773,-111.9618,75655
    Buynaksk,42.8335,47.113,75800
-   Kamensk Shakhtinskiy,48.3318,40.2518,75814
    Mackay,-21.1439,149.15,75922
-   Tailai,46.3904,123.41,75992
    Baytown,29.7607,-94.9628,75992
+   Tailai,46.3904,123.41,75992
    Tamanrasset,22.785,5.5228,76000
    Saint Augustine,29.8979,-81.31,76129
    Birobidzhan,48.7974,132.9508,76146
@@ -5902,7 +5792,6 @@ City Name,Lat,Lon,Population
    Al Musayyib,32.7786,44.29,76454
    Baldwin Park,34.0829,-117.972,76464
    Porterville,36.0636,-119.0332,76512
-   Sao Joao da Boa Vista,-21.98,-46.79,76540
    Jatai,-17.8796,-51.75,76547
    Uttaradit,17.6316,100.0972,76630
    Upland,34.1178,-117.6603,76684
@@ -5990,10 +5879,8 @@ City Name,Lat,Lon,Population
    Deerfield Beach,26.305,-80.1278,79764
    Valdosta,30.8503,-83.2789,79844
    Ciudad Mante,22.7334,-98.95,79981
-   Nabatiye et Tahta,33.3833,35.45,80000
-   Capenda-Camulemba,-9.4196,18.43,80000
-   Xigaze,29.25,88.8833,80000
    Koktokay,47.0004,89.4666,80000
+   Xigaze,29.25,88.8833,80000
    Vorkuta,67.5,64.01,80039
    Al Karak,31.1851,35.7047,80062
    Meiganga,6.5205,14.29,80100
@@ -6041,7 +5928,6 @@ City Name,Lat,Lon,Population
    Kaspiysk,42.8747,47.6244,81752
    Agboville,5.9403,-4.28,81770
    Williamsburg,37.2691,-76.7075,81840
-   Presidencia Roque Saenz Pena,-26.79,-60.45,81879
    Qasserine,35.1804,8.83,81987
    Hattiesburg,31.3073,-89.3169,81995
    Chililabombwe,-12.3696,27.82,82068
@@ -6090,7 +5976,6 @@ City Name,Lat,Lon,Population
    Troy,42.5817,-83.1458,83641
    Londonderry,55.0004,-7.3333,83652
    Bethlehem,-28.2196,28.3,83654
-   Anzhero Sudzhensk,56.08,86.04,83692
    Mbarara,-0.5996,30.65,83700
    Johns Creek,34.0333,-84.2027,83873
    Porto Santana,-0.0396,-51.18,83927
@@ -6123,7 +6008,6 @@ City Name,Lat,Lon,Population
    Behbehan,30.5818,50.2615,85707
    Helong,42.5348,129.0044,85756
    Clifton,40.8631,-74.1575,85845
-   Usolye Sibirskoye,52.765,103.645,85900
    Keffi,8.849,7.8736,85911
    Poitier,46.5833,0.3333,85960
    Chipata,-13.6296,32.64,85963
@@ -6166,7 +6050,6 @@ City Name,Lat,Lon,Population
    Kirkland,47.6996,-122.1982,87701
    Buzuluk,52.7821,52.2618,87714
    Napa,38.2982,-122.3011,87733
-   San Juan De Los Morros,9.901,-67.354,87739
    Parepare,-4.0167,119.6333,87776
    Chino,33.9836,-117.6653,87776
    Canakkale,40.1459,26.4064,87791
@@ -6175,7 +6058,6 @@ City Name,Lat,Lon,Population
    Agri,39.7198,43.0513,87854
    Saint John,45.267,-66.0767,87857
    Ebolowa,2.9,11.15,87875
-   Madinat ath Thawrah,35.8367,38.5481,87880
    Yozgat,39.818,34.815,87881
    Bowling Green,36.9725,-86.4371,87976
    Hawthorne,33.9147,-118.3476,88031
@@ -6206,7 +6088,6 @@ City Name,Lat,Lon,Population
    Fall River,41.7136,-71.1014,88930
    Missoula,46.8687,-114.0089,89017
    Newton,42.3317,-71.2085,89045
-   Valle de la Pascua,9.21,-66.02,89080
    Sumbawanga,-7.9596,31.62,89161
    Muncie,40.1989,-85.395,89186
    Tambacounda,13.7804,-13.68,89212
@@ -6217,7 +6098,6 @@ City Name,Lat,Lon,Population
    Chester,53.2,-2.92,89531
    Vlore,40.4774,19.4982,89546
    Decatur,39.8555,-88.9337,89653
-   Santana do Livramento,-30.88,-55.53,89694
    Jonkoping,57.7713,14.165,89780
    Yegoryevsk,55.3848,39.0294,89795
    Livermore,37.6863,-121.7607,89840
@@ -6271,7 +6151,6 @@ City Name,Lat,Lon,Population
    Dhangarhi,28.695,80.593,92294
    Lawton,34.6171,-98.4204,92299
    Itaituba,-4.2586,-55.925,92308
-   Santiago de Compostela,42.8829,-8.5411,92430
    Villa Maria,-32.41,-63.26,92453
    Maizuru,35.4504,135.3333,92465
    Fuan,27.0704,119.62,92470
@@ -6340,7 +6219,6 @@ City Name,Lat,Lon,Population
    Boli,45.7564,130.5759,95260
    San Marcos,33.135,-117.1743,95261
    Magadan,59.575,150.81,95282
-   San Carlos de Bariloche,-41.15,-71.3,95394
    Guliston,40.4957,68.7907,95520
    South Gate,33.9448,-118.1926,95538
    Kuznetsk,53.1204,46.6,95574
@@ -6377,7 +6255,6 @@ City Name,Lat,Lon,Population
    Guasave,25.5705,-108.47,96860
    Shangzhi,45.2204,127.97,96980
    Targu Jiu,45.045,23.274,97179
-   San Carlos del Zulia,9.0104,-71.92,97288
    Turkistan,43.3016,68.2549,97360
    Az Zahran,26.2914,50.1583,97446
    Bafra,41.5682,35.9069,97452
@@ -6422,8 +6299,8 @@ City Name,Lat,Lon,Population
    Thika,-1.0396,37.09,99322
    Thunder Bay,48.4462,-89.275,99334
    Choluteca,13.3007,-87.1908,99429
-   Galle,6.03,80.24,99478
    Novoshakhtinsk,47.77,39.92,99478
+   Galle,6.03,80.24,99478
    Wichita Falls,33.9072,-98.5293,99596
    Zelenodolsk,55.8406,48.655,99600
    Bend,44.0562,-121.3087,99634
@@ -6433,9 +6310,9 @@ City Name,Lat,Lon,Population
    Chanthaburi,12.6133,102.0979,99819
    Tsuruoka,38.7004,139.8302,99820
    Logan,41.7403,-111.8418,99909
-   Arlit,18.82,7.33,100000
    Subotica,46.07,19.68,100000
    Chamdo,31.1667,97.2333,100000
+   Arlit,18.82,7.33,100000
    Isna,25.2904,32.5499,100000
    Lida,53.8885,25.2846,100216
    Sabha,27.0333,14.4333,100249
@@ -6479,18 +6356,18 @@ City Name,Lat,Lon,Population
    Houma,35.62,111.21,102400
    La Crosse,43.8234,-91.2279,102427
    Grudziadz,53.4804,18.75,102443
-   Roxas,11.5853,122.7511,102688
    Piatra-Neamt,46.94,26.383,102688
+   Roxas,11.5853,122.7511,102688
    Pakxe,15.1221,105.8183,102775
-   Pedro Juan Caballero,-22.5446,-55.76,102787
+   Pedro Juan,-22.5446,-55.76,102787
    Palma Soriano,20.2172,-75.9988,102826
    Velikiye Luki,56.32,30.52,103149
    Vinh Long,10.256,105.964,103314
    Rialto,34.1128,-117.3885,103314
-   Hidalgo del Parral,26.9334,-105.6666,103378
+   Hidalgo,26.9334,-105.6666,103378
    Guaymas,27.93,-110.89,103449
-   Matruh,31.3504,27.23,103470
    Perabumulih,-3.4432,104.2315,103470
+   Matruh,31.3504,27.23,103470
    Konotop,51.2424,33.209,103547
    Gardiz,33.6001,69.2146,103601
    Biak,-1.1615,136.0485,103610
@@ -6516,8 +6393,8 @@ City Name,Lat,Lon,Population
    Burbank,34.188,-118.3234,104447
    Nong Khai,17.8733,102.7479,104505
    Torbat-e Jam,35.2233,60.6129,104578
-   Gera,50.8704,12.07,104659
    Lewisville,33.0453,-96.9823,104659
+   Gera,50.8704,12.07,104659
    Jena,50.9304,11.58,104712
    Prijedor,44.9804,16.7,104858
    Koutiala,12.3904,-5.47,104927
@@ -6550,7 +6427,7 @@ City Name,Lat,Lon,Population
    Namur,50.4704,4.87,106284
    Longjiang,47.3404,123.18,106384
    Daly City,37.6863,-122.4684,106472
-   Drobeta-Turnu Severin,44.6459,22.6659,106578
+   Drobeta-Turnu,44.6459,22.6659,106578
    Coimbra,40.2004,-8.4167,106582
    Clovis,36.8283,-119.6851,106583
    Douliou,23.7075,120.5439,106653
@@ -6646,7 +6523,7 @@ City Name,Lat,Lon,Population
    Kuqa,41.7277,82.9364,111499
    Gresham,45.5023,-122.4414,111523
    Daugavpils,55.88,26.51,111564
-   Conselheiro Lafaiete,-20.67,-43.79,111596
+   Conselheiro,-20.67,-43.79,111596
    Kandy,7.28,80.67,111701
    El Centro,32.7873,-115.5578,111733
    Zwolle,52.524,6.097,111805
@@ -6671,11 +6548,11 @@ City Name,Lat,Lon,Population
    Exeter,50.7004,-3.53,113118
    Kitami,43.8504,143.9,113137
    Downey,33.9379,-118.1312,113267
-   Kipushi,-11.7596,27.25,113347
    Richardson,32.9717,-96.7092,113347
+   Kipushi,-11.7596,27.25,113347
    Praia,14.9167,-23.5167,113364
    Pearland,29.5585,-95.3201,113570
-   Santa Cruz do Sul,-29.71,-52.44,113625
+   Santa Cruz,-29.71,-52.44,113625
    Saint Cloud,45.5339,-94.1718,113649
    Baerum,59.9135,11.3472,113659
    West Jordan,40.6024,-112.0008,113699
@@ -6700,7 +6577,7 @@ City Name,Lat,Lon,Population
    Clearwater,27.9787,-82.7623,114361
    Norman,35.2335,-97.3471,114444
    Giyon,8.5304,37.97,114534
-   Kamyanets-Podilskyy,48.6843,26.5809,114658
+   Kamyanets,48.6843,26.5809,114658
    Delicias,28.2,-105.5,114783
    Botosani,47.7484,26.6597,114783
    Ciudad Valles,21.98,-99.02,114964
@@ -6715,7 +6592,7 @@ City Name,Lat,Lon,Population
    Rock Hill,34.9413,-81.026,115755
    Inhambane,-23.858,35.3398,115776
    El Monte,34.0739,-118.0291,115807
-   Sri Jawewardenepura Kotte,6.9,79.95,115826
+   Kotte,6.9,79.95,115826
    Buizhou,37.3704,118.02,115893
    Yelets,52.58,38.5,115919
    Tahoua,14.9,5.2599,115956
@@ -6791,7 +6668,7 @@ City Name,Lat,Lon,Population
    Maastricht,50.853,5.677,122378
    Maina,13.4692,144.7332,122411
    Brits,-25.6296,27.78,122497
-   San Fernando de Apure,7.9,-67.4699,122701
+   San Fernando,7.9,-67.4699,122701
    Pati,-6.7415,111.0347,122785
    Segou,13.44,-6.26,122952
    Jiaohe,43.7163,127.346,123018
@@ -6815,7 +6692,7 @@ City Name,Lat,Lon,Population
    Fasa,28.9718,53.6715,124458
    Kenosha,42.5861,-87.8755,124580
    Zlin,49.2304,17.65,124610
-   Nueva San Salvador,13.674,-89.29,124694
+   San Salvador,13.674,-89.29,124694
    Semnan,35.5548,53.3743,124826
    Marv Dasht,29.8014,52.8215,125000
    Kelowna,49.9,-119.4833,125109
@@ -6860,7 +6737,7 @@ City Name,Lat,Lon,Population
    Port Blair,11.667,92.736,127562
    Tukuyu,-9.2496,33.64,127570
    Worcester,-33.64,19.4399,127597
-   Braganca Paulista,-22.95,-46.55,127676
+   Braganca,-22.95,-46.55,127676
    San Nicolas,-33.33,-60.24,127742
    Divo,5.839,-5.36,127867
    Ekibastuz,51.73,75.3199,127868
@@ -6988,7 +6865,7 @@ City Name,Lat,Lon,Population
    Piedras Negras,28.7076,-100.5317,139619
    Sherbrooke,45.4,-71.9,139652
    Bizerte,37.2904,9.855,139843
-   Bordj Bou Arreridj,36.059,4.63,140000
+   Bordj Bou,36.059,4.63,140000
    Dunhuang,40.1427,94.662,140094
    Badajoz,38.8804,-6.97,140133
    Peterborough,52.5804,-0.25,140141
@@ -6999,7 +6876,7 @@ City Name,Lat,Lon,Population
    Labe,11.32,-12.3,140575
    As Salt,32.0392,35.7272,140689
    Fullerton,33.8841,-117.9279,140721
-   Comodoro Rivadavia,-45.87,-67.5,140850
+   Comodoro,-45.87,-67.5,140850
    Tyler,32.3184,-95.3065,140857
    Ghazni,33.5633,68.4178,141000
    Paranagua,-25.5279,-48.5345,141013
@@ -7059,12 +6936,12 @@ City Name,Lat,Lon,Population
    Ayutthaya,14.3588,100.5684,145615
    Fairfield,38.2593,-122.0319,145665
    Podgorica,42.466,19.2663,145850
-   La Ceiba,15.7631,-86.797,145926
    Krishnanagar,23.3803,88.53,145926
+   La Ceiba,15.7631,-86.797,145926
    Hanzhong,33.13,107.03,145986
    Houma,29.5799,-90.7058,146174
    Dawei,14.098,98.195,146212
-   Cabo de Santo Agostinho,-8.29,-35.03,146219
+   Santo Agostinho,-8.29,-35.03,146219
    Leesburg,28.7674,-81.8983,146398
    Charleston,38.3484,-81.6323,146462
    Brugge,51.2204,3.23,146469
@@ -7117,9 +6994,9 @@ City Name,Lat,Lon,Population
    Cao Lanh,10.467,105.636,149837
    Pattani,6.864,101.25,150000
    Miaoli,24.57,120.82,150000
-   Yilan,24.75,121.75,150000
    Tororo,0.7104,34.17,150000
    M'sila,35.7,4.545,150000
+   Yilan,24.75,121.75,150000
    Keren,15.6804,38.45,150000
    Vryheid,-27.76,30.79,150012
    Urgentch,41.56,60.64,150110
@@ -7152,7 +7029,7 @@ City Name,Lat,Lon,Population
    Silchar,24.7904,92.79,152393
    Pomona,34.0585,-117.7625,152494
    Zabid,14.1951,43.3155,152504
-   San Francisco de Macoris,19.3,-70.25,152538
+   San Francisco,19.3,-70.25,152538
    Nusaybin,37.075,41.2184,152668
    Sunnyvale,37.3846,-122.0261,152771
    Usak,38.6804,29.42,152862
@@ -7443,7 +7320,7 @@ City Name,Lat,Lon,Population
    Tangail,24.25,89.92,180144
    Rio Claro,-22.41,-47.56,180147
    Zuwarah,32.9344,12.0791,180310
-   Reggio di Calabria,38.115,15.6414,180353
+   Calabria,38.115,15.6414,180353
    El Jadida,33.2604,-8.51,180470
    Funtua,11.5204,7.32,180475
    Castello,39.9704,-0.05,180610
@@ -7491,15 +7368,15 @@ City Name,Lat,Lon,Population
    Hagerstown,39.6401,-77.7217,186377
    Shendi,16.6805,33.42,186611
    Cienfuegos,22.1444,-80.4403,186644
-   San Cristobal de Las Casas,16.75,-92.6334,186661
+   San Cristobal,16.75,-92.6334,186661
    Olsztyn,53.8,20.48,186670
    Manpo,41.1454,126.2958,186827
    Pinar del Rio,22.4175,-83.6981,186990
-   Cachoeiro de Itapemirim,-20.85,-41.13,187019
+   Cachoeiro,-20.85,-41.13,187019
    Gibraltar,36.1324,-5.3781,187083
    Puerto Vallarta,20.6771,-105.245,187134
    Kimchaek,40.6723,129.2027,187270
-   Petropavlovsk Kamchatskiy,53.062,158.623,187282
+   Petropavlovsk,53.062,158.623,187282
    Ternate,0.793,127.363,187521
    Arapiraca,-9.75,-36.67,187668
    Szeged,46.2504,20.15,187765
@@ -7528,8 +7405,8 @@ City Name,Lat,Lon,Population
    Butuan,8.9495,125.5436,190557
    Grand Prairie,32.6869,-97.0209,190682
    Norwich,52.6304,1.3,190756
-   Bhiwani,28.81,76.125,190855
    Waterbury,41.5583,-73.0361,190855
+   Bhiwani,28.81,76.125,190855
    Bridgetown,13.102,-59.6165,191152
    Valera,9.32,-70.62,191167
    Dhamar,14.5575,44.3875,191259
@@ -7589,14 +7466,14 @@ City Name,Lat,Lon,Population
    Taza,34.2204,-4.02,199633
    Bacau,46.5784,26.9196,199668
    Meymaneh,35.9302,64.7701,199795
-   Kasama,-10.1996,31.1799,200000
-   Moratuwa,6.7804,79.88,200000
    Az Zawiyah,32.7604,12.72,200000
-   Nema,16.6171,-7.25,200000
+   Moratuwa,6.7804,79.88,200000
    Pokhara,28.264,83.972,200000
+   Bergamo,45.7004,9.67,200000
+   Kasama,-10.1996,31.1799,200000
    Zhubei,24.8333,121.0119,200000
    Rivera,-30.8996,-55.56,200000
-   Bergamo,45.7004,9.67,200000
+   Nema,16.6171,-7.25,200000
    Huntington Beach,33.696,-118.0023,200652
    Haldia,22.0257,88.0583,200762
    Dindigul,10.38,78,200797
@@ -7671,7 +7548,7 @@ City Name,Lat,Lon,Population
    Ijebu Ode,6.8204,3.92,209175
    Rennes,48.1,-1.67,209375
    Sanming,26.23,117.58,209444
-   Presidente Prudente,-22.12,-51.39,209502
+   Prudente,-22.12,-51.39,209502
    Fontana,34.0967,-117.4599,209665
    Oral,51.2711,51.335,209788
    Thai Binh,20.4503,106.333,210000
@@ -7712,7 +7589,7 @@ City Name,Lat,Lon,Population
    Orleans,47.9004,1.9,217301
    Sibolga,1.75,98.8,217312
    Mallawi,27.7304,30.84,217365
-   San Pedro de Macoris,18.4504,-69.3,217899
+   San Pedro,18.4504,-69.3,217899
    Potsdam,52.4004,13.07,218095
    Imperatriz,-5.52,-47.49,218106
    Bertoua,4.5804,13.68,218111
@@ -7807,7 +7684,7 @@ City Name,Lat,Lon,Population
    Al Fallujah,33.3477,43.7773,231819
    Saidpur,25.8004,89,232209
    Hetauda,27.4167,85.0334,232334
-   Nakhon Si Thammarat,8.4,99.97,232335
+   Nakhon,8.4,99.97,232335
    Ploiesti,44.9469,26.0365,232542
    Maradi,13.4916,7.0964,232555
    Kremenchuk,49.0835,33.4296,232742
@@ -7914,20 +7791,20 @@ City Name,Lat,Lon,Population
    Melun,48.5333,2.6666,249432
    Kirovohrad,48.5041,32.2603,249454
    Varzea Grande,-15.65,-56.14,249752
-   Jaffna,9.675,80.005,250000
-   Zumpango,19.8104,-99.11,250000
-   Nis,43.3304,21.9,250000
-   Arua,3.0204,30.9,250000
    Quang Ngai,15.1504,108.83,250000
-   Luzern,47.0504,8.28,250000
+   Zumpango,19.8104,-99.11,250000
    Laiyang,36.9684,120.7084,250000
-   Kashan,33.9804,51.58,250000
-   Como,45.81,9.08,250000
    Caserta,41.06,14.3374,250000
+   Jaffna,9.675,80.005,250000
+   Luzern,47.0504,8.28,250000
+   Kashan,33.9804,51.58,250000
+   Arua,3.0204,30.9,250000
+   Como,45.81,9.08,250000
+   Nis,43.3304,21.9,250000
    Iwo,7.63,4.18,250443
    Santa Clara,22.4,-79.9667,250512
    Sonipat,29,77.02,250521
-   Governador Valadares,-18.87,-41.97,250878
+   Valadares,-18.87,-41.97,250878
    Morogoro,-6.82,37.66,250902
    Khon Kaen,16.42,102.83,251056
    Linhai,28.85,121.12,251759
@@ -7944,7 +7821,7 @@ City Name,Lat,Lon,Population
    Paramaribo,5.835,-55.167,254169
    Cirebon,-6.7333,108.5666,254298
    Chuxiong,25.0364,101.5456,254370
-   Poza Rica de Hidalgo,20.5504,-97.47,254481
+   Poza Rica,20.5504,-97.47,254481
    Freiburg,48.0004,7.8699,254889
    Turpan,42.9354,89.165,254900
    Rivne,50.6166,26.2528,255106
@@ -8043,7 +7920,7 @@ City Name,Lat,Lon,Population
    Monteria,8.7575,-75.89,275198
    Bern,46.9167,7.467,275329
    Prokopyevsk,53.9,86.71,275615
-   Komsomolsk na Amure,50.555,137.02,275908
+   Komsomolsk,50.555,137.02,275908
    Sukabumi,-6.9096,106.9,276414
    Owo,7.2004,5.59,276574
    Kostroma,57.77,40.94,277656
@@ -8127,7 +8004,7 @@ City Name,Lat,Lon,Population
    Ar Ramadi,33.42,43.3,295121
    Morioka,39.72,141.13,295172
    Rampur,28.8154,79.025,296418
-   Bandar Seri Begawan,4.8833,114.9333,296500
+   Bandar,4.8833,114.9333,296500
    Cherkasy,49.4347,32.0709,297568
    Iskenderun,36.5804,36.17,297943
    Chernivtsi,48.3053,25.9216,298251
@@ -8140,10 +8017,10 @@ City Name,Lat,Lon,Population
    Kanggye,40.9732,126.6032,299514
    Asheville,35.5703,-82.5536,299892
    Curepipe,-20.3162,57.5166,299975
-   Qyzylorda,44.8,65.465,300000
-   Rach Gia,10.0154,105.0914,300000
-   Soc Trang,9.6037,105.98,300000
    Porto-Novo,6.4833,2.6166,300000
+   Qyzylorda,44.8,65.465,300000
+   Soc Trang,9.6037,105.98,300000
+   Rach Gia,10.0154,105.0914,300000
    Bidar,17.9229,77.5175,300136
    Mardan,34.2,72.04,300424
    Brest,52.1,23.7,300715
@@ -8156,7 +8033,7 @@ City Name,Lat,Lon,Population
    Barddhaman,23.2504,87.865,301725
    Qena,26.1505,32.72,302027
    Batman,37.8904,41.14,302074
-   Kingston upon Hull,53.7504,-0.33,302296
+   Hull,53.7504,-0.33,302296
    Saint Paul,44.9477,-93.104,302398
    Chemnitz,50.83,12.92,302643
    Hakodate,41.795,140.74,302984
@@ -8171,7 +8048,7 @@ City Name,Lat,Lon,Population
    Rajahmundry,17.0303,81.79,304804
    Franca,-20.53,-47.39,305041
    Hatay,36.2304,36.12,305564
-   San Salvador de Jujuy,-24.1833,-65.3,305891
+   Jujuy,-24.1833,-65.3,305891
    Porto Velho,-8.75,-63.9,306180
    Firozabad,27.15,78.3949,306409
    Tawau,4.271,117.896,306462
@@ -8181,7 +8058,7 @@ City Name,Lat,Lon,Population
    Chernihiv,51.5049,31.3015,307684
    Naltchik,43.4981,43.6179,307866
    Antsirabe,-19.85,47.0333,307921
-   Vitoria da Conquista,-14.85,-40.84,308204
+   Vitoria,-14.85,-40.84,308204
    Valledupar,10.48,-73.25,308237
    Chita,52.055,113.465,308500
    Dayr az Zawr,35.3304,40.13,309141
@@ -8282,7 +8159,7 @@ City Name,Lat,Lon,Population
    Bauru,-22.33,-49.08,335024
    Kochi,33.5624,133.5375,335570
    Gijon,43.53,-5.67,335972
-   Santa Cruz de Tenerife,28.47,-16.25,336061
+   Tenerife,28.47,-16.25,336061
    Fayetteville,36.0713,-94.166,336152
    Alor Setar,6.1133,100.3729,336475
    Phan Thiet,10.9337,108.1001,336846
@@ -8330,9 +8207,9 @@ City Name,Lat,Lon,Population
    Chimbote,-9.07,-78.57,349846
    Buon Me Thuot,12.667,108.05,349945
    Haarlem,52.3804,4.63,349957
-   Qoqon,40.5404,70.94,350000
    Long Xuyen,10.3804,105.42,350000
    Viet Tri,21.3304,105.43,350000
+   Qoqon,40.5404,70.94,350000
    Yumen,39.83,97.73,350000
    Kuala Terengganu,5.3304,103.12,350210
    Hualien,23.9837,121.6,350468
@@ -8344,7 +8221,7 @@ City Name,Lat,Lon,Population
    Eldoret,0.52,35.27,353381
    Safi,32.32,-9.24,353476
    Mito,36.3704,140.48,353892
-   Santiago del Estero,-27.7833,-64.2667,354692
+   Estero,-27.7833,-64.2667,354692
    Longxi,35.0476,104.6394,355037
    Orizaba,18.85,-97.13,355333
    Ambon,-3.7167,128.2,355596
@@ -8402,7 +8279,7 @@ City Name,Lat,Lon,Population
    Shache,38.4261,77.25,373492
    Latur,18.4004,76.57,374394
    Kaunas,54.9504,23.88,374643
-   Sao Jose do Rio Preto,-20.7996,-49.39,374699
+   Rio Preto,-20.7996,-49.39,374699
    Villavicencio,4.1533,-73.635,374763
    Khorramabad,33.4804,48.35,375198
    Shillong,25.5705,91.88,375527
@@ -8472,8 +8349,8 @@ City Name,Lat,Lon,Population
    Buraydah,26.3664,43.9628,398581
    Gomez Palacio,25.5701,-103.5,399328
    Tumkur,13.33,77.1,399606
-   Surgut,61.2599,73.425,400000
    Jingmen,31.0304,112.1,400000
+   Surgut,61.2599,73.425,400000
    Sikar,27.6104,75.14,400000
    Tver,56.86,35.89,400212
    Durham,35.9801,-78.9045,400379
@@ -8597,7 +8474,7 @@ City Name,Lat,Lon,Population
    Iquitos,-3.75,-73.25,458729
    Cranbourne,-38.0996,145.2834,460491
    Hamah,35.1503,36.73,460602
-   Naberezhnyye Chelny,55.7,52.3199,461086
+   Naberezhnyye,55.7,52.3199,461086
    Bandar-e-Abbas,27.2041,56.2721,461499
    Panzhihua,26.55,101.73,461513
    Malatya,38.3704,38.3,461574
@@ -8654,17 +8531,17 @@ City Name,Lat,Lon,Population
    Reynosa,26.08,-98.3,498654
    Macapa,0.033,-51.05,499166
    Mataram,-8.5795,116.135,499409
-   Mazatlan,29.0171,-110.1333,500000
-   Awka,6.2104,7.07,500000
-   San Lorenzo,-25.34,-57.52,500000
-   Taoyuan,24.9889,121.3111,500000
-   Chiayi,23.4755,120.4351,500000
-   Keelung,25.1333,121.7333,500000
-   Thai Nguyen,21.6,105.83,500000
    Shuangyashan,46.6704,131.35,500000
+   San Lorenzo,-25.34,-57.52,500000
+   Thai Nguyen,21.6,105.83,500000
+   Mazatlan,29.0171,-110.1333,500000
    El Minya,28.09,30.75,500000
    Damanhur,31.0504,30.47,500000
    Pasuruan,-7.6296,112.9,500000
+   Taoyuan,24.9889,121.3111,500000
+   Keelung,25.1333,121.7333,500000
+   Chiayi,23.4755,120.4351,500000
+   Awka,6.2104,7.07,500000
    Tsu,34.7171,136.5167,500000
    Bari,41.1142,16.8728,500577
    Provo,40.2458,-111.6457,501690
@@ -8800,8 +8677,8 @@ City Name,Lat,Lon,Population
    Jalalabad,34.4415,70.4361,597971
    Zahedan,29.5,60.83,598887
    Barnaul,53.355,83.745,599579
-   Canoas,-29.92,-51.18,600000
    El Mansura,31.0504,31.38,600000
+   Canoas,-29.92,-51.18,600000
    Sohag,26.5504,31.7,600000
    Barcelona,10.1304,-64.72,600954
    Sangli,16.8604,74.575,601214
@@ -8849,8 +8726,8 @@ City Name,Lat,Lon,Population
    Zaragoza,41.65,-0.89,649404
    Concord,37.9722,-122.0016,649437
    Krasnodar,45.02,39,649851
-   Andijon,40.79,72.34,650000
    Tiruppur,11.0804,77.33,650000
+   Andijon,40.79,72.34,650000
    Irbid,32.55,35.85,650000
    Kryvyy Rih,47.9283,33.345,652380
    Zhanyi,25.6005,103.8166,652604
@@ -8861,7 +8738,7 @@ City Name,Lat,Lon,Population
    Pointe-Noire,-4.77,11.88,659084
    Bytom,50.35,18.91,662247
    Santo Andre,-23.6528,-46.5278,662373
-   Sao Jose dos Pinhais,-25.57,-49.18,665063
+   Pinhais,-25.57,-49.18,665063
    An Najaf,32.0003,44.3354,665552
    Puyang,35.7004,114.98,666322
    Utsunomiya,36.55,139.87,667752
@@ -8926,15 +8803,15 @@ City Name,Lat,Lon,Population
    Liege,50.63,5.58,749110
    Birmingham,33.5276,-86.7986,749299
    Changhua,24.0734,120.5134,750000
-   Hsinchu,24.8168,120.9767,750000
-   Fargona,40.39,71.78,750000
    Namangan,41,71.67,750000
    Kolhapur,16.7,74.22,750000
+   Hsinchu,24.8168,120.9767,750000
+   Fargona,40.39,71.78,750000
    Tangier,35.7473,-5.8327,750060
    Pietermaritzburg,-29.61,30.39,750845
    Taizz,13.6045,44.0394,751000
    Hungnam,39.8231,127.6232,751322
-   Sao Jose dos Campos,-23.2,-45.8799,753769
+   Campos,-23.2,-45.8799,753769
    Vientiane,17.9667,102.6,754000
    Saltillo,25.42,-101.005,754000
    Krakow,50.06,19.96,756000
@@ -8946,8 +8823,8 @@ City Name,Lat,Lon,Population
    Kananga,-5.89,22.4,765000
    Trujillo,-8.12,-79.02,765171
    Quetta,30.22,67.025,768000
-   Fuxin,42.0105,121.66,770000
    Shiyan,32.57,110.78,770000
+   Fuxin,42.0105,121.66,770000
    Saarbrucken,49.2504,6.97,770001
    Ilorin,8.49,4.55,771000
    Fuyang,30.0533,119.9519,771000
@@ -8969,19 +8846,19 @@ City Name,Lat,Lon,Population
    Omaha,41.2634,-96.0453,792463
    Chihuahua,28.645,-106.085,793000
    Liaoyang,41.28,123.18,794000
-   Yingkow,40.6703,122.28,795000
    Bhiwandi,19.35,73.13,795000
+   Yingkow,40.6703,122.28,795000
    Oran,35.71,-0.62,798000
    McAllen,26.2203,-98.2457,798187
    Pekanbaru,0.565,101.425,799000
    Baoji,34.38,107.15,800000
    Bordeaux,44.85,-0.595,803000
    Lvov,49.835,24.03,803880
-   Malang,-7.98,112.61,805000
    Aligarh,27.8922,78.0618,805000
+   Malang,-7.98,112.61,805000
    Qui Nhon,13.78,109.18,805290
-   Cuiaba,-15.5696,-56.085,806000
    Lingyuan,41.24,119.4011,806000
+   Cuiaba,-15.5696,-56.085,806000
    Valencia,39.485,-0.4,808000
    Culiacan,24.83,-107.38,809000
    Zhaotang,27.3204,103.72,809000
@@ -9016,26 +8893,26 @@ City Name,Lat,Lon,Population
    Yancheng,33.3856,120.1253,839000
    Yuci,37.6804,112.73,840000
    Saratov,51.58,46.03,843000
-   Voronezh,51.73,39.27,844000
    Bhubaneshwar,20.2704,85.8274,844000
+   Voronezh,51.73,39.27,844000
    Nova Iguacu,-22.74,-43.47,844583
    El Paso,31.8478,-106.431,845059
    Toulouse,43.62,1.4499,847000
-   Zunyi,27.7,106.92,849000
-   Anshun,26.2504,105.93,849000
    Pingdingshan,33.7304,113.3,849000
+   Anshun,26.2504,105.93,849000
+   Zunyi,27.7,106.92,849000
    Valparaiso,-33.0478,-71.621,854000
    Zhenjiang,32.22,119.43,854000
-   Padang,-0.96,100.36,855000
    Jullundur,31.3349,75.569,855000
+   Padang,-0.96,100.36,855000
    Jiaozuo,35.25,113.22,857000
    Tampico,22.3,-97.87,859419
    Kigali,-1.9536,30.0605,860000
    Tucson,32.1558,-110.8777,860333
    Cardiff,51.5,-3.225,861400
    Palermo,38.125,13.35,863000
-   Rizhao,35.4304,119.45,865000
    Bandar Lampung,-5.43,105.27,865000
+   Rizhao,35.4304,119.45,865000
    Xuanzhou,30.9525,118.7553,866000
    Puch'on,37.4989,126.7831,866000
    Okayama,34.672,133.9171,866092
@@ -9057,8 +8934,8 @@ City Name,Lat,Lon,Population
    Tongliao,43.62,122.27,884000
    Ulaanbaatar,47.9167,106.9166,885000
    Mexicali,32.65,-115.48,885000
-   Anyang,36.08,114.35,887000
    Cartagena,10.3997,-75.5144,887000
+   Anyang,36.08,114.35,887000
    Mysore,12.31,76.66,887000
    Zaria,11.08,7.71,889000
    Concepcion,-36.83,-73.05,889725
@@ -9076,14 +8953,14 @@ City Name,Lat,Lon,Population
    Goyang,37.6527,126.8372,903000
    Naha,26.2072,127.673,905238
    Teresina,-5.095,-42.78,907000
-   Xinyu,27.8,114.93,913000
    Huaibei,33.9504,116.75,913000
+   Xinyu,27.8,114.93,913000
    Hartford,41.7661,-72.6834,913587
    Niamey,13.5167,2.1167,915000
    Bogor,-6.57,106.75,918000
    Konya,37.875,32.475,919000
-   Managua,12.153,-86.2685,920000
    Antwerpen,51.2204,4.415,920000
+   Managua,12.153,-86.2685,920000
    Buffalo,42.9016,-78.8487,920136
    Olinda,-8,-34.85,921840
    Djibouti,11.595,43.148,923000
@@ -9101,14 +8978,14 @@ City Name,Lat,Lon,Population
    Bacolod,10.6317,122.9817,949354
    Hue,16.47,107.58,950000
    General Santos,6.1108,125.1747,950530
-   Ogbomosho,8.13,4.24,951000
    Tiruchirappalli,10.81,78.69,951000
+   Ogbomosho,8.13,4.24,951000
    Kozhikode,11.2504,75.77,953000
-   Thiruvananthapuram,8.5,76.95,954000
+   Trivandrum,8.5,76.95,954000
    Salerno,40.6804,14.7699,954265
-   Kelang,3.0204,101.55,956000
    Joao Pessoa,-7.1011,-34.8761,956000
    Jinzhou,41.1204,121.1,956000
+   Kelang,3.0204,101.55,956000
    Queretaro,20.63,-100.38,961000
    Pingxiang,27.62,113.85,961000
    Xinyi,34.38,118.35,962656
@@ -9125,22 +9002,22 @@ City Name,Lat,Lon,Population
    Volgograd,48.71,44.5,984000
    Dahuk,36.8667,43,986000
    Guilin,25.28,110.28,987000
-   Donetsk,48,37.83,988000
    Joinville,-26.32,-48.8399,988000
+   Donetsk,48,37.83,988000
    Jiaxing,30.7704,120.75,988000
    Ndjamena,12.1131,15.0491,989000
-   Odessa,46.49,30.71,991000
    Yinchuan,38.468,106.273,991000
+   Odessa,46.49,30.71,991000
    San Luis Potosi,22.17,-101,992000
    Jodhpur,26.2918,73.0168,995000
    Ahvaz,31.28,48.72,996000
    Perm,58,56.25,997000
    Kitakyushu,33.8704,130.82,997536
-   Aden,12.7797,45.0095,1000000
-   Da Nang,16.06,108.25,1000000
    Cochabamba,-17.41,-66.17,1000000
    Yongzhou,26.2304,111.62,1000000
+   Da Nang,16.06,108.25,1000000
    Baoshan,25.12,99.15,1000000
+   Aden,12.7797,45.0095,1000000
    Fez,34.0546,-5.0004,1002000
    Qinhuangdao,39.9304,119.62,1003000
    Louisville,38.1662,-85.6488,1003412
@@ -9168,8 +9045,8 @@ City Name,Lat,Lon,Population
    Monrovia,6.3106,-10.8048,1041000
    Richmond,37.5294,-77.4755,1041877
    Gaziantep,37.075,37.385,1044000
-   Lille,50.65,3.08,1044000
    Ranchi,23.37,85.33,1044000
+   Lille,50.65,3.08,1044000
    Zhangjiakou,40.83,114.93,1046000
    Xining,36.62,101.77,1048000
    Dnipro,48.48,35,1050000
@@ -9197,9 +9074,9 @@ City Name,Lat,Lon,Population
    Belgrade,44.8186,20.468,1099000
    Ikare,7.5304,5.76,1099931
    Mogadishu,2.0667,45.3667,1100000
+   Tbilisi,41.725,44.7908,1100000
    Huambo,-12.75,15.76,1100000
    Ankang,32.68,109.02,1100000
-   Tbilisi,41.725,44.7908,1100000
    Yerevan,40.1812,44.5136,1102000
    Sharjah,25.3714,55.4065,1103027
    Zigong,29.4,104.78,1105000
@@ -9208,8 +9085,8 @@ City Name,Lat,Lon,Population
    Nezahualcoyotl,19.41,-99.03,1109363
    Calgary,51.083,-114.08,1110000
    Aurangabad,19.8957,75.3203,1113000
-   Kazan,55.7499,49.1263,1115000
    Helsinki,60.1756,24.9341,1115000
+   Kazan,55.7499,49.1263,1115000
    Barquisimeto,10.05,-69.3,1116000
    Can Tho,10.05,105.77,1121000
    Cagayan de Oro,8.4508,124.6853,1121561
@@ -9218,8 +9095,8 @@ City Name,Lat,Lon,Population
    Nampo,38.7669,125.4524,1127000
    Newcastle,-32.8453,151.815,1134616
    Omsk,54.99,73.4,1135000
-   Samara,53.195,50.1513,1137000
    Vijayawada,16.52,80.63,1137000
+   Samara,53.195,50.1513,1137000
    Srinagar,34.1,74.815,1140000
    Jacksonville,30.3322,-81.6749,1141459
    Torreon,25.5701,-103.42,1144000
@@ -9270,22 +9147,22 @@ City Name,Lat,Lon,Population
    Adana,36.995,35.32,1293000
    Madurai,9.92,78.12,1294000
    Mbuji-Mayi,-6.15,23.6,1295000
-   Mandalay,21.97,96.085,1300000
    Jamshedpur,22.7875,86.1975,1300000
+   Mandalay,21.97,96.085,1300000
    Peshawar,34.005,71.535,1303000
    Yekaterinburg,56.85,60.6,1313000
    Mosul,36.345,43.145,1316000
    Changzhou,31.78,119.97,1327000
-   Lusaka,-15.4166,28.2833,1328000
    Asansol,23.6833,86.9833,1328000
+   Lusaka,-15.4166,28.2833,1328000
    Porto,41.15,-8.62,1337000
    Pretoria,-25.7069,28.2294,1338000
    Heze,35.23,115.45,1338000
    Ghaziabad,28.6604,77.4084,1341000
    Ciudad Juarez,31.6904,-106.49,1343000
    Lubumbashi,-11.68,27.48,1352000
-   Yiyang,28.6004,112.33,1352000
    Varanasi,25.33,83,1352000
+   Yiyang,28.6004,112.33,1352000
    Brazzaville,-4.2592,15.2847,1355000
    Maanshan,31.7304,118.48,1366302
    Milwaukee,43.064,-87.9669,1377104
@@ -9302,8 +9179,8 @@ City Name,Lat,Lon,Population
    The Hague,52.08,4.27,1406000
    Tabriz,38.0863,46.3012,1413000
    Kampala,0.3167,32.5833,1420000
-   Lyon,45.77,4.83,1423000
    Karaj,35.8004,50.97,1423000
+   Lyon,45.77,4.83,1423000
    Suining,30.5333,105.5333,1425000
    San Salvador,13.71,-89.203,1433000
    Kawasaki,35.53,139.705,1437266
@@ -9314,14 +9191,14 @@ City Name,Lat,Lon,Population
    Kuala Lumpur,3.1667,101.7,1448000
    Doha,25.2866,51.533,1450000
    Huainan,32.63,116.98,1451000
-   Lome,6.1319,1.2228,1452000
    Cordoba,-31.4,-64.1823,1452000
+   Lome,6.1319,1.2228,1452000
    Bronx,40.8501,-73.8662,1455720
    Hyderabad,25.38,68.375,1459000
    Kharkiv,50,36.25,1461000
    Quanzhou,24.9,118.58,1463000
-   Neijiang,29.5804,105.05,1466000
    Phnom Penh,11.55,104.9166,1466000
+   Neijiang,29.5804,105.05,1466000
    Daejeon,36.3355,127.425,1468000
    Changde,29.03,111.68,1469000
    Fushun,41.8654,123.87,1470000
@@ -9329,20 +9206,20 @@ City Name,Lat,Lon,Population
    Virginia Beach,36.7335,-76.0435,1487505
    Leon,21.15,-101.7,1488000
    Bursa,40.2,29.07,1492000
-   Bamako,12.65,-8,1494000
    Conakry,9.5315,-13.6802,1494000
+   Bamako,12.65,-8,1494000
    Columbus,39.9859,-82.9852,1495146
    Liuzhou,24.28,109.25,1497000
-   Ganzhou,25.92,114.95,1500000
    Florence,43.78,11.25,1500000
+   Ganzhou,25.92,114.95,1500000
    Niteroi,-22.9,-43.1,1500513
    Gujranwala,32.1604,74.185,1513000
    Montevideo,-34.858,-56.1711,1513000
    Kochi,10.015,76.2239,1519000
    Multan,30.2,71.455,1522000
    Kobe,34.68,135.17,1528478
-   Leeds,53.83,-1.58,1529000
    Vishakhapatnam,17.73,83.305,1529000
+   Leeds,53.83,-1.58,1529000
    Toluca,19.3304,-99.67,1531000
    Perth,-31.955,115.84,1532000
    Luzhou,28.88,105.38,1537000
@@ -9350,14 +9227,14 @@ City Name,Lat,Lon,Population
    Indianapolis,39.7771,-86.1458,1550488
    Santiago,19.5,-70.67,1550753
    Tijuana,32.5,-117.08,1553000
-   Khulna,22.84,89.56,1553000
    Weifang,36.7204,119.1001,1553000
+   Khulna,22.84,89.56,1553000
    Xiantao,30.3704,113.44,1556000
    Harare,-17.8178,31.0447,1572000
    Abuja,9.0833,7.5333,1576000
    Kalyan,19.2502,73.1602,1576614
-   La Paz,-16.498,-68.15,1590000
    Zhanjiang,21.2,110.38,1590000
+   La Paz,-16.498,-68.15,1590000
    Kansas City,39.1239,-94.5541,1590762
    Agra,27.1704,78.015,1592000
    Shantou,23.37,116.67,1601000
@@ -9394,10 +9271,10 @@ City Name,Lat,Lon,Population
    Cleveland,41.4766,-81.6805,1731637
    Essen,51.45,7.0166,1742135
    Brussels,50.8333,4.3333,1743000
-   Wuxi,31.58,120.3,1749000
    Palembang,-2.98,104.75,1749000
-   Manaus,-3.1,-60,1753000
+   Wuxi,31.58,120.3,1749000
    Shangqiu,34.4504,115.65,1753000
+   Manaus,-3.1,-60,1753000
    Vadodara,22.31,73.18,1756000
    Hamburg,53.55,10,1757000
    Orlando,28.4801,-81.3448,1757288
@@ -9449,8 +9326,8 @@ City Name,Lat,Lon,Population
    Urumqi,43.805,87.575,2151000
    Santo Domingo,18.4701,-69.9001,2154000
    Patna,25.625,85.13,2158000
-   Belem,-1.45,-48.48,2167000
    Nanning,22.82,108.32,2167000
+   Belem,-1.45,-48.48,2167000
    Nanchong,30.7804,106.13,2174000
    Havana,23.132,-82.3642,2174000
    Baltimore,39.3051,-76.6144,2181206
@@ -9487,8 +9364,8 @@ City Name,Lat,Lon,Population
    Lanzhou,36.056,103.792,2561000
    Xiangtan,27.8504,112.9,2586948
    Izmir,38.4361,27.1518,2587000
-   Dakar,14.7158,-17.4731,2604000
    Changsha,28.2,112.97,2604000
+   Dakar,14.7158,-17.4731,2604000
    Fuzhou,26.08,119.3,2606000
    Faisalabad,31.41,73.11,2617000
    Ibadan,7.38,3.93,2628000
