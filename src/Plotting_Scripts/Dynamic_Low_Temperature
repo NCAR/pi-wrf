@@ -13,7 +13,7 @@
 wks_type           = "png"
 wks_type@wkWidth   = 2048
 wks_type@wkHeight  = 2048
-wks=gsn_open_wks("png","/home/pi/pi-wrf/Output/Low_Temperature")
+wks=gsn_open_wks("png","/pi-wrf/Output/Low_Temperature")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
 
 
@@ -99,54 +99,29 @@ res@lbTitleOn            = True
 res@cnFillPalette        = "BlueYellowRed" 
 res@lbTitleString        = "Temperature ~S~o~N~ F"
 res@lbTitleFontHeightF   = .02
-	
-	if (max(max_temp).le.0) then
-		res@cnMinLevelValF  = -45
-		res@cnMaxLevelValF  = 0
-		res@cnLevelSpacingF = 5
 
-	else if(max(max_temp).gt.0.and.max(max_temp).le.15)
-		res@cnMinLevelValF  = -30
-		res@cnMaxLevelValF  = 15
-		res@cnLevelSpacingF = 5
 
-	else if(max(max_temp).gt.15.and.max(max_temp).le.35)
-		res@cnMinLevelValF  = -10
-		res@cnMaxLevelValF  = 35
-		res@cnLevelSpacingF = 5
-	
-	else if(max(max_temp).gt.35.and.max(max_temp).le.50)
-		res@cnMinLevelValF  = 5
-		res@cnMaxLevelValF  = 50
-		res@cnLevelSpacingF = 5 
+upper_bound = max(max_temp)
+upper_bound = upper_bound+(10-mod(upper_bound,10))
+lower_bound = min(min_temp)
+lower_bound = lower_bound-(mod(lower_bound,10))
 
-	else if(max(max_temp).gt.50.and.max(max_temp).le.65)
-		res@cnMinLevelValF  = 20
-		res@cnMaxLevelValF  = 65
-		res@cnLevelSpacingF = 5 
+res@cnMinLevelValF = lower_bound
+res@cnMaxLevelValF = upper_bound
+range              = upper_bound - lower_bound
+        if (range.le.10) then
+                res@cnLevelSpacingF  = 1
+        else if(range.gt.10.and.range.le.20)
+                res@cnLevelSpacingF  = 2
+        else if(range.gt.20.and.range.le.30)
+                 res@cnLevelSpacingF = 5
+                 res@cnMinLevelValF  = lowest_value - 5
+        else
+                 res@cnLevelSpacingF = 5
+        end if
+        end if
+        end if
 
-	else if(max(max_temp).gt.65.and.max(max_temp).le.85)
-		res@cnMinLevelValF  = 40
-		res@cnMaxLevelValF  = 85
-		res@cnLevelSpacingF = 5 
-
-	else if(max(max_temp).gt.85.and.max(max_temp).le.95)
-		res@cnMinLevelValF  = 50
-		res@cnMaxLevelValF  = 95
-		res@cnLevelSpacingF = 5 
-
-	else
-		res@cnMinLevelValF  = 75
-		res@cnMaxLevelValF  = 120
-		res@cnLevelSpacingF = 5
-
-	end if
-	end if
-	end if
-	end if
-	end if
-	end if
-	end if
 
 markerres                 = True
 markerres@gsMarkerColor   = "Black"           ; City marker settings

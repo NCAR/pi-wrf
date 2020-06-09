@@ -83,7 +83,7 @@ res@mpGeophysicalLineThicknessF =  6
 res@mpOutlineDrawOrder          = "PostDraw"
 
                                               ; Contour Settings
-;res@cnLevelSelectionMode = "ManualLevels"     ; Set manual contour levels
+res@cnLevelSelectionMode = "ManualLevels"     ; Set manual contour levels
 ;res@cnMinLevelValF       = 0                  ; Set min contour level
 ;res@cnMaxLevelValF       = 110                 ; Set max contour level
 res@cnLevelSpacingF      = 2                  ; Set contour spacing 
@@ -98,49 +98,29 @@ res@cnFillPalette      = "BlueYellowRed"
 res@lbTitleString      = "Wind Speed (mph)"
 res@lbTitleFontHeightF = .02
 
+upper_bound = max(wind)
+upper_bound = upper_bound+(10-mod(upper_bound,10))
+lower_bound = 0
 
-	if (max(wind).le.15) then
-		res@cnMinLevelValF  = 0
-		res@cnMaxLevelValF  = 15
-		res@cnLevelSpacingF = 2
+res@cnMinLevelValF = 0
+range              = upper_bound 
+        if (range.le.10) then
+                res@cnLevelSpacingF = 1
+                res@cnMaxLevelValF  = upper_bound
 
-	else if(max(wind).gt.15.and.max(wind).le.35)
-		res@cnMinLevelValF  = 0
-		res@cnMaxLevelValF  = 50
-		res@cnLevelSpacingF = 5
-	
-	else if(max(wind).gt.35.and.max(wind).le.50)
-		res@cnMinLevelValF  = 0
-		res@cnMaxLevelValF  = 50
-		res@cnLevelSpacingF = 5 
+        else if(range.gt.10.and.range.le.30)
+                res@cnMaxLevelValF  = 30
+                res@cnLevelSpacingF = 5
 
-	else if(max(wind).gt.50.and.max(wind).le.65)
-		res@cnMinLevelValF  = 0
-		res@cnMaxLevelValF  = 75
-		res@cnLevelSpacingF = 5 
-
-	else if(max(wind).gt.65.and.max(wind).le.85)
-		res@cnMinLevelValF  = 0
-		res@cnMaxLevelValF  = 100
-		res@cnLevelSpacingF = 10 
-
-	else if(max(wind).gt.85.and.max(wind).le.95)
-		res@cnMinLevelValF  = 0
-		res@cnMaxLevelValF  = 100
-		res@cnLevelSpacingF = 10 
-
-	else
-		res@cnMinLevelValF  = 0
-		res@cnMaxLevelValF  = 150
-		res@cnLevelSpacingF = 10
-
-	end if
-	end if
-	end if
-	end if
-	end if
-	end if
-	end if
+        else if(range.gt.30.and.range.le.60)
+                 res@cnLevelSpacingF = 5
+                 res@cnMaxLevelValF  = 60
+        else
+                 res@cnLevelSpacingF = 10
+                 res@cnMaxLevelValF  = upper_bound
+        end if
+        end if
+        end if
 
 markerres                 = True
 markerres@gsMarkerColor   = "Black"           ; City marker settings
