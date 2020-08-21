@@ -1,6 +1,8 @@
 #Importing modules 
 import sys
 from importlist import *
+from tkinter import messagebox
+import os
 
 #Set Color Scheme and Font
 gui_color=color_scheme(1)                                            # 1=default
@@ -13,6 +15,10 @@ def update_figure(name,screen_width,screen_height):
         photo=tk.PhotoImage(file="/pi-wrf/Output/{}.gif".format(name))
         image_display.config(image=photo)
         image_display.image=photo
+
+def save_output():
+    os.system('cp /pi-wrf/Output/*.png /pi-wrf/Output/user_saved_files')
+    
         
 class FigurePage(tk.Frame):
     def __init__(self, parent, controller):
@@ -124,4 +130,10 @@ class FigurePage(tk.Frame):
                           activebackground=gui_color[3],
                           command=lambda : [update_figure("Snow_Depth",screenwidth,screenheight)])
         button9.pack(fill=tk.X,side=tk.LEFT)
-        
+       
+        save_btn=tk.Button(frame4_high_nav_bar,
+			   text="Save Figures",
+			   bg=gui_color[2],
+			   activebackground=gui_color[3],
+			   command=lambda : [save_output(), messagebox.showinfo("Output Saved", "Figures were saved to your local directory")])
+        save_btn.pack(fill=tk.X,side=tk.LEFT) 

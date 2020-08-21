@@ -27,18 +27,21 @@ class StartPage(tk.Frame):
                         .format(screenwidth,screenheight),
                         shell=True)
         photo=tk.PhotoImage(file="/pi-wrf/WRF_System/lib/start_page_bg.gif")
+        self.grid_columnconfigure(0,weight=4)
+        self.grid_rowconfigure(0,weight=1)
+        self.grid_rowconfigure(1,weight=3)
+        self.grid_rowconfigure(2,weight=1)
+        self.grid_rowconfigure(3,weight=3)
+        self.grid_rowconfigure(4,weight=1)
         bg_label_test=tk.Label(self,image=photo)
         bg_label_test.image=photo
         bg_label_test.place(x=0,y=0,relwidth=1,relheight=1)
 
-        frame1_topbanner=tk.Frame(self)
-        frame1_topbanner.pack(side=tk.TOP,fill=tk.X)
-        
-        topbanner = tk.Label(frame1_topbanner,
+        topbanner = tk.Label(self,
                              bg=gui_color[1],
                              font=("Arial Bold",40),
                              text="Welcome to the Raspberry Pi-WRF Application")
-        topbanner.pack(fill=tk.X)
+        topbanner.grid(column=0,columnspan=3,sticky='new')
         
         from Pages.page_one   import PageOne
         btn_1 = tk.Button(self,
@@ -48,7 +51,7 @@ class StartPage(tk.Frame):
                           activebackground=gui_color[3],
                           width=20,
                           command=lambda : [controller.show_frame(PageOne),check_internet()])
-        btn_1.pack(pady=(250,25))
+        btn_1.grid(row=1,sticky='s') 
         if check_internet():
             btn_1.config(command=lambda : [controller.show_frame(PageOne)])
         else:
@@ -62,7 +65,7 @@ class StartPage(tk.Frame):
                           width=20,
                           command=lambda : messagebox.showwarning("Warning", 
                                                                    "Archived Simulations Are Not Yet Available"))
-        btn_2.pack(pady=(0,25))
+        btn_2.grid(row=2)
         btn_3 = tk.Button(self,
                           text="Exit",
                           font=("Arial Bold",40),
@@ -70,14 +73,12 @@ class StartPage(tk.Frame):
                           activebackground=gui_color[3],
                           width=20,
                           command=lambda : controller.quit_app())
-        btn_3.pack()
+        btn_3.grid(row=3,sticky='n')
 
-        bottombanner=tk.Frame(self)
-        bottombanner.pack(side=tk.BOTTOM,fill=tk.X)
-        version_lable = tk.Label(bottombanner,
-                                 text=("Pi-WRF Version 1.1.2"),
+        version_lable = tk.Label(self,
+                                 text=("Pi-WRF Version 1.2.0"),
                                  anchor="w",
                                  font=("Arial Bold",5),
                                  fg="black",
                                  bg=gui_color[1])
-        version_lable.pack(side=tk.BOTTOM,fill=tk.X)
+        version_lable.grid(row=4,sticky='sew')

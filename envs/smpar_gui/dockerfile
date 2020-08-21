@@ -50,7 +50,7 @@ RUN apt-get update && apt-get install -y \
         && mkdir /pi-wrf/WRF_System/lib/DATA/                \
         && mkdir -p /pi-wrf/pi_wrf/pi_wrf                    \
 	&& mkdir -p /pi-wrf/pi_wrf/pi_wrf/Pages              \
-	&& mkdir -p /pi-wrf/Output                           \
+	&& mkdir -p /pi-wrf/Output/user_saved_files          \
         && mkdir -p /pi-wrf/WRF_System/Plotting_Scripts      \
         #
         #
@@ -64,29 +64,29 @@ RUN apt-get update && apt-get install -y \
         #
 	# DOWNLOADING AND INSTALLING WRF
 	&& cd /pi-wrf/WRF_System/                                                  \
-	&& curl -O -L -J http://www2.mmm.ucar.edu/wrf/src/WRFV3.9.1.TAR.gz         \
+	&& curl -O -L -J -k http://www2.mmm.ucar.edu/wrf/src/WRFV3.9.1.TAR.gz      \
 	&& tar -zxvf /pi-wrf/WRF_System/WRFV3.9.1.TAR.gz -C /pi-wrf/WRF_System/    \
 	&& rm /pi-wrf/WRF_System/*.gz                                              \
 	#
 	#
 	# DOWNLOADING AND INSTALLING WPS
-	&& curl -O -L -J https://github.com/wrf-model/WPS/archive/v4.1.tar.gz             \
+	&& curl -O -L -J -k https://github.com/wrf-model/WPS/archive/v4.1.tar.gz          \
 	&& tar -zxvf /pi-wrf/WRF_System/WPS-4.1.tar.gz -C /pi-wrf/WRF_System/             \
 	&& mv WPS-4.1 WPS                                                                 \
 	&& rm *.gz                                                                        \
 	#
 	#
 	# DOWNLOADING AND INSTALLING NCL 6.4.0 LIBRARY
-        && wget https://www2.cisl.ucar.edu/sites/default/files/ncl_6.4.0.tar_.zip     \
-        && unzip ncl_6.4.0.tar_.zip -d /pi-wrf/WRF_System/                            \
-        && rm *.zip                                                                   \
-        && tar -xvf ncl_6.4.0.tar                                                     \
-	&& rm *.tar                                                                   \
+        && wget --no-check-certificate https://www2.cisl.ucar.edu/sites/default/files/ncl_6.4.0.tar_.zip     \
+        && unzip ncl_6.4.0.tar_.zip -d /pi-wrf/WRF_System/                                                   \
+        && rm *.zip                                                                                          \
+        && tar -xvf ncl_6.4.0.tar                                                                            \
+	&& rm *.tar                                                                                          \
         #
         #
         # INSTALLING NETCDF LIBRARY
 	&& cd $DIR/                                                                                                     \
-        && curl -O -L -J http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/netcdf-4.1.3.tar.gz     \
+        && curl -O -L -J -k http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/netcdf-4.1.3.tar.gz  \
                 --output $DIR/netcdf-4.1.3.tar.gz                                                                       \
         && tar -zxvf $DIR/netcdf-4.1.3.tar.gz  -C $DIR/                        						\
 	&& cd $DIR/netcdf-4.1.3                                                                 			\
@@ -97,7 +97,7 @@ RUN apt-get update && apt-get install -y \
         #
         #  INSTALLING MPICH LIBRARY
         && cd $DIR/												           \
-	&& curl -O -L -J http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/mpich-3.0.4.tar.gz         \
+	&& curl -O -L -J -k http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/mpich-3.0.4.tar.gz      \
 	            --output $DIR/mpich-3.0.4.tar.gz                                                                       \
         && tar -zxvf $DIR/mpich-3.0.4.tar.gz -C $DIR/                         						   \
 	&& cd $DIR/mpich-3.0.4/                     						                           \
@@ -108,7 +108,7 @@ RUN apt-get update && apt-get install -y \
         #
         # Installing ZLIB LIBRARY                     
         && cd $DIR/ 													  \
-	&& curl -O -L -J http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/zlib-1.2.7.tar.gz         \
+	&& curl -O -L -J -k http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/zlib-1.2.7.tar.gz      \
 	            --output $DIR/zlib-1.2.7.tar.gz                                                                       \
         && tar -zxvf $DIR/zlib-1.2.7.tar.gz -C $DIR/                      						  \
 	&& cd $DIR/zlib-1.2.7/                        									  \
@@ -119,7 +119,7 @@ RUN apt-get update && apt-get install -y \
         #
         # INSTALLING LIBPNG LIBRARY
         && cd $DIR/													\
-	&& curl -O -L -J http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/libpng-1.2.50.tar.gz    \
+	&& curl -O -L -J -k http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/libpng-1.2.50.tar.gz \
 	            --output $DIR/libpng-1.2.50.tar.gz                                                                  \
 	&& tar -zxvf $DIR/libpng-1.2.50.tar.gz -C $DIR/                        						\
 	&& cd $DIR/libpng-1.2.50/                     									\
@@ -130,7 +130,7 @@ RUN apt-get update && apt-get install -y \
         #
         # INSTALLING JASPER LIBRARY
         && cd $DIR/ 													  \
-	&& curl -O -L -J http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/jasper-1.900.1.tar.gz     \
+	&& curl -O -L -J -k http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/jasper-1.900.1.tar.gz  \
 	            --output $DIR/jasper-1.900.1.tar.gz                                                                   \
 	&& tar -zxvf $DIR/jasper-1.900.1.tar.gz -C $DIR/                                                                  \
 	&& cd $DIR/jasper-1.900.1/                    									  \
@@ -141,11 +141,11 @@ RUN apt-get update && apt-get install -y \
         #
         #
 	# DOWNLOADING STATIC DATA for WPS 4.1
-	&& cd /pi-wrf/WRF_System/lib/                                                        \
-	&& wget http://www2.mmm.ucar.edu/wrf/src/wps_files/geog_low_res_mandatory.tar.gz     \
-	&& tar xvf geog_low_res_mandatory.tar.gz                                             \
-	&& mv WPS_GEOG_LOW_RES WPS_GEOG                                                      \
-	&& rm *.gz                                                                           \
+	&& cd /pi-wrf/WRF_System/lib/                                                                               \
+	&& wget --no-check-certificate http://www2.mmm.ucar.edu/wrf/src/wps_files/geog_low_res_mandatory.tar.gz     \
+	&& tar xvf geog_low_res_mandatory.tar.gz                                                                    \
+	&& mv WPS_GEOG_LOW_RES WPS_GEOG                                                                             \
+	&& rm *.gz                                                                                                  \
 	#
         # CONFIGURING  AND Compile WRFV3.9.1-DMPAR
         # To compile a serial implementation use option 32, SMPAR option 33, DMPAR option 34

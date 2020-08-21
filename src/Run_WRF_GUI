@@ -89,11 +89,11 @@ done
 
 #Move Back to WPS Directory
 cd $wrf_path/WPS/
-$wrf_path/WPS/geogrid.exe
+$wrf_path/WPS/geogrid.exe | tee /pi-wrf/Output/geogrid_exec_text_output
 $wrf_path/WPS/link_grib.csh $wrf_path/lib/DATA/
 ln -sf ungrib/Variable_Tables/Vtable.GFS Vtable
-./ungrib.exe
-./metgrid.exe
+./ungrib.exe  | tee /pi-wrf/Output/ungrib_exec_text_output
+./metgrid.exe | tee /pi-wrf/Output/metgrid_exec_text_output
 
 #Modify met_em files such that missing values are corrected
 for f in  met_em*.nc
@@ -117,7 +117,7 @@ echo
 #Move to WRFV3's run directory to initialize model
 cd $wrf_path/WRFV3/run
 ln -sf $wrf_path/WPS/met_em*.nc .
-./real.exe
+./real.exe | tee /pi-wrf/Output/real_exec_text_output
 
 echo
 echo Running WRF
@@ -126,7 +126,7 @@ echo
 
 #Run WRF
 export OMP_NUM_THREADS=4
-./wrf.exe
+./wrf.exe | tee /pi-wrf/Output/wrf_exec_text_output
 #mpirun -np 4./wrf.exe
 clear
 echo
