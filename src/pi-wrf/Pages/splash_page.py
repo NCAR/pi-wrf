@@ -1,14 +1,14 @@
-#Importing modules 
+#Importing standard modules 
+import subprocess
 import sys
-from importlist import *
-import requests
-from tkinter import messagebox
+import tkinter as tk
 
+#Importin local modules
+from color_schemes      import color_scheme
 from Pages.start_page   import StartPage
 
 #Set Color Scheme and Font
 gui_color=color_scheme(1)                                            # 1=default
-LARGE_FONT = ("Verdana", 12)
 
 
 class SplashPage(tk.Frame):
