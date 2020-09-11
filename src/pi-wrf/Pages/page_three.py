@@ -1,7 +1,8 @@
 #Importing standard modules
-import tkinter as tk
 import os
 import subprocess
+import tkinter as tk
+from tkinter import messagebox
 
 #importing local modules
 from color_schemes     import color_scheme
@@ -117,7 +118,7 @@ class PageThree(tk.Frame):
                                        activebackground=gui_color[3],
                                        font=('Arial Bold',16),
                                        command=lambda: [save_exec_output(),
-                                                        tk.messagebox.showinfo("Output Saved",
+                                                        messagebox.showinfo("Output Saved",
                                                         "Text output was saved to your local directory")])
         save_exec_output_btn.pack(fill=tk.X,side=tk.LEFT)
         save_exec_output_btn.pack_forget()

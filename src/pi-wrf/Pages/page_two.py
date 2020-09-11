@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import pickle
 from statistics   import mean
 import tkinter as tk
+from tkinter import messagebox
 
 # importing local modules
 from color_schemes     import color_scheme
@@ -51,7 +52,7 @@ class PageTwo(tk.Frame):
             gridcells=round(domain_area/30/30)
                         
             if gridcells < 100:
-                tk.messagebox.showwarning(title="Domain too small",
+                messagebox.showwarning(title="Domain too small",
                                           message="At least 100 gridcells are needed. "
                                                   "Please click   and drag a larger "
                                                   "domain or click zoom out.")

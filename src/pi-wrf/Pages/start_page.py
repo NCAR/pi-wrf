@@ -3,6 +3,7 @@ import requests
 import subprocess
 import sys
 import tkinter as tk
+from tkinter import messagebox
 
 # set color scheme and font
 from color_schemes     import color_scheme
@@ -62,7 +63,7 @@ class StartPage(tk.Frame):
         if check_internet():
             run_fcst_btn.config(command=lambda : [controller.show_frame(PageOne)])
         else:
-            run_fcst_btn.config(command=lambda : [tk.messagebox.showwarning('Warning', 'No network connection detected. ' 
+            run_fcst_btn.config(command=lambda : [messagebox.showwarning('Warning', 'No network connection detected. '
                                                  'cannot run live simulation. Please exit application and check connection.')])
         # archived sim button
         arc_sim_btn = tk.Button(self,
