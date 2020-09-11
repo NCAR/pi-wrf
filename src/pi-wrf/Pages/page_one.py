@@ -81,7 +81,7 @@ class PageOne(tk.Frame):
             
             if user_duration.total_seconds()/60/60 == 0.0:
                 output=('Start and end time match. Please change times to continue.')
-                domain_button.config(state='disabled')
+                domain_btn.config(state='disabled')
             else:
                 output=('The duration of your simulation is '+str(user_duration.days)+
                         ' days and '+str(((user_duration.total_seconds()/60)/60)%24)+
