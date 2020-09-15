@@ -8,13 +8,10 @@ import tkinter as tk
 from color_schemes     import color_scheme
 import warnings
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
-#from importlist import *
-
-
 
 #Set Color Scheme and Font
 gui_color=color_scheme(1)                     #1=default
-#LARGE_FONT = ("Verdana", 12)
+
 
 def update_figure(name,screen_width,screen_height):
         subprocess.call('convert /pi-wrf/Output/{}.png \

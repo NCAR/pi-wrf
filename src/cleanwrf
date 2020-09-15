@@ -3,7 +3,7 @@
 # This script installs cleans up auto generated files from# 
 # previous WRF runs                                       # 
 #                                                         #
-# Eliott-Foust wefoust@ucar.edu                           #
+# Eliott Foust wefoust@ucar.edu                           #
 ###########################################################
 
 #Removing files from WPS
@@ -27,7 +27,4 @@ rm /$wrf_path/WRFV3/run/rsl.out.*
 rm /$wrf_path/WRFV3/run/wrfinput_*
 rm /$wrf_path/WRFV3/run/wrfbdy_*
 
-#Removing auto-generated NCL plots
-#broad_path="$(find /home/pi/ -name "WRF_3.9.1_SMPAR")"
-#rm $broad_path/Output/*
 

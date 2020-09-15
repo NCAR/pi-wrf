@@ -1,8 +1,8 @@
 &share
  wrf_core = 'ARW',
  max_dom = 1,
- start_date = '2018-12-18_12:00:00',
- end_date   = '2018-12-18_18:00:00',
+ start_date = '2020-09-14_12:00:00',
+ end_date   = '2020-09-14_18:00:00',
  interval_seconds = 21600
  io_form_geogrid = 2,
 /
@@ -12,8 +12,8 @@
  parent_grid_ratio =   1,   3,
  i_parent_start    =   1,  31,
  j_parent_start    =   1,  17,
- e_we=44
- e_sn=29
+ e_we=14
+ e_sn=14
  !
  !!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
  ! This namelist is specific for use with the lowest resolution option for
@@ -25,18 +25,18 @@
  dx = 30000,
  dy = 30000,
  map_proj = 'mercator',
- ref_lat=29.277708592777103
- ref_lon=84.69133606119905
+ ref_lat=39.09539170506913
+ ref_lon=-75.89861751152073
 
- truelat1=25.541718555417205
- truelat2=33.013698630137
+ truelat1=37.29815668202765
+ truelat2=40.89262672811061
 
- stand_lon=84.69133606119905
+ stand_lon=-75.89861751152073
 
- pole_lat=60.7222914072229
+ pole_lat=50.90460829493087
  pole_lon=0
 
-geog_data_path='/home/pi/pi-wrf/WRF_System/lib/WPS_GEOG'
+ geog_data_path='/pi-wrf/WRF_System/lib/WPS_GEOG'
 /
 
 &ungrib

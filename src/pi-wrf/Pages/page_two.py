@@ -9,8 +9,9 @@ import tkinter as tk
 from tkinter import messagebox
 
 # importing local modules
-from color_schemes     import color_scheme
-import wrf_model_domain_settings as ds
+from calculate_distance import calculate_distance
+from color_schemes      import color_scheme
+from set_domain         import set_domain
 
 # importing 3rd party modules
 from mpl_toolkits.basemap  import Basemap
@@ -40,11 +41,11 @@ class PageTwo(tk.Frame):
             global xlim, ylim, gridcells
             temp_xlim=np.sort(np.array([erelease.xdata,eclick.xdata]))
             temp_ylim=np.sort(np.array([erelease.ydata,eclick.ydata]))
-            domain_x_length=ds.calculate_distances(min(temp_xlim),
+            domain_x_length=calculate_distance(min(temp_xlim),
                                                    max(temp_xlim),
                                                    mean([min(temp_ylim),max(temp_ylim)]),
                                                    mean([min(temp_ylim),max(temp_ylim)]))
-            domain_y_length=ds.calculate_distances(min(temp_xlim),
+            domain_y_length=calculate_distance(min(temp_xlim),
                                                    min(temp_xlim),
                                                    min(temp_ylim),
                                                    max(temp_ylim))
@@ -154,11 +155,11 @@ class PageTwo(tk.Frame):
 
             
             # Calculating the spatial area and amount of grid cells.
-            domain_x_length=ds.calculate_distances(min(xlim),
+            domain_x_length=calculate_distance(min(xlim),
                                                      max(xlim),
                                                      mean([min(ylim),max(ylim)]),
                                                      mean([min(ylim),max(ylim)]))
-            domain_y_length=ds.calculate_distances(min(xlim),
+            domain_y_length=calculate_distance(min(xlim),
                                                      min(xlim),
                                                      min(ylim),
                                                      max(ylim))
@@ -177,7 +178,7 @@ class PageTwo(tk.Frame):
                                           message= "The domain is too large to run a simulation. "
                                                    "Please select a domain less than 15,000 grid cells.")
             else:
-                ds.set_domain(xlim,ylim)
+                set_domain(xlim,ylim)
                 controller.show_frame(PageThree)
                 reset_domain(default_lon_limits,default_lat_limits)
 

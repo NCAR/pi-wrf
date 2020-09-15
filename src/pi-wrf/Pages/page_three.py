@@ -18,7 +18,7 @@ def run_command(command):
     while True:
         output=process.stdout.readline().decode()
         if output == '' and process.poll() is not None:
-            subprocess.call('/pi-wrf/WRF_System/lib/Run_WRF_GUI_NCL', shell=True)
+            subprocess.call('/pi-wrf/WRF_System/lib/plot_figures', shell=True)
             run_model_btn.config(state='disabled')
             
             save_exec_output_btn.pack(fill=tk.X,side=tk.LEFT)
@@ -51,7 +51,7 @@ def run_command(command):
 
 def putintext():
     """ inserts the command prompt text into a frame within the main window"""
-    txt.insert('1.0',run_command('/pi-wrf/Run_WRF_GUI'))
+    txt.insert('1.0',run_command('/pi-wrf/run_wrf'))
 
 def save_exec_output():
     """saves the command prompt output to a user-mounted directory"""

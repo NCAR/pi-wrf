@@ -9,7 +9,6 @@ from color_schemes     import color_scheme
 # set gui color scheme
 gui_color=color_scheme(1)  # 1=default
 
-
 current_time=datetime.datetime.utcnow().replace(microsecond=0,
                                                 second=0,
                                                 minute=0)
@@ -64,7 +63,7 @@ class PageOne(tk.Frame):
                                    '-'+
                                   user_start_selection[11:13])
             subprocess.call('sed -i /userstartdate=/c\\userstartdate="{}" '
-                            ' ../../Run_WRF_GUI'.format(user_start_selection),shell=True)
+                            ' /pi-wrf/run_wrf'.format(user_start_selection),shell=True)
         
             user_end_selection=duration_times_lbx.get('active')
             user_end_selection=(user_end_selection[5:7]+
@@ -74,7 +73,7 @@ class PageOne(tk.Frame):
                                 '-'+
                                 user_end_selection[11:13])
             subprocess.call('sed -i /userenddate=/c\\userenddate="{}" '
-                            '../../Run_WRF_GUI'.format(user_end_selection),shell=True)
+                            '/pi-wrf/run_wrf'.format(user_end_selection),shell=True)
 
             user_duration=datetime.datetime.strptime(user_end_selection,'%m-%d-%Y-%H') - \
                           datetime.datetime.strptime(user_start_selection,'%m-%d-%Y-%H')

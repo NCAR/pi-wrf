@@ -17,8 +17,8 @@ $wrf_basis/Setup/Set_Environment
 $wrf_path/lib/cleanwrf >& /dev/null
 
 
-userstartdate=01-06-2020-00
-userenddate=01-06-2020-06
+userstartdate=09-14-2020-12
+userenddate=09-14-2020-18
 
 currentdate=`date +%m-%d-%Y-%H`
 user_date_convert1=$(date +%s -d "${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2} ${userstartdate:11:2}:00:00")
@@ -49,28 +49,22 @@ fi
 
 
 # Update start and end date in WPS and WRF namelists
-sed -i "/start_date/c\ start_date = \'${userstartdate:6:4}-${userstartdate:0:5}_${userstartdate:11:2}:00:00\'," $wrf_path/lib/dynamic_namelist.wps
-sed -i "/end_date/c\ end_date   = \'${userenddate:6:4}-${userenddate:0:5}_${userenddate:11:2}:00:00\'," $wrf_path/lib/dynamic_namelist.wps
+sed -i "/start_date/c\ start_date = \'${userstartdate:6:4}-${userstartdate:0:5}_${userstartdate:11:2}:00:00\'," $wrf_path/WPS/namelist.wps
+sed -i "/end_date/c\ end_date   = \'${userenddate:6:4}-${userenddate:0:5}_${userenddate:11:2}:00:00\'," $wrf_path/WPS/namelist.wps
 
-sed -i "/run_hours/c\ run_hours    = $run_hours_total" $wrf_path/lib/dynamic_namelist_input.wrf 
+sed -i "/run_hours/c\ run_hours    = $run_hours_total" $wrf_path/WRFV3/run/namelist.input 
 
-sed -i "/start_year/c\ start_year    = ${userstartdate:6:4}" $wrf_path/lib/dynamic_namelist_input.wrf 
-sed -i "/start_month/c\ start_month    = ${userstartdate:0:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
-sed -i "/start_day/c\ start_day    = ${userstartdate:3:2}" $wrf_path/lib/dynamic_namelist_input.wrf
-sed -i "/start_hour/c\ start_hour    = ${userstartdate:11:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
+sed -i "/start_year/c\ start_year    = ${userstartdate:6:4}" $wrf_path/WRFV3/run/namelist.input 
+sed -i "/start_month/c\ start_month    = ${userstartdate:0:2}" $wrf_path/WRFV3/run/namelist.input 
+sed -i "/start_day/c\ start_day    = ${userstartdate:3:2}" $wrf_path/WRFV3/run/namelist.input
+sed -i "/start_hour/c\ start_hour    = ${userstartdate:11:2}" $wrf_path/WRFV3/run/namelist.input 
 
-sed -i "/end_year/c\ end_year    = ${userenddate:6:4}" $wrf_path/lib/dynamic_namelist_input.wrf 
-sed -i "/end_month/c\ end_month    = ${userenddate:0:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
-sed -i "/end_day/c\ end_day    = ${userenddate:3:2}" $wrf_path/lib/dynamic_namelist_input.wrf
-sed -i "/end_hour/c\ end_hour    = ${userenddate:11:2}" $wrf_path/lib/dynamic_namelist_input.wrf 
+sed -i "/end_year/c\ end_year    = ${userenddate:6:4}" $wrf_path/WRFV3/run/namelist.input
+sed -i "/end_month/c\ end_month    = ${userenddate:0:2}" $wrf_path/WRFV3/run/namelist.input 
+sed -i "/end_day/c\ end_day    = ${userenddate:3:2}" $wrf_path/WRFV3/run/namelist.input
+sed -i "/end_hour/c\ end_hour    = ${userenddate:11:2}" $wrf_path/WRFV3/run/namelist.input
 
-sed -i "/geog_data_path/c\geog_data_path='$wrf_path/lib/WPS_GEOG'" $wrf_path/lib/dynamic_namelist.wps 
-
-
-rm $wrf_path/WPS/namelist.wps
-rm $wrf_path/WRFV3/run/namelist.input
-cp $wrf_path/lib/dynamic_namelist.wps $wrf_path/WPS/namelist.wps
-cp $wrf_path/lib/dynamic_namelist_input.wrf $wrf_path/WRFV3/run/namelist.input 
+sed -i "/geog_data_path/c\geog_data_path='$wrf_path/lib/WPS_GEOG'" $wrf_path/WPS/namelist.wps 
 
 	
 #Download input file starting from 12z to 12z at  6-hour incraments for one day
@@ -89,11 +83,11 @@ done
 
 #Move Back to WPS Directory
 cd $wrf_path/WPS/
-$wrf_path/WPS/geogrid.exe | tee /pi-wrf/Output/geogrid_exec_text_output
+$wrf_path/WPS/geogrid.exe
 $wrf_path/WPS/link_grib.csh $wrf_path/lib/DATA/
 ln -sf ungrib/Variable_Tables/Vtable.GFS Vtable
-./ungrib.exe  | tee /pi-wrf/Output/ungrib_exec_text_output
-./metgrid.exe | tee /pi-wrf/Output/metgrid_exec_text_output
+./ungrib.exe
+./metgrid.exe
 
 #Modify met_em files such that missing values are corrected
 for f in  met_em*.nc
@@ -117,7 +111,7 @@ echo
 #Move to WRFV3's run directory to initialize model
 cd $wrf_path/WRFV3/run
 ln -sf $wrf_path/WPS/met_em*.nc .
-./real.exe | tee /pi-wrf/Output/real_exec_text_output
+./real.exe
 
 echo
 echo Running WRF
@@ -126,7 +120,7 @@ echo
 
 #Run WRF
 export OMP_NUM_THREADS=4
-./wrf.exe | tee /pi-wrf/Output/wrf_exec_text_output
+./wrf.exe
 #mpirun -np 4./wrf.exe
 clear
 echo
@@ -134,7 +128,8 @@ echo
 echo
 
 #Move and Rename output
-mv wrfout_d01_"${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2}_${userstartdate:11:2}:00:00" $wrf_basis/Output/Temp_WRF_Output
+mv wrfout_d01_"${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2}_${userstartdate:11:2}:00:00" \
+$wrf_basis/Output/Temp_WRF_Output
 
 #Run Plotting Scripts
 echo Plotting Temperature, Wind, Precipitation, Snow Accumulation, and Reference Maps

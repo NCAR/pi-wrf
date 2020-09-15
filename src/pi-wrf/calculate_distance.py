@@ -1,11 +1,8 @@
 from math import sin,cos,sqrt,atan2,radians,degrees,pi
-#from geopy import distance
 
-def calculate_distances(lon1_input,lon2_input,lat1_input,lat2_input):
-    #point_1=(lat1_input,lon1_input)
-    #point_2=(lat2_input,lon2_input)
-    #user_distance=distance.distance(point_1,point2).km
-    #return user_distance
+def calculate_distance(lon1_input,lon2_input,lat1_input,lat2_input):
+    """ calculates the distance between two locations on the globe
+    based on their lat/lon coordinates"""
     R=6373
     lat1=radians(lat1_input)
     lon1=radians(lon1_input)
@@ -28,6 +25,3 @@ def calculate_distances(lon1_input,lon2_input,lat1_input,lat2_input):
         c=2*atan2(sqrt(a),sqrt(1-a))
         distance_long=2*R*c-distance_short
         return distance_long
-    
-#mydistance=calculate_distances(-179.67443515,179.33641701,-0.07649884,30.16723003)
-#print(mydistance)
