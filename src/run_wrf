@@ -17,8 +17,8 @@ $wrf_basis/Setup/Set_Environment
 $wrf_path/lib/cleanwrf >& /dev/null
 
 
-userstartdate=09-14-2020-12
-userenddate=09-14-2020-18
+userstartdate=11-29-2020-18
+userenddate=11-30-2020-00
 
 currentdate=`date +%m-%d-%Y-%H`
 user_date_convert1=$(date +%s -d "${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2} ${userstartdate:11:2}:00:00")
@@ -27,26 +27,6 @@ user_date_convert2=$(date +%s -d "${userenddate:6:4}-${userenddate:0:2}-${useren
 #add if running online
 days_past=$(( ($currentdate - $user_date_convert1) / 60 / 60 / 24 ))
 run_hours_total=$(( ($user_date_convert2 - $user_date_convert1) / 60 / 60 ))
-
-
-#add if  running live
-#Check user input time and issue warnings
-if [ $days_past -gt 7 ]; then
-	echo 'Data does not extend that far back in time. Please choose a more recent initialization time.'
-	exit 1
-fi 
-
-if [ $run_hours_total -gt 144 ]; then
-	echo 'Run exceedes 6 days. This will take a long time to run. Would you like to continue (y/n)?'
-	read prompt
-	if [$prompt = no] || [$prompt = No] || [$prompt = n] || [$prompt = N] || [$prompt = No]; then
-		exit 1 
-	fi
-elif [ $run_hours_total -lt 0 ]; then
-	echo 'Start Date is after end date. Please revise.'
-	exit 1
-fi
-
 
 # Update start and end date in WPS and WRF namelists
 sed -i "/start_date/c\ start_date = \'${userstartdate:6:4}-${userstartdate:0:5}_${userstartdate:11:2}:00:00\'," $wrf_path/WPS/namelist.wps
@@ -66,7 +46,27 @@ sed -i "/end_hour/c\ end_hour    = ${userenddate:11:2}" $wrf_path/WRFV3/run/name
 
 sed -i "/geog_data_path/c\geog_data_path='$wrf_path/lib/WPS_GEOG'" $wrf_path/WPS/namelist.wps 
 
-	
+# Setting wrfout times
+if [ $run_hours_total -le 24 ]; then
+    sed -i "/history_interval/c\\history_interval=60" /pi-wrf/WRF_System/WRFV3/run/namelist.input
+    nhrs='1'
+
+elif [ $run_hours_total -gt 24 && -le 48 ]; then
+    sed -i "/history_interval/c\\history_interval=120" /pi-wrf/WRF_System/WRFV3/run/namelist.input
+    nhrs='2'
+elif [ $run_hours_total -gt 48 && -le 72 ]; then
+    sed -i "/history_interval/c\\history_interval=180" /pi-wrf/WRF_System/WRFV3/run/namelist.input
+    nhrs='3'
+else
+    sed -i "/history_interval/c\\history_interval=660" /pi-wrf/WRF_System/WRFV3/run/namelist.input
+    nhrs='6'
+fi
+
+# Clear previous output if it exists
+rm /pi-wrf/Output/*.png
+rm /pi-wrf/Output/*.gif
+rm /pi-wrf/Output/user_saved_files/*.png
+rm /pi-wrf/Output/Temp_WRF_Output
 #Download input file starting from 12z to 12z at  6-hour incraments for one day
 rm $wrf_path/lib/DATA/*
 cd $wrf_path/lib/DATA/ 
@@ -132,5 +132,19 @@ mv wrfout_d01_"${userstartdate:6:4}-${userstartdate:0:2}-${userstartdate:3:2}_${
 $wrf_basis/Output/Temp_WRF_Output
 
 #Run Plotting Scripts
-echo Plotting Temperature, Wind, Precipitation, Snow Accumulation, and Reference Maps
-echo Please wait for button to appear to view output
+echo Plotting Surface Temperatures
+ncl -Q  /pi-wrf/WRF_System/lib/Plotting_Scripts/temperature.ncl &>/dev/null
+
+echo Plotting Precipitation
+ncl -Q hrly=$nhrs /pi-wrf/WRF_System/lib/Plotting_Scripts/rain.ncl &>/dev/null
+
+echo Plotting Snow Depth
+ncl -Q  /pi-wrf/WRF_System/lib/Plotting_Scripts/snow.ncl &>/dev/null
+
+echo Plotting Surface Winds
+ncl -Q  /pi-wrf/WRF_System/lib/Plotting_Scripts/wind.ncl &>/dev/null
+
+echo Plotting Reference Domains
+ncl -Q  /pi-wrf/WRF_System/lib/Plotting_Scripts/Plot_Domain &>/dev/null
+ncl -Q  /pi-wrf/WRF_System/lib/Plotting_Scripts/Plot_Domain_Relative &>/dev/null
+

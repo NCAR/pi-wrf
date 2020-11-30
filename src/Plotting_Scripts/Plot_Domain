@@ -3,11 +3,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;	Load WRF Out file and Set workstation
-;a=addfile("/home/pi/Desktop/WRF_3.9.1_SMPAR/Output/Temp_WRF_Output","r")
+a   =  addfile("/pi-wrf/Output/Temp_WRF_Output","r")
 wks_type ="png"
 wks_type@wkWidth = 2048
 wks_type@wkHeight= 2048
-wks=gsn_open_wks("png","/home/pi/pi-wrf/Output/Your_Domain")
+wks=gsn_open_wks("png","/pi-wrf/Output/Your_Domain")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;	Set the colors to be used

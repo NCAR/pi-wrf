@@ -18,11 +18,8 @@ def run_command(command):
     while True:
         output=process.stdout.readline().decode()
         if output == '' and process.poll() is not None:
-            subprocess.call('/pi-wrf/WRF_System/lib/plot_figures', shell=True)
             run_model_btn.config(state='disabled')
-            
             save_exec_output_btn.pack(fill=tk.X,side=tk.LEFT)
-
             view_output_btn.config(text="View Output",
                                    bd=2,
                                    state='normal',
@@ -37,7 +34,9 @@ def run_command(command):
                             bg=gui_color[2],
                             activebackground=gui_color[3])
             exit_btn.pack(fill=tk.X,side=tk.RIGHT)
-            reset_btn.config(text='reset',bg=gui_color[2],activebackground=gui_color[3])
+            reset_btn.config(text='reset',
+                             bg=gui_color[2],
+                            activebackground=gui_color[3])
             reset_btn.pack(fill=tk.X,side=tk.LEFT)
             break
         
@@ -67,8 +66,8 @@ def reset():
 class PageThree(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        screenwidth=self.winfo_screenwidth()                         #get the current screen width
-        screenheight=self.winfo_screenheight()                       #current height of screen 
+        screenwidth=self.winfo_screenwidth()     #get the current screen width
+        screenheight=self.winfo_screenheight()   #current height of screen
 
         import Pages.page_four
         def retrieve_figure():
