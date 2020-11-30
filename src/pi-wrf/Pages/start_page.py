@@ -4,10 +4,12 @@ import subprocess
 import sys
 import tkinter as tk
 from tkinter import messagebox
+from PIL import Image, ImageTk
+
 
 # set color scheme and font
 from color_schemes     import color_scheme
-gui_color=color_scheme(1)                                            # 1=default
+gui_color=color_scheme(1)      # 1=default
 
 def check_internet():
     url='http://www.google.com/'
@@ -22,14 +24,9 @@ class StartPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.configure(bg=gui_color[0])
-        screenwidth=self.winfo_screenwidth()                         #get the current screen width
-        screenheight=self.winfo_screenheight()                       #current height of screen
-        subprocess.call('convert /pi-wrf/WRF_System/lib/start_page_bg.jpg -resize {}x{}\! '
-                        ' /pi-wrf/WRF_System/lib/start_page_bg.gif'\
-                        .format(screenwidth,screenheight),
-                        shell=True)
-        photo=tk.PhotoImage(file='/pi-wrf/WRF_System/lib/start_page_bg.gif')
-
+        self.image = Image.open("/pi-wrf/WRF_System/lib/start_page_bg.jpg")
+        self.background_image = ImageTk.PhotoImage(self.image)
+        
         # configuring layout of widgets
         self.grid_columnconfigure(0,weight=4)
         self.grid_rowconfigure(0,weight=1)
@@ -39,8 +36,8 @@ class StartPage(tk.Frame):
         self.grid_rowconfigure(4,weight=1)
         
         # background label
-        bg_lbl = tk.Label(self,image=photo)
-        bg_lbl.image = photo
+        bg_lbl = tk.Label(self,image=self.background_image)
+        bg_lbl.image = self.background_image
         bg_lbl.place(x=0,y=0,relwidth=1,relheight=1)
 
         # header label
@@ -65,17 +62,7 @@ class StartPage(tk.Frame):
         else:
             run_fcst_btn.config(command=lambda : [messagebox.showwarning('Warning', 'No network connection detected. '
                                                  'cannot run live simulation. Please exit application and check connection.')])
-        # archived sim button
-        arc_sim_btn = tk.Button(self,
-                          text='Run Archived Simulation',
-                          font=('Arial Bold',40),
-                          borderwidth=5,
-                          bg=gui_color[2],
-                          activebackground=gui_color[3],
-                          width=20,
-                          command=lambda : tk.messagebox.showwarning('Warning', 
-                                                                  'Archived Simulations Are Not Yet Available'))
-        arc_sim_btn.grid(row=2)
+    
         
         # exit button
         exit_btn = tk.Button(self,
@@ -89,7 +76,7 @@ class StartPage(tk.Frame):
 
         # version label
         version_lbl = tk.Label(self,
-                                 text=('Pi-WRF Version 1.2.0'),
+                                 text=('Pi-WRF Version 2.0'),
                                  anchor='w',
                                  font=('Arial Bold',5),
                                  fg='black',
