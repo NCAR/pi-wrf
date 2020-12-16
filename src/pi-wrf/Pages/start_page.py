@@ -12,7 +12,7 @@ from color_schemes     import color_scheme
 gui_color=color_scheme(1)      # 1=default
 
 def check_internet():
-    url='http://www.google.com/'
+    url='https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs'
     timeout=5
     try:
         _ = requests.get(url, timeout=timeout)
@@ -60,9 +60,13 @@ class StartPage(tk.Frame):
         if check_internet():
             run_fcst_btn.config(command=lambda : [controller.show_frame(PageOne)])
         else:
-            run_fcst_btn.config(command=lambda : [messagebox.showwarning('Warning', 'No network connection detected. '
-                                                 'cannot run live simulation. Please exit application and check connection.')])
-    
+            run_fcst_btn.config(command=lambda : [messagebox.showerror('Warning', 
+                                                  'No network connection detected or no access to the NCEP Server.\n\n'
+                                                  'Unable to retrieve initial conditions and run live simulations. ' 
+                                                  'Please exit the application and check network connection.\n\n'
+                                                  'If network connection is established check the NCEP server:\n\n'
+                                                  'https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs\n\n'
+                                                  'If the server is down, wait a few hours as the server undergoes maintenance.' )])    
         
         # exit button
         exit_btn = tk.Button(self,
@@ -76,7 +80,7 @@ class StartPage(tk.Frame):
 
         # version label
         version_lbl = tk.Label(self,
-                                 text=('Pi-WRF Version 2.0'),
+                                 text=('Pi-WRF Version 2.00.01'),
                                  anchor='w',
                                  font=('Arial Bold',5),
                                  fg='black',
