@@ -126,10 +126,10 @@ class PageThree(tk.Frame):
                                   bd=0,
                                   state='normal',
                                   command=lambda :[retrieve_figure(),
-						                           topbanner_lbl.config(text="Start Your Simulation"),
+						   topbanner_lbl.config(text="Start Your Simulation"),
                                                    controller.show_frame(Pages.page_four.FigurePage),
                                                    reset(),
-						                           reset_btn.pack_forget(),
+						   reset_btn.pack_forget(),
                                                    exit_btn.pack_forget()])
         view_output_btn.pack(fill=tk.X,side=tk.LEFT)
         view_output_btn.pack_forget()
@@ -150,9 +150,9 @@ class PageThree(tk.Frame):
                                bd=0,
                                state='normal',
                                command=lambda : [topbanner_lbl.config(text="Start Your Simulation"),
-						                         reset(),
-                                                 save_exec_output_btn.pack_forget(),
-						                         reset_btn.pack_forget(),
-                                                 exit_btn.pack_forget(),
-                                                 controller.show_frame(StartPage)])
+						                      reset(),
+                                                                      save_exec_output_btn.pack_forget(),
+						                      reset_btn.pack_forget(),
+                                                                      exit_btn.pack_forget(),
+                                                                      controller.show_frame(StartPage)])
         

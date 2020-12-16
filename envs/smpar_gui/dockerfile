@@ -169,13 +169,11 @@ ADD /resources/images/* /pi-wrf/WRF_System/lib/
 ADD /resources/*.csv /pi-wrf/WRF_System/lib/
 ADD /resources/ref_namelist.wps /pi-wrf/WRF_System/WPS/namelist.wps
 ADD /resources/ref_namelist.input /pi-wrf/WRF_System/WRFV3/run/namelist.input
-ADD /src/plot_figures /pi-wrf/WRF_System/lib/
 ADD /src/cleanwrf /pi-wrf/WRF_System/lib/
 ADD /src/Plotting_Scripts/* /pi-wrf/WRF_System/lib/Plotting_Scripts/
 ADD /src/pi-wrf/*.*  /pi-wrf/pi_wrf/pi_wrf/
 ADD /src/pi-wrf/Pages/* /pi-wrf/pi_wrf/pi_wrf/Pages/
 ADD /src/run_wrf /pi-wrf/
-ADD /resources/images/*.gif /pi-wrf/Output/
 
 
 WORKDIR /pi-wrf/pi_wrf/pi_wrf
