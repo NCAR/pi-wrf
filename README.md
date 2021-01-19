@@ -15,7 +15,7 @@ In order to run the Pi-WRF application, you will need to download and install Do
 `curl -sSL https://get.docker.com | sh`:<br/>
 
 3) Download a Docker image and create a container that holds the WRF app by typing the following (all in one line):<br/>
-`sudo docker run -it --rm --net=host -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf`
+`sudo docker run -it --rm --net=host -e "DISPLAY" -v $(pwd):/pi-wrf/Output/user_saved_files -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf`
 
 ### Section 2: Using the App
 After the app launches, the user will select the time to start/initialize the model, set the model’s duration, select the domain of the model, and then run the model. In order to use the application, the raspberry Pi must be connected to the internet. :<br/>
