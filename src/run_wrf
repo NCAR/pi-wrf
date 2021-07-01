@@ -75,7 +75,7 @@ for i in `seq 0 6 $run_hours_total`; do
 	echo
 	echo Downloading boundary condition for forecast hour $boundary_condition
 	wget -q https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.\
-${userstartdate:6:4}${userstartdate:0:2}${userstartdate:3:2}/${userstartdate:11:2}/gfs.t\
+${userstartdate:6:4}${userstartdate:0:2}${userstartdate:3:2}/${userstartdate:11:2}/atmos/gfs.t\
 ${userstartdate:11:2}z.pgrb2.1p00.f$boundary_condition \ 
 $wrf_path/lib/DATA/
 done
