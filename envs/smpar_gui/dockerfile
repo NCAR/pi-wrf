@@ -175,6 +175,26 @@ ADD /src/pi-wrf/*.*  /pi-wrf/pi_wrf/pi_wrf/
 ADD /src/pi-wrf/Pages/* /pi-wrf/pi_wrf/pi_wrf/Pages/
 ADD /src/run_wrf /pi-wrf/
 
+RUN apt-get update \
+  && apt-get install -y  build-essential \
+  && apt-get install -y  python3.9.5 \
+  && apt-get install -y  python3-pip \
+  && apt-get install -y  python3-dev \
+  && python3 -m pip install --upgrade jupyter \
+  && python3 -m pip install --upgrade ipyleaflet \
+	&& python3 -m pip install --upgrade jupyter-client==6.1.12 \
+	&& mkdir -p /pi-wrf/src/notebooks 
 
-WORKDIR /pi-wrf/pi_wrf/pi_wrf
-CMD python3 /pi-wrf/pi_wrf/pi_wrf/Runner.py 
+COPY envs/smpar_gui/notebooks/* /pi-wrf/src/notebooks
+WORKDIR /pi-wrf/src/notebooks 
+
+ENV TINI_VERSION v0.19.0
+
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-armhf /usr/bin/tini
+RUN chmod +x /usr/bin/tini
+ENTRYPOINT ["/usr/bin/tini", "--"]
+
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+
+#WORKDIR /pi-wrf/pi_wrf/pi_wrf
+#CMD python3 /pi-wrf/pi_wrf/pi_wrf/Runner.py 
