@@ -183,6 +183,7 @@ RUN apt-get update \
   && python3 -m pip install --upgrade jupyter \
   && python3 -m pip install --upgrade ipyleaflet \
 	&& python3 -m pip install --upgrade jupyter-client==6.1.12 \
+	&& python3 -m pip install --upgrade tzwhere \
 	&& mkdir -p /pi-wrf/src/notebooks 
 
 COPY envs/smpar_gui/notebooks/* /pi-wrf/src/notebooks
