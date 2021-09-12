@@ -1,6 +1,6 @@
 # SMPAR-GUI-Version
 FROM raspbian/stretch
-MAINTAINER Eliott Foust (wefoust@ucar.edu)
+MAINTAINER Agbeli Ameko (agbeli@ucar.edu)
 SHELL ["/bin/bash","-c"]
 ENV     DIR=/pi-wrf/WRF_System/lib/LIBRARIES                       \
         CC=gcc                                                     \
