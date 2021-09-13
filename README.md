@@ -1,7 +1,10 @@
-This repository hosts a GUI-based application of the Weather Research and Forecasting Model (WRF) on a Raspberry Pi (version 3 or higher). The following text can be summarized into a few instructions to install and run the application. :<br/>
+This repository hosts a Jupyter Notebook application of the Weather Research and Forecasting Model (WRF) on a Raspberry Pi (version 3 or higher). The following text can be summarized into a few instructions to install and run the application. :<br/>
 1) Open a terminal
 2) Type `curl -sSL https://get.docker.com | sh`
-3) Type `sudo docker run -it --rm --net=host -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf`
+3) Type `sudo docker run reidolson/piwrf_notebook`
+note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks reidolson/piwrf_notebook`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system.
+
+
 
 ### Section 1: Installing and Running the App (Raspberry Pi)
 The Pi-WRF application requires an internet connection, and the container platform [Docker](https://www.docker.com/products/docker-desktop "Docker.com") to run. In short, Docker is a is a platform that creates containers, which simulates the software of a different computer, all within your own computer. If you are familiar with the term virtual machine, then containers are light-weight forms of virtual machines. The containers Docker creates are self-contained, and code/programs within the container do no affect any of the files or security on your host system. 
@@ -15,14 +18,12 @@ In order to run the Pi-WRF application, you will need to download and install Do
 `curl -sSL https://get.docker.com | sh`:<br/>
 
 3) Download a Docker image and create a container that holds the WRF app by typing the following (all in one line):<br/>
-`sudo docker run -it --rm --net=host -e "DISPLAY" -v $(pwd):/pi-wrf/Output/user_saved_files -v $HOME/.Xauthority:/root/.Xauthority ncar/pi-wrf`
+`sudo docker run reidolson/piwrf_notebook`
+note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks reidolson/piwrf_notebook`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system.
+
 
 ### Section 2: Using the App
-After the app launches, the user will select the time to start/initialize the model, set the model’s duration, select the domain of the model, and then run the model. In order to use the application, the raspberry Pi must be connected to the internet. :<br/>
-1) Click “Run Forecast” to Start :<br/>
-2) Choose the day and time to run the simulation (Must run a simulation that is initialized within 48 hours of the current time, and we recommend running a simulation smaller than 1,000 grid cells):<br/>
-3) Click “Run Model” button to start. A view output button will show when the model finishes:<br/>
-
+After the Docker container starts, there will be a URL in the terminal the user can copy and paste into their browser. This will open a locally hosted instance of Jupyter Notebook. The user should select the Pi-WRF.ipynb notebook which will open in a new tab. The notebook provides instructions for selecting the domain and the datetime range for the model. In order to use the application, the raspberry Pi must be connected to the internet. :<br/>
 
  
 ### Section 3: Uninstalling Docker
