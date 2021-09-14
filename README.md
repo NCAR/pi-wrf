@@ -1,8 +1,8 @@
 This repository hosts a Jupyter Notebook application of the Weather Research and Forecasting Model (WRF) on a Raspberry Pi (version 3 or higher). The following text can be summarized into a few instructions to install and run the application. :<br/>
 1) Open a terminal
 2) Type `curl -sSL https://get.docker.com | sh`
-3) Type `sudo docker run reidolson/piwrf_notebook`
-note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks reidolson/piwrf_notebook`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system.
+3) Type `sudo docker run ncar/pi-wrf`
+note: these instructions runs the pi-wrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks ncar/piwrf`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system.
 
 
 
@@ -19,7 +19,7 @@ In order to run the Pi-WRF application, you will need to download and install Do
 
 3) Download a Docker image and create a container that holds the WRF app by typing the following (all in one line):<br/>
 `sudo docker run reidolson/piwrf_notebook`
-note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks reidolson/piwrf_notebook`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system.
+note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks ncar/pi-wrf`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system.
 
 
 ### Section 2: Using the App
