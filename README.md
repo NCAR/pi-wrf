@@ -18,12 +18,11 @@ In order to run the Pi-WRF application, you will need to download and install Do
 `curl -sSL https://get.docker.com | sh`:<br/>
 
 #### Two Options: Clone and Contribute Changes or Run an Instance
-A)To Run an instance download a Docker image and create a container that holds the WRF app by typing the following (all in one line):<br/>
-`sudo docker run ncar/pi-wrf`
+A)To run an instance download a Docker image and create a container that holds the WRF app. Note that this runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved) This is done by by typing the following (all in one line):<br/>
+             `sudo docker run ncar/pi-wrf`
 
-       Note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved)
 
-B)Clone or copy to run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks ncar/pi-wrf`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system. Most likely this will be in your default home directory.
+B)RECOMMENDED: Clone or copy to run the notebook so any of your potential changes are saved. You will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of option "A" above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks ncar/pi-wrf`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system. Most likely this will be in your default home directory.
 
 
 ### Section 2: Using the App
