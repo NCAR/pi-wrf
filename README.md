@@ -17,10 +17,13 @@ In order to run the Pi-WRF application, you will need to download and install Do
 2) Download and install Docker (this may take upwards of 10 minutes) by typing the following in the terminal. This step only needs to be done once. Subsequent use of the app will not require this step.:<br/>
 `curl -sSL https://get.docker.com | sh`:<br/>
 
-3) Download a Docker image and create a container that holds the WRF app by typing the following (all in one line):<br/>
+#### Two Options: Clone and Contribute Changes or Run an Instance
+A)To Run an instance download a Docker image and create a container that holds the WRF app by typing the following (all in one line):<br/>
 `sudo docker run ncar/pi-wrf`
 
-note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks ncar/pi-wrf`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system.
+       Note: these instructions runs the piwrf notebook in a non-persistant state (any changes to the notebook will not be saved)
+
+B)Clone or copy to run the notebook so changes are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks ncar/pi-wrf`. The path after -v will need to be modified depending on where you clone the Pi-WRF repo in your file system. Most likely this will be in your default home directory.
 
 
 ### Section 2: Using the App
@@ -64,3 +67,6 @@ At the equator, large towering cumulus clouds that arise due to deep convection 
 Users are limited to a few days before the current date. Times prior to this are considered archived simulations and a collection of archive simulations will be included at a later version of the Pi-WRF application. 
 
 
+### Credits
+Maintainer and moderator: Agbeli Ameko
+Researchers and Developers: Eliott Faust, Reid Olson, Keith Maull, Lily Kailyn, AJ Lauer
