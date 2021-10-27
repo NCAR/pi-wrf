@@ -1,0 +1,17 @@
+name: pi-wrf 
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - ipywidgets
+  - jupyterlab-system-monitor
+  - jupyterlab>=3
+  - matplotlib
+  - python=3.9
+  - watermark
+  - nodejs
+  - pre-commit
+  - pyyaml
+  - pytest
+  - pyproj
+  - numpy
