@@ -16,3 +16,5 @@ dependencies:
   - pyproj
   - numpy
   - tzwhere
+  - ipyleaflet
+  - IPython
