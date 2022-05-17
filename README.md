@@ -4,6 +4,8 @@ This repository hosts a Jupyter Notebook application of the Weather Research and
 3) Type `docker run -p 8888:8888 ncar/pi-wrf`
 4) **RECOMMENDED**: these instructions runs the pi-wrf notebook in a non-persistant state (any changes to the notebook will not be saved). To run the notebook so your changes or contributions are saved, you will need to clone NCAR's Pi-WRF repo: [Pi-WRF](https://github.com/NCAR/pi-wrf "Pi-WRF"). Then, instead of step #3 above, Type `docker run -p 8888:8888 -v ~/pi-wrf/envs/smpar_gui/notebooks:/pi-wrf/src/notebooks ncar/pi-wrf`. The path after  **-v** will need to be modified depending on where you clone the Pi-WRF repo in your file system.
 
+**GUI VERSION**: To run the Pi-WRF program without an interactive Jupyter notebook front end using a point-and-click Graphical User Interface (GUI) please check out https://github.com/NCAR/pi-wrf-gui
+
 
 
 ### Section 1: Installing and Running the App (Raspberry Pi)
