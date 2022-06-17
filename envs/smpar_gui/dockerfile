@@ -1,6 +1,6 @@
 # SMPAR-GUI-Version
 FROM raspbian/stretch
-MAINTAINER Agbeli Ameko (agbeli@ucar.edu)
+LABEL maintainer "Agbeli Ameko (agbeli@ucar.edu)"
 SHELL ["/bin/bash","-c"]
 ENV     DIR=/pi-wrf/WRF_System/lib/LIBRARIES                       \
         CC=gcc                                                     \
