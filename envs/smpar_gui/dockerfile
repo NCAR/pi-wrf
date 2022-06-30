@@ -20,7 +20,7 @@ ENV PATH="/pi-wrf/WRF_System/lib/LIBRARIES/netcdf/bin:${PATH}"
 ENV PATH="/pi-wrf/WRF_System/lib/LIBRARIES/mpich/bin:${PATH}"
 
 
-        ####### DOWNLOADING LIBRARIES ######################
+####### DOWNLOADING LIBRARIES ######################
 RUN apt update && apt -y upgrade
 RUN apt install -y \
         build-essential              \
@@ -55,7 +55,7 @@ RUN apt install -y \
         && pip install tzwhere        \
         && pip install ipyleaflet        
 
-        ########     SETTING UP DIRECTORIES                  #############################
+########     SETTING UP DIRECTORIES                  #############################
 RUN     mkdir -p /pi-wrf/WRF_System/lib/LIBRARIES         \
         && mkdir /pi-wrf/WRF_System/lib/DATA/                \
         && mkdir -p /pi-wrf/pi_wrf/pi_wrf                    \
@@ -64,12 +64,12 @@ RUN     mkdir -p /pi-wrf/WRF_System/lib/LIBRARIES         \
         && mkdir -p /pi-wrf/WRF_System/Plotting_Scripts      \
         #
         #
-        ############   SETTING UP ALIASES     ###############
+############   SETTING UP ALIASES     ###############
         && echo "alias run='python3 /pi-wrf/pi_wrf/pi_wrf/Runner.py'" >> ~/.bashrc   \
         && source ~/.bashrc                                                          \
         #
         #
-        #########   DOWNLOADING AND INSTALLING DEPENDENCIES     ##########################
+#########   DOWNLOADING AND INSTALLING DEPENDENCIES     ##########################
 	#
         #
 	# DOWNLOADING AND INSTALLING WRF
@@ -174,7 +174,7 @@ RUN     cd $DIR/												           \
         && ./configure <<< $'1\r1\r'                                                                                                  \
         && ./compile 
 
-        # ADDING RESOURCES
+# ADDING RESOURCES
 
 ADD /resources/images/* /pi-wrf/WRF_System/lib/
 ADD /resources/*.csv /pi-wrf/WRF_System/lib/
@@ -187,8 +187,21 @@ ADD /src/pi-wrf/Pages/* /pi-wrf/pi_wrf/pi_wrf/Pages/
 ADD /src/run_wrf /pi-wrf/
 
 
+# CREATING DIRECTORY FOR JUPYTER NOTEBOOKS
 
-RUN     mkdir -p /pi-wrf/src/notebooks 
+RUN     mkdir -p /pi-wrf/src/notebooks
+
+# ADDING NEW PYTHON PLOTTING LIBRARIES
+
+RUN sudo apt update && apt -y upgrade
+RUN sudo apt-get install -y ffmpeg
+RUN pip install -U matplotlib 
+RUN pip install hvplot ffmpeg-python
+RUN pip install folium
+RUN pip uninstall PIL && sudo pip install --upgrade Pillow==7.2
+RUN pip install xarray "xarray[viz]"
+RUN sudo apt-get -y install libatlas-base-dev && sudo apt update 
+
 COPY    envs/smpar_gui/notebooks/* /pi-wrf/src/notebooks
 WORKDIR /pi-wrf/src/notebooks 
 
