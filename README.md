@@ -71,4 +71,4 @@ Users are limited to a few days before the current date. Times prior to this are
 ### Credits
 Maintainer and moderator: Agbeli Ameko
 
-Researchers and Developers: Eliott Faust, Reid Olson, Keith Maull, Lily Kailyn, AJ Lauer
+Researchers and Developers: Eliott Faust,'Joba Adisa, Reid Olson, Keith Maull, Lily Kailyn, AJ Lauer
