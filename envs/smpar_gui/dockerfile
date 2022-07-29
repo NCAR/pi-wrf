@@ -1,6 +1,6 @@
 # SMPAR-GUI-Version
 FROM raspbian/stretch
-MAINTAINER Agbeli Ameko (agbeli@ucar.edu)
+LABEL maintainer "Agbeli Ameko (agbeli@ucar.edu)"
 SHELL ["/bin/bash","-c"]
 ENV     DIR=/pi-wrf/WRF_System/lib/LIBRARIES                       \
         CC=gcc                                                     \
@@ -20,8 +20,10 @@ ENV PATH="/pi-wrf/WRF_System/lib/LIBRARIES/netcdf/bin:${PATH}"
 ENV PATH="/pi-wrf/WRF_System/lib/LIBRARIES/mpich/bin:${PATH}"
 
 
-        ####### DOWNLOADING LIBRARIES ######################
-RUN apt-get update && apt-get install -y \
+####### DOWNLOADING LIBRARIES ######################
+RUN apt update && apt -y upgrade
+RUN apt install -y \
+        build-essential              \
         wget                         \
         csh                          \
         nco                          \
@@ -32,21 +34,29 @@ RUN apt-get update && apt-get install -y \
         make                         \
         curl                         \
         g++                          \
-        build-essential              \
 	libpng12-0                   \
-	python3-pip                  \
 	imagemagick                  \
-	unzip                        \
+	unzip                        
+
+        ####### SETTING UP PYTHON LIBRARIES ######################
+RUN apt install -y \	
+        python3-pip                  \
+	python3-dev                  \
         python3-pil.imagetk          \
         python3-matplotlib           \
         python3-mpltoolkits.basemap  \
+        && sudo -H pip3 install --upgrade pip \
+        && ln -s /usr/bin/python3 /usr/bin/python \
+        && ln -s /usr/bin/pip3 /usr/bin/pip     \
 	&& apt-get autoremove -y     \
         && apt-get clean -y          \
-	&& pip3 install requests     \
-	#
-        #
-        ########     SETTING UP DIRECTORIES                  #############################
-        && mkdir -p /pi-wrf/WRF_System/lib/LIBRARIES         \
+	&& pip install requests     \
+        && pip install jupyter       \
+        && pip install tzwhere        \
+        && pip install ipyleaflet        
+
+########     SETTING UP DIRECTORIES                  #############################
+RUN     mkdir -p /pi-wrf/WRF_System/lib/LIBRARIES         \
         && mkdir /pi-wrf/WRF_System/lib/DATA/                \
         && mkdir -p /pi-wrf/pi_wrf/pi_wrf                    \
 	&& mkdir -p /pi-wrf/pi_wrf/pi_wrf/Pages              \
@@ -54,12 +64,12 @@ RUN apt-get update && apt-get install -y \
         && mkdir -p /pi-wrf/WRF_System/Plotting_Scripts      \
         #
         #
-        ############   SETTING UP ALIASES     ###############
+############   SETTING UP ALIASES     ###############
         && echo "alias run='python3 /pi-wrf/pi_wrf/pi_wrf/Runner.py'" >> ~/.bashrc   \
         && source ~/.bashrc                                                          \
         #
         #
-        #########   DOWNLOADING AND INSTALLING DEPENDENCIES     ##########################
+#########   DOWNLOADING AND INSTALLING DEPENDENCIES     ##########################
 	#
         #
 	# DOWNLOADING AND INSTALLING WRF
@@ -75,14 +85,6 @@ RUN apt-get update && apt-get install -y \
 	&& mv WPS-4.1 WPS                                                                 \
 	&& rm *.gz                                                                        \
 	#
-	#
-	# DOWNLOADING AND INSTALLING NCL 6.4.0 LIBRARY
-        && wget --no-check-certificate https://www2.cisl.ucar.edu/sites/default/files/ncl_6.4.0.tar_.zip     \
-        && unzip ncl_6.4.0.tar_.zip -d /pi-wrf/WRF_System/                                                   \
-        && rm *.zip                                                                                          \
-        && tar -xvf ncl_6.4.0.tar                                                                            \
-	&& rm *.tar                                                                                          \
-        #
         #
         # INSTALLING NETCDF LIBRARY
 	&& cd $DIR/                                                                                                     \
@@ -92,11 +94,19 @@ RUN apt-get update && apt-get install -y \
 	&& cd $DIR/netcdf-4.1.3                                                                 			\
         && ./configure --prefix=$DIR/netcdf --disable-dap --disable-netcdf-4 --disable-shared   			\
         && make                                                                                 			\
-        && make install                                                                         			\
+        && make install                                                                         			
         #
+        # DOWNLOADING AND INSTALLING NCL
+ADD /resources/dependencies/ncl_6.4.0.tar_.zip /pi-wrf/WRF_System
+
+RUN     cd /pi-wrf/WRF_System \
+        && unzip ncl_6.4.0.tar_.zip \
+        && rm *.zip \
+        && tar -xvf ncl_6.4.0.tar \
+        && rm *.tar
         #
         #  INSTALLING MPICH LIBRARY
-        && cd $DIR/												           \
+RUN     cd $DIR/												           \
 	&& curl -O -L -J -k http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/mpich-3.0.4.tar.gz      \
 	            --output $DIR/mpich-3.0.4.tar.gz                                                                       \
         && tar -zxvf $DIR/mpich-3.0.4.tar.gz -C $DIR/                         						   \
@@ -162,8 +172,9 @@ RUN apt-get update && apt-get install -y \
         && cd /pi-wrf/WRF_System/WPS/                                                                                                 \
         && sed -i 's/CONFIGURE_NETCDFF_LIB -lnetcdf/CONFIGURE_NETCDFF_LIB -lnetcdf -lgomp/g' /pi-wrf/WRF_System/WPS/arch/preamble     \
         && ./configure <<< $'1\r1\r'                                                                                                  \
-        && ./compile
+        && ./compile 
 
+# ADDING RESOURCES
 
 ADD /resources/images/* /pi-wrf/WRF_System/lib/
 ADD /resources/*.csv /pi-wrf/WRF_System/lib/
@@ -175,18 +186,23 @@ ADD /src/pi-wrf/*.*  /pi-wrf/pi_wrf/pi_wrf/
 ADD /src/pi-wrf/Pages/* /pi-wrf/pi_wrf/pi_wrf/Pages/
 ADD /src/run_wrf /pi-wrf/
 
-RUN apt-get update \
-  && apt-get install -y  build-essential \
-  && apt-get install -y  python3.9.5 \
-  && apt-get install -y  python3-pip \
-  && apt-get install -y  python3-dev \
-  && python3 -m pip install --upgrade jupyter \
-  && python3 -m pip install --upgrade ipyleaflet \
-	&& python3 -m pip install --upgrade jupyter-client==6.1.12 \
-	&& python3 -m pip install --upgrade tzwhere \
-	&& mkdir -p /pi-wrf/src/notebooks 
 
-COPY envs/smpar_gui/notebooks/* /pi-wrf/src/notebooks
+# CREATING DIRECTORY FOR JUPYTER NOTEBOOKS
+
+RUN     mkdir -p /pi-wrf/src/notebooks
+
+# ADDING NEW PYTHON PLOTTING LIBRARIES
+
+RUN sudo apt update && apt -y upgrade
+RUN sudo apt-get install -y ffmpeg
+RUN pip install -U matplotlib 
+RUN pip install hvplot ffmpeg-python
+RUN pip install folium
+RUN pip uninstall PIL && sudo pip install --upgrade Pillow==7.2
+RUN pip install xarray "xarray[viz]"
+RUN sudo apt-get -y install libatlas-base-dev && sudo apt update 
+
+COPY    envs/smpar_gui/notebooks/* /pi-wrf/src/notebooks
 WORKDIR /pi-wrf/src/notebooks 
 
 ENV TINI_VERSION v0.19.0
@@ -196,6 +212,3 @@ RUN chmod +x /usr/bin/tini
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
-
-#WORKDIR /pi-wrf/pi_wrf/pi_wrf
-#CMD python3 /pi-wrf/pi_wrf/pi_wrf/Runner.py 
