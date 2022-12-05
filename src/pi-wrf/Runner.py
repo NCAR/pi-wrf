@@ -14,7 +14,7 @@ from Pages.page_four    import FigurePage
 class MainWindow(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
-        self.title('WRF Sim')                                        #set the title of the main window
+        self.title('Pi-WRF')                                         #set the title of the main window
         screenwidth=self.winfo_screenwidth()                         #get the current screen width
         screenheight=self.winfo_screenheight()                       #current height of screen
         self.geometry('%dx%d'%(screenwidth,screenheight))            #makes the main window fullscreen
