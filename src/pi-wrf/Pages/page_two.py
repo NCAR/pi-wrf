@@ -187,7 +187,7 @@ class PageTwo(tk.Frame):
         frame1_topbanner=tk.Frame(self)
         frame1_topbanner.pack(side=tk.TOP,fill=tk.X)
         topbanner_lbl = tk.Label(frame1_topbanner,
-                                 text="Choose Domain and Resolution",
+                                 text="Choose Domain",
                                  font=('Arial Bold',40),
                                  bg=gui_color[1])
         topbanner_lbl.pack(fill=tk.X)
